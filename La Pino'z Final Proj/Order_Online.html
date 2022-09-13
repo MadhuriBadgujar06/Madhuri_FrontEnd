@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="./Homepage.html">
+<link rel="stylesheet" href="./Our_Story.html">
+<link rel="stylesheet" href="./Order_Online.html">
+<link rel="stylesheet" href="./Store_Locator.html">
+<link rel="stylesheet" href="Franchise_enquiry.html">
+<link rel="stylesheet" href="./Refund_policy.html">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Inter:wght@300&family=Montserrat:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Column container */
+        .row {  
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        /* Style the body */
+        body {
+          font-family: Arial;
+          margin: 0;
+        }
+        
+        
+        
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+        
+        @media only screen and (min-width: 600px) {
+          /* For tablets: */
+          .col-s-1 {width: 8.33%;}
+          .col-s-2 {width: 16.66%;}
+          .col-s-3 {width: 25%;}
+          .col-s-4 {width: 33.33%;}
+          .col-s-5 {width: 41.66%;}
+          .col-s-6 {width: 50%;}
+          .col-s-7 {width: 58.33%;}
+          .col-s-8 {width: 66.66%;}
+          .col-s-9 {width: 75%;}
+          .col-s-10 {width: 83.33%;}
+          .col-s-11 {width: 91.66%;}
+          .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+          /* For desktop: */
+          .col-1 {width: 8.33%;}
+          .col-2 {width: 16.66%;}
+          .col-3 {width: 25%;}
+          .col-4 {width: 33.33%;}
+          .col-5 {width: 41.66%;}
+          .col-6 {width: 50%;}
+          .col-7 {width: 58.33%;}
+          .col-8 {width: 66.66%;}
+          .col-9 {width: 75%;}
+          .col-10 {width: 83.33%;}
+          .col-11 {width: 91.66%;}
+          .col-12 {width: 100%;}
+        }
+ 
+        @media only screen and (max-width: 600px) {
+
+        .header
+        {
+          z-index: 10;
+          position: static;
+        }
+        *{
+          font-size: 13px!important;
+        }
+        h1{
+          font-size: 25px!important;
+        }
+        h2{
+          font-size: 20px!important;
+        }
+        h3{
+          font-size: 18px!important;
+        }
+        h4{
+          font-size: 15px!important;
+        }
+        
+    .img {
+          width: 80%;
+          display: inline-flex;
+          align-items: center;
+      
+          justify-content: flex-start;
+        }
+        .img img
+        {
+          height: 15px;
+      
+          padding: 2%!important;
+        }
+        .hamburger{
+          
+          display:inline-flex!important;
+          width: 20%;
+          align-items: center;
+          justify-content: center;
+        }
+  
+      
+        .mob_navbar
+        {
+          display: flex;
+          font-size: 10px!important;
+          justify-content: center;
+          align-items: center;
+        
+          flex-direction: column;
+        }
+        .mob_navbar a{
+          padding:2% 1%!important;
+        }
+        .letter{
+          margin: 2%!important;
+          width: 100%!important;
+        }
+        .mrgn
+        {
+          margin-left:10% ;
+        }
+        
+        button{
+          padding: 1% 4%!important;
+        }
+        .order input
+        {width:80% !important;
+          margin-top: 3%!important;
+        padding:3% 5% !important;}
+        .f2{
+          margin: 5% 0% 10% 0%!important;
+        }
+      }
+     
+     
+      
+      .img {
+        padding-left: 0% 5%;
+      }
+   
+      .img img {
+        /* width: 80%; */
+        height: 60px;
+        padding-left: 3%;
+        float: right;
+      }
+
+      .navbar {
+        overflow: hidden;
+        display: flex;
+        padding-left: 5%;
+        padding-top: 2%;
+      }
+      .navbar a {
+  
+        display: block;
+        text-decoration: none;
+        color: rgb(53, 51, 51);
+        padding: 0% 2%;
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+      }
+       .hamburger{
+         display: none;
+       }
+      .header {
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        left: 0px;
+        background-color: white;
+        padding: 0% 0%;
+      }
+        .order_online_sec1{
+            
+            padding: 2% 2%;
+            background-color: #f7f7f7;;
+          }
+     
+       
+        .order{
+            text-align: center;
+        }
+        .search
+        {
+            color: rgb(119, 126, 133);
+        }
+         .textbox
+         {
+             padding: 1% 2%;
+             width: 40%;
+             
+             margin: 1%;
+             border-radius: 25px;
+             border: none;
+           
+             box-shadow: 2px 2px solid gray!important ;
+         }
+        .btn{
+           background-color: white;
+           box-shadow: 0px 4px 7px rgb(226, 223, 223);
+           padding: 1%;
+           
+           color: rgb(73, 70, 70);
+           font-size: 14px;
+           border: 1px solid rgb(192, 188, 188);
+           border-radius: 7px;
+           margin: 1% 0.7%;
+        }
+        .btn:hover{
+            border: 1px solid black;
+            cursor: pointer;
+        }
+        .order input{
+            box-shadow: 0px 3px 6px rgb(177, 175, 175);
+        }
+        .letter{
+            padding :11% 17%;
+
+            border: none;
+            box-shadow:2px 2px 3px rgb(104, 102, 102) ;
+            background-color: #00572d;
+            border-radius: 30px;
+            font-size: 14px;
+            color: white;
+            font-weight: 500;
+           
+        }
+        .let_margin
+        {
+           width: 4%;
+           margin-top: 1%;
+         
+        }
+    .footer
+    {
+        background-color: #00572d;
+        height: 50%;
+        width: 100%;
+        padding:3% 9%;
+        color: white;
+    }
+    .f1 a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .f2 img{
+        border-radius: 4px;
+    }
+    .f3
+    {
+        font-size: 14px;
+        
+    }
+    .f3 a
+    {
+      text-decoration: none;
+      color: white;
+    }
+    .f3 i{
+        margin: 2.5%!important;
+    }
+    .last_line
+   {
+       color: black;
+       font-size: 15px;
+       text-align: center;
+   }
+   .last_line a
+   {
+       text-decoration: none;
+       color: white;
+       font-size: 16px;
+       font-weight: 500;
+       margin-right: 1%;
+   }
+
+    </style>
+    <script>
+      $(document).ready(function(){
+        
+        $(".fa-bars").click(function(){
+          $(".mob_navbar").toggle();    
+            
+        })
+      
+      })
+    </script>
+</head>
+<body>
+    <divq class="container">
+        <div class="row header">
+           
+         
+                <div class="col-s-2 col-2 img">
+                 <img src="lapinoz-logo.png" alt="">                
+                </div>
+                <div class="hamburger col-s-2 col-2"><i class="fa fa-bars" style="font-size:24px!important;color: grey;"></i>
+                </div>
+              
+            <div class=" col-9 navbar mob_navbar">
+              <a href="Homepage.html">Home</a>
+              <a href="Our_Story.html" >Our Story</a>
+              <a href="Store_Locator.html">Store Locator</a>
+              <a href="Contact_us.html">Contact Us</a>
+              <a href="Franchise_enquiry.html">Franchise Enquiry</a>
+              <a href="order_online.html">Order Online</a>
+            
+              <a href="#" style="padding-left: 3%">
+                <i class="fa fa-power-off" style="font-size: 24px; color: grey"></i
+              ></a>
+            </div>
+        </div>
+ 
+    
+        <div class="row order_online_sec1">
+           
+                <div class="col-s-12 col-12 order">
+                   <h2>Online Ordering</h2>
+                   <div class="search">Search City Or Locality to Start Ordering</div>
+                   
+                   <input type="textbox" placeholder="Enter city or locality" class="textbox">
+                </div>
+            
+
+            <div class="col-s-12 col-12 locate_us">
+               
+                        <div class="row">
+                          
+                     <div class="col-s-1 col-1 let_margin">
+                          <button class="letter">A</button>
+                        </div>
+                        <div class="col-s-11 col-11 mrgn">
+                         <button class="btn ">Agra</button>
+                         <button class="btn ">Ahmedabad</button>
+                         <button class="btn ">Ajmer</button>
+                         <button class="btn">Ambala Cantt</button>
+                         <button class="btn ">Ambala City</button>
+                         <button class="btn ">Amreli</button>
+                         <button class="btn ">Amritser</button>
+                         <button class="btn ">Anand</button>
+                         <button class="btn ">Ankleshwar</button>
+                         <button class="btn ">Ayodhya</button>
+                         <button class="btn ">Azamgarh</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-s-1 col-1 let_margin">
+                         <button class="letter">B</button>
+                        </div>
+                        <div class="col-s-11 col-11  mrgn">
+                         <button class="btn">Baddi</button>
+                         <button class="btn">Bardoli</button>
+                         <button class="btn">Batala</button>
+                         <button class="btn">Bhathinda</button>
+                         <button class="btn">Bangluru</button>
+                         <button class="btn">Bharuch</button>
+                         <button class="btn">Bhavnagar</button>
+                         <button class="btn">Bilai</button>
+                         <button class="btn">Bilwara</button>
+                         <button class="btn">Bhuj</button>
+                         <button class="btn">Bikaner</button>
+                         <button class="btn">Bokaro</button>
+                         <button class="btn">Borsad</button>
+                         <button class="btn">Botad</button>
+                         <button class="btn">Budaul</button>
+                        </div>
+                        </div>
+                    <div class="row">
+                         <div class="col-s-1 col-1 let_margin">
+                           <button class="letter">C</button>
+                        </div>
+                        <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Chandigarh</button>
+                         <button class="btn ">Chennai</button>
+                         <button class="btn ">Chikhali</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-s-1 col-1 let_margin">
+                          <button class="letter">D</button>
+                       </div>
+                       <div class="col-11 col-s-11  mrgn">
+                      
+                         <button class="btn ">Dahod</button>
+                         <button class="btn ">Daman</button>
+                         <button class="btn ">Dasuya</button>
+                         <button class="btn ">Delhi</button>
+                         <button class="btn ">Derabassi</button>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-s-1 col-1 let_margin">
+                          <button class="letter">F</button>
+                       </div>
+                       <div class="col-11 col-s-11  mrgn">
+                        
+                         <button class="btn ">Faridabad</button>
+                         <button class="btn ">Fateharh Sahib</button>
+                         <button class="btn ">ferozpur</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">G</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         
+                         <button class="btn ">Gandhidham</button>
+                         <button class="btn ">Gandhinagar</button>
+                         <button class="btn ">Gaziabad</button>
+                         <button class="btn ">Goa</button>
+                         <button class="btn ">Godhra</button>
+                         <button class="btn ">Gondal</button>
+                         <button class="btn ">Gorakhpur</button>
+                         <button class="btn ">Greater Noida</button>
+                         <button class="btn ">Gurudaspur</button>
+                         <button class="btn ">Gurugoan</button>
+                         <button class="btn ">Guhati</button>
+                         <button class="btn ">Gwaliyar</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">H</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                      
+                         <button class="btn">Haldwani</button>
+                         <button class="btn">Halol</button>
+                         <button class="btn">Himmatnagar</button>
+                         <button class="btn">Hoshiyarpur</button>
+                         <button class="btn">Hydrabad</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">I</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                               <button class="btn">Indore</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">J</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         
+                         <button class="btn">Jabalapur</button>
+                         <button class="btn">Jaipur</button>
+                         <button class="btn">Jalandhar</button>
+                         <button class="btn">Jammu</button>
+                         <button class="btn">Jamnagar</button>
+                         <button class="btn">Jamshedpur</button>
+                         <button class="btn">Johnpur</button>
+                         <button class="btn">Jetpur</button>
+                         <button class="btn">Jodhpur</button>
+                         <button class="btn">Junagarh</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">K</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn">Kadi</button>
+
+                         <button class="btn">Kalol</button>
+                         <button class="btn">Kanpur</button>
+                         <button class="btn">Karjat</button>
+                         <button class="btn">Karnal</button>
+                         <button class="btn">Kasol</button>
+                         <button class="btn">Kharar</button>
+                         <button class="btn">Kochi</button>
+                         <button class="btn">Kolhapur</button>
+                         <button class="btn">Kolkata</button>
+                         <button class="btn">Kota</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin ">
+                              <button class="letter">L</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Limdi</button>
+                         <button class="btn ">Lakhnau</button>
+                         <button class="btn ">Ludhiyana</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">M</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Mahuva</button>
+                         <button class="btn ">Maliyamiliyana</button>
+                         <button class="btn ">Malout</button>
+                         <button class="btn ">Manali</button>
+                         <button class="btn ">Mandi Gobhindgarh</button>
+                         <button class="btn ">Manglore</button>
+                         <button class="btn ">Meraut</button>
+                         <button class="btn ">Mehsana</button>
+                         <button class="btn">Mohali</button>
+                         <button class="btn ">Moradabad</button>
+                         <button class="btn ">Morbi</button>
+                         <button class="btn ">Mount Abu</button>
+                         <button class="btn ">Mukerian</button>
+                         <button class="btn ">Mumbai</button>
+                         <button class="btn ">Muzaffarpur</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">N</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Nadiad</button>
+                         <button class="btn ">Nagpur</button>
+                         <button class="btn ">Narmada</button>
+                         <button class="btn ">Nasik</button>
+                         <button class="btn ">Navi Mumbai</button>
+                         <button class="btn ">Nausari</button>
+                         <button class="btn ">Noida</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">P</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+
+                         <button class="btn">Palanpur</button>
+                         <button class="btn">Pali</button>
+                         <button class="btn">Panchkula</button>
+                         <button class="btn">Patan</button>
+                         <button class="btn">Panipat</button>
+                         <button class="btn">Pathankot</button>
+                         <button class="btn">Patiala</button>
+                         <button class="btn">Patana</button>
+                         <button class="btn">Pinjor</button>
+                         <button class="btn">Porbandar</button>
+                         <button class="btn">Prayagraj</button>
+                         <button class="btn">Pune</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">R</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn">Raebareli</button>
+                         <button class="btn">Raipur</button>
+                         <button class="btn">Rajkot</button>
+                         <button class="btn">Rajnandgaon</button>
+                         <button class="btn">Rajpura</button>
+                         <button class="btn">Ranchi</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">S</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn">Saputara</button>
+                         <button class="btn">Sikandarabad</button>
+                         <button class="btn">Sikar</button>
+                         <button class="btn">Silvassa</button>
+                         <button class="btn">Solan</button>
+                         <button class="btn">Sri Ganganagar</button>
+                         <button class="btn">Surendranagar</button>
+                         <button class="btn">Surat</button>
+                         <button class="btn ">Sundarnagar</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">U</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Udaipur</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">V</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Vadodara</button>
+                         <button class="btn ">Valsad</button>
+                         <button class="btn ">Vapi</button>
+                         <button class="btn ">Varanasi</button>
+                         <button class="btn ">Virar</button>
+                         <button class="btn ">Visnagar</button>
+                         <button class="btn ">Vyara</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">Y</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Yamunagar</button>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-s-1 col-1 let_margin">
+                              <button class="letter">Z</button>
+                           </div>
+                           <div class="col-11 col-s-11  mrgn">
+                         <button class="btn ">Zirakpur</button>
+                        </div>  
+            </div>
+       
+            </div>
+        </div>
+        <div class="row footer">
+          <div class="col-s-6 col-4 f1">
+                <p><a href="#"> <i class="fa fa-lightbulb-o" style="font-size:15px"></i> Useful Links</a></p>
+                <p><a href="Refund_policy.html" target="_blank">  Refund Policy</a></p>
+                <p><a href="Terms_and_conditions.html" target="_blank">  Terms & Conditions</a></p>
+                <p> <a href="#"> Privacy Policy</a></p>
+                 <p><a href="#">  Promo Codes</a></p>
+          </div>
+          <div class="col-s-6 col-4 f2">
+              <p><i class='fas fa-hand-holding-usd' style='font-size:24px'></i>Payment Methods</p>
+              <a href="#"><img src="visa.png" alt=""></a>
+              <a href="#"><img src="google-pay.png" alt=""></a>
+              <a href="#"><img src="paytm.png" alt=""></a>
+              <a href="#"><img src="master-card.png" alt=""></a>
+          </div>
+          <div class="col-s-6 col-4 f3">
+              <p style="margin:1%; font-weight: bold;">@ Contact With Us</p>
+               
+              <a href="https:/www.facebook.com" target="_blank"> <i class="fa fa-facebook-f" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 3%;border-radius: 25px;"></i></a>
+              <a href="https:/www.instagram.com"target="_blank"> <i class="fa fa-instagram" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.5%;border-radius: 25px;"></i></a>
+              <a href="https:/www.youtube.com"target="_blank"> <i class="fa fa-youtube-play" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.2%;border-radius: 25px;"></i></a>
+              <a href="https:/www.pinterest.com"target="_blank"> <i class="fa fa-pinterest" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.5%;border-radius: 25px;"></i></a>
+               <a href="https:/www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.4%;border-radius: 25px;"></i></a> <br>
+              <i class="fa fa-envelope" style="font-size:12px;margin:1%;color:#00572d;background-color:white;"></i>
+              <span style="font-size: 14px;margin:3% 0%;">copenhagenhospitalityandretail@yahoo.com</span>
+             <div> <i class="fa fa-phone" style="font-size:15px"></i><span> +9101762509231</span></div>
+          </div>
+          <div class="col-s-12 col-12">
+              <hr >
+            </div>
+              <div class="col-s-12 col-12 last_line">
+                Made with Love in India by <a href="https://www.uengage.in/"> Uengage</a> Copyright. All Rights Researved
+            </div>
+      </div>
+      </div>
+     </body>
+ </html>
