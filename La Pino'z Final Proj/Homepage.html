@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La Pino'z</title>
+
+    <!-- ------------------links to other webpages----------------- -->
     <link rel="stylesheet" href="./Contact_us.html" />
     <link rel="stylesheet" href="./Franchise_enquiry.html" />
     <link rel="stylesheet" href="./order_online.html" />
@@ -12,7 +14,13 @@
     <link rel="stylesheet" href="Our_Story.html" />
     <link rel="stylesheet" href="Homepage.html" />
     <link rel="stylesheet" href="./Refund_policy.html" />
-    
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- --------------style Page Link------------------- -->
+   <link rel="stylesheet" href="style/style_homepage.css">
+    <!-- --------------------------------------------------------- -->
+
+      <!-- --------------Google Fonts------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,724 +43,70 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+
+    <!-- --------------------------Jquery Link---------------------------------- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- -----------------------------slick carousel---------------------------------- -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- ---------------------------------------------------------------------------------------- -->
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      /* Column container */
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      /* Style the body */
-      body {
-        font-family: Arial;
-        margin: 0;
-      }
-
-      /* For mobile phones: */
-      [class*="col-"] {
-        width: 100%;
-      }
-
-      @media only screen and (min-width: 600px) {
-        /* For tablets: */
-        .col-s-1 {
-          width: 8.33%;
-        }
-        .col-s-2 {
-          width: 16.66%;
-        }
-        .col-s-3 {
-          width: 25%;
-        }
-        .col-s-4 {
-          width: 33.33%;
-        }
-        .col-s-5 {
-          width: 41.66%;
-        }
-        .col-s-6 {
-          width: 50%;
-        }
-        .col-s-7 {
-          width: 58.33%;
-        }
-        .col-s-8 {
-          width: 66.66%;
-        }
-        .col-s-9 {
-          width: 75%;
-        }
-        .col-s-10 {
-          width: 83.33%;
-        }
-        .col-s-11 {
-          width: 91.66%;
-        }
-        .col-s-12 {
-          width: 100%;
-        }
-      
- 
-
-      }
-      @media only screen and (min-width: 768px) {
-        /* For desktop: */
-        .col-1 {
-          width: 8.33%;
-        }
-        .col-2 {
-          width: 16.66%;
-        }
-        .col-3 {
-          width: 25%;
-        }
-        .col-4 {
-          width: 33.33%;
-        }
-        .col-5 {
-          width: 41.66%;
-        }
-        .col-6 {
-          width: 50%;
-        }
-        .col-7 {
-          width: 58.33%;
-        }
-        .col-8 {
-          width: 66.66%;
-        }
-        .col-9 {
-          width: 75%;
-        }
-        .col-10 {
-          width: 83.33%;
-        }
-        .col-11 {
-          width: 91.66%;
-        }
-        .col-12 {
-          width: 100%;
-        }
-
-      }
-
-      @media only screen and (max-width: 600px) {
-    
-        .header
-        {
-          z-index: 10;
-          position: static;
-        }
-     
-        .img {
-          width: 80%;
-          display: inline-flex;
-          align-items: center;
-      
-          justify-content: flex-start;
-        }
-        .img img
-        {
-          height: 15px;
-      
-          padding: 2%!important;
-        }
-        .hamburger{
-          
-          display:inline-flex!important;
-          width: 20%;
-          align-items: center;
-          justify-content: center;
-        }
-      
-        h1{
-          font-size: 25px!important;
-        }
-        h2{
-          font-size: 20px!important;
-        }
-        h3{
-          font-size: 18px!important;
-        }
-        h4{
-          font-size: 15px!important;
-        }
-        .explr_img
-        {
-          
-           width: 50%;
-          font-size: 10px!important;
-        }
-        *,p{
-          font-size: 15px!important;
-        }
-        .explr_img h3
-        {
-         
-            font-size: 13px!important;
-
-        }
-        .mob_navbar
-        {
-          display: flex;
-          font-size: 10px!important;
-          justify-content: center;
-          align-items: center;
-        
-          flex-direction: column;
-        }
-        .mob_navbar a{
-          padding:2% 1%!important;
-        }
-        .select_city
-        {
-          width: 70%!important;
-        }
-        .select_outlet
-        {
-          width: 60%!important;
-        }
-        .f2{
-          margin: 5% 0% 10% 0%!important;
-        }
-        .homepage_sec1 
-        {
-         padding-top: 25%!important;
-        }
-
-        .homepage_sec1 h1
-        {
-          margin-bottom: 3%!important;
-        }
-      .sec1_b1
-      {
-        padding: 5%!important;
-        height: 430px!important;
-      }
-      .sec1_b2
-      {
-        padding: 5%!important;
-        height: 430px!important;
-      }
-      .h_white
-      {
-        margin-top: 50px!important;
-      }
-      .sec1_b3
-      {
-        padding: 5%!important;
-        height: 430px!important;
-      }
-      }
-      .img {
-        padding-left: 0% 5%;
-      }
-   
-      .img img {
-        /* width: 80%; */
-        height: 60px;
-        padding-left: 3%;
-        float: right;
-      }
-   .hamburger{
-   display:none;  
-   }
-      .navbar {
-        overflow: hidden;
-        display: flex;
-        padding-left: 5%;
-        padding-top: 2%;
-      }
-      .navbar a {
-  
-        display: block;
-        text-decoration: none;
-        color: rgb(53, 51, 51);
-        padding: 0% 2%;
-        font-family: "Inter", sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-      }
-
-      .header {
-        position: sticky;
-        top: 0px;
-        z-index: 10;
-        left: 0px;
-        display: flex;
-
-        background-color: white;
-        padding: 0% 0%;
-      }
-
       .sec1_b1 {
-        content: "";
-        background:rgba(0,0,0,0.5)url("banner1.jpg")no-repeat center center/cover;
-    
-        width: 100%;
-        background-blend-mode: darken;
-        /* height: 580px; */
-         height: auto;
-        color: white;
-        text-shadow: 2px 2px 2px black;
-     
-       text-align: center;
-      }
-      .sec1_b2 {
-        content: "";
-        background:rgba(0,0,0,0.5)url("banner2.jpg")no-repeat center center/cover;
-    
-        width: 100%;
-        background-blend-mode: darken;
-        /* height: 580px; */
-     height: auto;
-        color: white;
-        text-shadow: 2px 2px 2px black;
-     
-       text-align: center;
-      }
-      .sec1_b3 {
-        content: "";
-        background:rgba(0,0,0,0.5)url("banner3.jpg")no-repeat center center/cover;
-    
-        width: 100%;
-        background-blend-mode: darken;
-        /* height: 580px; */
-        height: auto;
-        color: white;
-        text-shadow: 2px 2px 2px black;
-     
-       text-align: center;
-      }
-      .h_white
-      {   
-          margin-bottom: 0px;
-          color: white;
-          font-size:55px;
-          text-shadow: 2px 2px 2px black;
-          font-weight: 500;
-      }
-      .h_yellow{
-          color:yellow ;
-           padding-top: 0;
-           font-size: 55px;
-           font-weight: 500;
-           text-shadow: 2px 2px 2px black;
-           s  margin-top: 0;
-      }
-      .dwnld button
-      {
-          padding: 1% 2%;
-          color: white;
-          background-color: black;
-          border-radius: 30px;
-          border: none;
-          font-weight: bold;
-      }
-      .dwnld button:hover
-      {
-          color: black;
-          cursor: pointer;
-          background-color: white;
-          border: 1px solid black;
-      }
-      .sec1 h2{
-          color: white;
-          font-weight: 500;
-      }
-     
-    .main_select select{
-          border: none;
-          margin: 1%;
-          padding:1.2% 1% ;
-      }
-     .dwnld button{
-       color: rgb(252, 249, 249);
-       background-color: rgb(10, 10, 10);
-     }
-      .select_city
-      {
-        width: 40%;
-        border-radius: 30px;
-        margin: 2% 0%;
-      }
-      .select_outlet
-      {
-        width: 30%;
-        border-radius: 30px;
-        margin: 2% 0%;
-      }
-      .deals
-      {
-        padding: 3% 3%;
-      }
-      .deals_pad
-      {
-        padding: 1% 4%;
-      }
-      .deals img
-      {
-        width: 100%;
-        border-radius: 10px;
-      }
-      .best_seller
-      {
-        padding:1% 4%;
-      }
-      .seller_box{
-        padding: 4%;
-        overflow: hidden;
-        box-shadow: 1px 2px 4px grey;
-        border-radius: 10px;
-      }
-     
-      .seller_box h4
-      {
-        padding: 0;
-        margin-bottom: 8px;
-      }
-      .seller_box p
-      {
-        color: grey;
-        font-size: 15px;
-        padding: 0px;
-        margin: 0px;
-      }
-      .seller_box img
-      {
-        width: 100%;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        overflow: hidden;
-
-      }
-  
-      .seller_box img:hover{
-
-	-webkit-animation: kenburns-top 1s ease-out both;
-	        animation: kenburns-top 1s ease-out both;
-}
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.1) translateY(-15px);
-            transform: scale(1.1) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.1) translateY(-15px);
-            transform: scale(1.1) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
-.launched_stores
-{
-  background-color: rgb(255, 249, 249);
-  padding:1% 4%;
-
-}
-.hp
-{padding: 4%;}
-.store h2
-{
-  font-size: 15px;
-}
- .store span
-{
-  font-size: 13px;
-
-}
-.store_pad
-{
-  padding: 1%;  
-  color: #00572d;
-}
-.store
-{
-  background-color: white;
-  border-radius: 10px;
-  z-index: 1;
-  cursor: pointer;
-  position:relative;
-  border: 1px solid lightgray;
-  box-shadow: 1px 1px 4px grey;
-}
-
- .lapinoz_img
- {
-   width: 15%
- }
- .lapinoz_img img{
-   width: 100%;
- }
-.phone_icn
-{
-  background-color:white ;
-  border-radius: 100%;
-  position: absolute;
-  top: 35%;
-  right: 7%;
-  width: 13%;
-  height: 16%;
-  padding-top:2%;
-  text-align: center;
-}
-.phone_icn img
-{
-  width: 60%;
-  position: absolute;
-  top: 10%;
-  right: 30%;
-}
-.b1,.b2,.b3,.b4,.b5,.b6
-{
-  border-radius: 10px;
+  content: "";
+  background:rgba(0,0,0,0.5)url("images/banner1.jpg")no-repeat center center/cover; 
+  width: 100%;
+  background-blend-mode: darken;
+   height: auto;
   color: white;
-  padding: 4%;
+  text-shadow: 2px 2px 2px black; 
+ text-align: center;
 }
-.b1
-{
-  background: linear-gradient(#5ca07f,#99ddbc);
-}
-.b3
-{ 
-  background: linear-gradient(rgb(238, 212, 165),rgb(233, 192, 116));
-}
-.b2
-{
-  background: linear-gradient(rgb(241, 98, 110),rgb(238, 165, 175));
-}
-.b4
-{
-  background: linear-gradient(rgb(98, 208, 241),rgb(165, 185, 207));
-}
-.b5
-{
-  
-  background: linear-gradient(rgb(79, 230, 124),rgb(165, 238, 165));  
-}
-.b6
-{
-  background: linear-gradient(rgb(241, 98, 217),rgb(238, 165, 226));  
-} 
-.explore {
-        padding:1% 4%;
-        background-color: #f7f7f7;
-      }
-      .i1 {
-        padding: 1%;
-        margin: 0%;
-      }
-      .i1 img {
-        width: 100%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-      }
-      .i1 h3 {
-        text-align: center;
-        font-size: 15px;
-        color: #201c1d;
-      }
-      .i1 img:hover {
-        transform: scale(1.02);
-      }
-      .enquire {
-        padding:1% 4%;
-      }
-      .enquire img {
-        border-radius: 12px;
-        width: 100%;
-      }
-      .sec_review
-      {
-        padding: 1% 4%;
-      }
-      .review
-      {
-        color: rgb(65, 63, 63);
-        line-height: 1.5;
-        font-family: 'Baloo Bhai 2';
-        font-size: 20px;
-        padding: 1%;
-        margin: 15px;
-        background-color: #f8f8f8;
-        box-shadow: 1px 1px 4px grey;
-        border-radius: 7px;
-      }
-      .lapinoz_loc_near_you {
-        background-color: #00572d;
-        padding: 0% 4%;
-        color: white;
-        /* height: 500px; */
-      }
-      .btn {
-        background-color: #016b38;
-        padding: 1%;
-        color: white;
-        font-size: 15px;
-        border: none;
-        border-radius: 7px;
-        margin: 1% 0.7%;
-      }
-      .btn:hover {
-        background-color: white;
-        color: #00572d;
-        border: 1px solid black;
-        cursor: pointer;
-      }
-      .order input {
-        box-shadow: 0px 3px 6px rgb(177, 175, 175);
-      }
+.sec1_b2 {
+  content: "";
+  background:rgba(0,0,0,0.5)url("images/banner2.jpg")no-repeat center center/cover;
 
-      .homepage_letter {
-        padding: 11% 17%;
-        margin: 2%;
-        border: none;
-        box-shadow: 2px 2px 3px rgb(104, 102, 102);
-        background-color: white;
-        border-radius: 30px;
-        font-size: 15px;
-        color: #00572d;
+  width: 100%;
+  background-blend-mode: darken;
+height: auto;
+  color: white;
+  text-shadow: 2px 2px 2px black;
 
-        font-weight: 500;
-      }
-      .homepage_let_margin {
-        width: 4%;
-        margin-top: 1%;
-        margin-right: 2%;
-      }
-      .app_dwnld
-      {
-        padding: 2% 5%;
-        background-color: #f8f8f8;
-      }
-      .dwnld_info
-      {
-        padding: 1% 7%;
-        color: grey;
-        line-height: 1.5;
-        font-family: "arial";
-        font-size: 16px;
-      }
-      .dwnld_info h1
-      {
-        color: black;
-        font-size: 38px;
-   }
-      .dwnld_info img{
-        width: 35%;
-        margin-top:2%;
-      }
-      .dwnld_info i{
-       
-        padding-right: 2%;
-      }
-      .dwnld_info p
-      {
-        margin: 1%;
-      }
-    
-     .phone
-     { 
-      padding: 6% 25%;
+ text-align: center;
+}
+.sec1_b3 {
+  content: "";
+  background:rgba(0,0,0,0.5)url("images/banner3.jpg")no-repeat center center/cover;
+    width: 100%;
+  background-blend-mode: darken;
+ height: auto;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+
+ text-align: center;
+}
+.slide_bar
+{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#div1,#div2,#div3{
+  background-color: rgba(245, 240, 240, 0.3);
+  box-shadow: 0px 1px 1px rgba(255, 254, 254, 0.3);
+  width: 35px;
+  height: 5px;
   
-     }
-     .phone img{
-       border-radius: 20px;
-       width: 85%;
-       box-shadow: 0px 0px 8px grey;
-      
-     }
-     .phone img:hover
-     {
-       cursor: pointer;
-       transform: scale(1.02);
-     }
-     
-      .footer {
-        background-color: #00572d;
-        height: 50%;
-        padding: 3% 9%;
-        color: white;
-      }
-      .f1 a {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-      }
-      .f2 img {
-        border-radius: 4px;
-      }
-      .f3 {
-        font-size: 14px;
-      }
-      .f3 a {
-        text-decoration: none;
-        color: white;
-      }
-      .f3 i {
-        margin: 2.5% !important;
-      }
-      .last_line {
-        color: black;
-        font-size: 15px;
-        text-align: center;
-      }
-      .last_line a {
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 500;
-        margin-right: 1%;
-      }
-      
-      .slide_bar
-      {
-        display: flex;
-        gap: 5px;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-      #div1,#div2,#div3{
-        background-color: rgba(245, 240, 240, 0.3);
-        box-shadow: 0px 1px 1px rgba(255, 254, 254, 0.3);
-        width: 35px;
-        height: 5px;
-        
-      }
-      
-      #div1:hover,#div2:hover,#div3:hover
-    
-      {
-        background-color: whitesmoke;
-      }
-  .store a{
-    text-decoration: none;
-    color: black;
-  }
+}
+
+#div1:hover,#div2:hover,#div3:hover
+
+{
+  background-color: whitesmoke;
+}
     </style>
     <script>
       $(document).ready(function(){
@@ -790,7 +144,7 @@
     <div class="container">
       <div class="row header">
         <div class="col-s-2 col-2 img">
-          <img src="lapinoz-logo.png" alt="" />
+          <img src="images/lapinoz-logo.png" alt="" />
           </div>
           
           <div class="hamburger col-s-2 col-2"><i class="fa fa-bars" style="font-size:24px!important;color: grey;"></i>
@@ -803,7 +157,7 @@
           <a href="Contact_us.html">Contact Us</a>
           <a href="Franchise_enquiry.html">Franchise Enquiry</a
           >
-          <a href="order_online.html" target="_blank">Order Online</a>
+          <a href="order_online.html" >Order Online</a>
           <a href="#" style="padding-left: 3%">
             <i class="fa fa-power-off" style="font-size: 24px; color: grey"></i
           ></a>
@@ -976,27 +330,27 @@
             
         <div class="col-s-3 col-3">
           <a href="./Order_Online.html">
-        <div class="deals"> <img src="./deals.jpg" alt=""> </div>
+        <div class="deals"> <img src="images/deals.jpg" alt=""> </div>
         </a>
         </div>
         <div class="col-s-3 col-3">
           <a href="./Order_Online.html">
-          <div class="deals"> <img src="./deals2.jpg" alt=""> </div>
+          <div class="deals"> <img src="images/deals2.jpg" alt=""> </div>
           </a>
           </div>
           <div class="col-s-3 col-3">
             <a href="./Order_Online.html">
-            <div class="deals"> <img src="./deals3.jpg" alt=""> </div>
+            <div class="deals"> <img src="images/deals3.jpg" alt=""> </div>
           </a>  
           </div>
             <div class="col-s-3 col-3">
               <a href="./Order_Online.html">
-              <div class="deals"> <img src="./deal4.jpg" alt=""> </div>
+              <div class="deals"> <img src="images/deal4.jpg" alt=""> </div>
             </a>  
             </div>
               <div class="col-s-3 col-3">
                 <a href="./Order_Online.html">
-                <div class="deals"> <img src="./deal5.jpg" alt=""> </div>
+                <div class="deals"> <img src="images/deal5.jpg" alt=""> </div>
               </a>  
               </div>
               </div>
@@ -1010,32 +364,32 @@
         </div>
           <div class="row">
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i1.png" alt="" />
+            <img src="images/explore_i1.png" alt="" />
             <h3>Veg Pizza</h3>
           </div>
 
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i2.png" alt="" />
+            <img src="images/explore_i2.png" alt="" />
             <h3>Classic Pizzas for Classic Maniacs</h3>
           </div>
 
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i3.png" alt="" />
+            <img src="images/explore_i3.png" alt="" />
             <h3>Sides</h3>
           </div>
 
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i4.png" alt="" />
+            <img src="images/explore_i4.png" alt="" />
             <h3>Classic Pizza Pack Of 4</h3>
           </div>
 
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i5.png" alt="" />
+            <img src="images/explore_i5.png" alt="" />
             <h3>Pasta</h3>
           </div>
 
           <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i6.png" alt="" />
+            <img src="images/explore_i6.png" alt="" />
             <h3>BOGO</h3>
           </div>
         </div>
@@ -1054,7 +408,7 @@
 <div class="row BestSellerSlider">
   <div class="col-s-3 col-3"style="padding:7px;">
   <div class="deals_pad seller_box ">
-     <img src="best_seller1.jpg"  alt="">
+     <img src="images/best_seller1.jpg"  alt="">
      <br>
       <h4>Farm Villa Pizza</h4>
     <p>The Freshness of capsicum,tomato...</p>
@@ -1062,7 +416,7 @@
   </div>
   <div class="col-s-3 col-3"style="padding:7px">
     <div class="deals_pad seller_box">
-       <img src="best_seller2.jpg" alt="">
+       <img src="images/best_seller2.jpg" alt="">
        <br>
         <h4>Korma Special Pizza</h4>
       <p>Need some Indian zing to your Pizza</p>
@@ -1070,14 +424,14 @@
     </div>
     <div class="col-s-3 col-3"style="padding:7px">
       <div class="deals_pad seller_box">
-         <img src="best_seller3.jpg" alt="">
+         <img src="images/best_seller3.jpg" alt="">
          <br>
           <h4>Las Vegas Treat Pizza</h4>
         <p>Mushrooms,Jelapenos,Baby Corn...</p>
       </div>
       </div><div class="col-s-3 col-3" style="padding:7px">
         <div class="deals_pad seller_box">
-           <img src="best_seller4.jpg" alt="">
+           <img src="images/best_seller4.jpg" alt="">
            <br>
             <h4>Spring Fling Pizza</h4>
           <p>Quintessentially veg with capsicum...</p>
@@ -1085,7 +439,7 @@
         </div>
         <div class="col-s-3 col-3" style="padding:7px">
           <div class="deals_pad seller_box">
-             <img src="./best_seller5.jpeg" alt="">
+             <img src="images/best_seller5.jpeg" alt="">
              <br>
               <h4>Farm Villa Pizza</h4>
             <p>The Freshness of capsicum,tomato...</p>
@@ -1093,7 +447,7 @@
           </div>
           <div class="col-s-3 col-3" style="padding:7px">
             <div class="deals_pad seller_box">
-               <img src="./best_seller6.jpeg" alt="">
+               <img src="images/best_seller6.jpeg" alt="">
                <br>
                 <h4>Cheezy-7 Pizza</h4>
               <p>An Exotic combination of white</p>
@@ -1126,10 +480,10 @@
          <div class="row">
            <div class="col-s-12 col-12 b5">
             <div class="phone_icn">
-              <img src="phone-icn.png" alt="">
+              <img src="images/phone-icn.png" alt="">
             </div>
             <div class="lapinoz_img">
-              <img src="lapinoz.png" alt="">
+              <img src="images/lapinoz.png" alt="">
             </div>
                <h3>La Pino'z Pizza</h3>
            </div>
@@ -1149,10 +503,10 @@
       <div class="row">
         <div class="col-s-12 col-12 b2">
           <div class="phone_icn">
-          <img src="phone-icn.png" alt="">
+          <img src="images/phone-icn.png" alt="">
         </div>
         <div class="lapinoz_img">
-          <img src="lapinoz.png" alt="">
+          <img src="images/lapinoz.png" alt="">
         </div>
           <h3>La Pino'z Pizza</h3>
       </div>
@@ -1171,10 +525,10 @@
     <div class="row">
       <div class="col-s-12 col-12 b3">
         <div class="phone_icn">
-        <img src="phone-icn.png" alt="">
+        <img src="images/phone-icn.png" alt="">
       </div>
       <div class="lapinoz_img">
-        <img src="lapinoz.png" alt="">
+        <img src="images/lapinoz.png" alt="">
       </div>
         <h3>La Pino'z Pizza</h3>
     </div>
@@ -1194,10 +548,10 @@
   <div class="row">
     <div class="col-s-12 col-12 b4">
       <div class="phone_icn">
-        <img src="phone-icn.png" alt="">
+        <img src="images/phone-icn.png" alt="">
       </div>
       <div class="lapinoz_img">
-      <img src="lapinoz.png" alt="">
+      <img src="images/lapinoz.png" alt="">
     </div>
       <h3>La Pino'z Pizza</h3>
   </div>
@@ -1216,10 +570,10 @@
    <div class="row">
      <div class="col-s-12 col-12 b5">
       <div class="phone_icn">
-        <img src="phone-icn.png" alt="">
+        <img src="images/phone-icn.png" alt="">
       </div>
       <div class="lapinoz_img">
-        <img src="lapinoz.png" alt="">
+        <img src="images/lapinoz.png" alt="">
       </div>
          <h3>La Pino'z Pizza</h3>
      </div>
@@ -1238,10 +592,10 @@
 <div class="row">
   <div class="col-s-12 col-12 b6">
     <div class="phone_icn">
-    <img src="phone-icn.png" alt="">
+    <img src="images/phone-icn.png" alt="">
   </div>
   <div class="lapinoz_img">
-    <img src="lapinoz.png" alt="">
+    <img src="images/lapinoz.png" alt="">
   </div>
     <h3>La Pino'z Pizza</h3>
 </div>
@@ -1260,10 +614,10 @@
 <div class="row">
 <div class="col-s-12 col-12 b3">
   <div class="phone_icn">
-  <img src="phone-icn.png" alt="">
+  <img src="images/phone-icn.png" alt="">
 </div>
 <div class="lapinoz_img">
-  <img src="lapinoz.png" alt="">
+  <img src="images/lapinoz.png" alt="">
 </div>
   <h3>La Pino'z Pizza</h3>
 </div>
@@ -1283,10 +637,10 @@
 <div class="row">
 <div class="col-s-12 col-12 b1">
 <div class="phone_icn">
-  <img src="phone-icn.png" alt="">
+  <img src="images/phone-icn.png" alt="">
 </div>
 <div class="lapinoz_img">
-<img src="lapinoz.png" alt="">
+<img src="images/lapinoz.png" alt="">
 </div>
 <h3>La Pino'z Pizza</h3>
 </div>
@@ -1304,7 +658,7 @@
       <div class="row enquire">
         <div class="col-12 col-s-12">
      
-          <img src="./Enquire_img.jpeg" usemap="#workmap" alt="Image was there">
+          <img src="images/Enquire_img.jpeg" usemap="#workmap" alt="Image was there">
           <map name="workmap">
             <area shape="rect" coords="853px,184px,1148px,223px" href="./Franchise_enquiry.html" alt="">
  
@@ -1678,14 +1032,14 @@
        <p><i class="fa fa-angle-right" style="font-size:24px"></i>Flat Rs.400 off on Min Billing of Rs.1999</p>
        <span>Download the app from</span>
        <div class="play_store">
-        <a href="https://play.google.com/store/apps/details?id=com.app.uengage.lapinoz&hl=en_IN" target="_black"> <img src="google-play-store.png" alt=""></a>
-        <a href="https://apps.apple.com/in/app/lapinoz-pizza/id1390247370" target="_blank"> <img src="apple-store.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=com.app.uengage.lapinoz&hl=en_IN" target="_black"> <img src="images/google-play-store.png" alt=""></a>
+        <a href="https://apps.apple.com/in/app/lapinoz-pizza/id1390247370" target="_blank"> <img src="images/apple-store.png" alt=""></a>
        </div>
       </div>
   
       <div class="col-s-12 col-6 ">
               <div class="phone">
-        <img src="unnamed2.png" alt="">
+        <img src="images/unnamed2.png" alt="">
       </div>
        
       </div>
@@ -1711,10 +1065,10 @@
           <i class="fas fa-hand-holding-usd" style="font-size: 24px"></i>Payment
           Methods
         </p>
-        <a href="#"><img src="visa.png" alt="" /></a>
-        <a href="#"><img src="google-pay.png" alt="" /></a>
-        <a href="#"><img src="paytm.png" alt="" /></a>
-        <a href="#"><img src="master-card.png" alt="" /></a>
+        <a href="#"><img src="images/visa.png" alt="" /></a>
+        <a href="#"><img src="images/google-pay.png" alt="" /></a>
+        <a href="#"><img src="images/paytm.png" alt="" /></a>
+        <a href="#"><img src="images/master-card.png" alt="" /></a>
       </div>
       <div class="col-s-6 col-4 f3">
         <p style="margin: 1%; font-weight: bold">@ Contact With Us</p>
@@ -1807,6 +1161,8 @@
         Researved
       </div>
     </div>
+    
+    <!-- Script For Responsive carousel Of Deals and Offers -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
@@ -1849,9 +1205,9 @@
     // instead of a settings object
   ]
 });
-
-
     </script>
+
+     <!-- Script For Responsive carousel Of Best Seller -->
     <script>
       $('.BestSellerSlider').slick({
     dots: true,
@@ -1891,7 +1247,9 @@
     ]
   });
   
-</script>    
+</script>  
+
+ <!-- Script For Responsive carousel Of Review section -->
 <script>
   $('.responsive_review').slick({
 dots: true,

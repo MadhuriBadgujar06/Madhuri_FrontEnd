@@ -1,765 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Story</title>
-    <link rel="stylesheet" href="./Contact_us.html">
-    <link rel="stylesheet" href="./Franchise_enquiry.html">
-    <link rel="stylesheet" href="./order_online.html">
-    <link rel="stylesheet" href="./Store_Locator.html">
-    <link rel="stylesheet" href="Our_Story.html">
-    <link rel="stylesheet" href="Homepage.html">
-    <link rel="stylesheet" href="Refund_policy.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Inter:wght@300&family=Montserrat:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ------------------links to other webpages----------------- -->
+    <link rel="stylesheet" href="./Contact_us.html" />
+    <link rel="stylesheet" href="./Franchise_enquiry.html" />
+    <link rel="stylesheet" href="./order_online.html" />
+    <link rel="stylesheet" href="./Store_Locator.html" />
+    <link rel="stylesheet" href="Our_Story.html" />
+    <link rel="stylesheet" href="Homepage.html" />
+    <link rel="stylesheet" href="Refund_policy.html" />
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- --------------style Page Link------------------- -->
+    <link rel="stylesheet" href="style/our_story.css" />
+    <!-- --------------------------------------------------------- -->
+
+    <!-- --------------Google Fonts------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Inter:wght@300&family=Montserrat:wght@700&family=Yanone+Kaffeesatz:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        /* Column container */
-        .row {  
-          display: flex;
-          flex-wrap: wrap;
-        }
-        
-        /* Style the body */
-        body {
-          font-family: Arial;
-          margin: 0;
-        }
-        
-        
-        
-        /* For mobile phones: */
-        [class*="col-"] {
-          width: 100%;
-        }
-        
-        @media only screen and (min-width: 600px) {
-          /* For tablets: */
-          .col-s-1 {width: 8.33%;}
-          .col-s-2 {width: 16.66%;}
-          .col-s-3 {width: 25%;}
-          .col-s-4 {width: 33.33%;}
-          .col-s-5 {width: 41.66%;}
-          .col-s-6 {width: 50%;}
-          .col-s-7 {width: 58.33%;}
-          .col-s-8 {width: 66.66%;}
-          .col-s-9 {width: 75%;}
-          .col-s-10 {width: 83.33%;}
-          .col-s-11 {width: 91.66%;}
-          .col-s-12 {width: 100%;}
-        }
-        @media only screen and (min-width: 768px) {
-          /* For desktop: */
-          .col-1 {width: 8.33%;}
-          .col-2 {width: 16.66%;}
-          .col-3 {width: 25%;}
-          .col-4 {width: 33.33%;}
-          .col-5 {width: 41.66%;}
-          .col-6 {width: 50%;}
-          .col-7 {width: 58.33%;}
-          .col-8 {width: 66.66%;}
-          .col-9 {width: 75%;}
-          .col-10 {width: 83.33%;}
-          .col-11 {width: 91.66%;}
-          .col-12 {width: 100%;}
-        }
-        @media only screen and (max-width: 600px) {
-    
-    .header
-    {
-      z-index: 10;
-      position: static;
-    }
- 
-    
-     .photo img
-     {
-         width: 100%;
-     }
-    h1{
-      font-size: 25px!important;
-    }
-    h2{
-      font-size: 20px!important;
-    }
-    h3{
-      font-size: 18px!important;
-    }
-    h4{
-      font-size: 15px!important;
-    }
-    .explr_img
-    {
-      
-       width: 50%;
-      font-size: 10px!important;
-    }
-    *,p{
-      font-size: 13px!important;
-    }
-    .explr_img h3
-    {
-     
-        font-size: 13px!important;
 
-    }
-    .img {
-          width: 80%;
-          display: inline-flex;
-          align-items: center;
-      
-          justify-content: flex-start;
-        }
-        .img img
-        {
-          height: 15px;
-      
-          padding: 2%!important;
-        }
-        .hamburger{
-          
-          display:inline-flex!important;
-          width: 20%;
-          align-items: center;
-          justify-content: center;
-        }
-  
-      
-        .mob_navbar
-        {
-          display: flex;
-          font-size: 10px!important;
-          justify-content: center;
-          align-items: center;
-        
-          flex-direction: column;
-        }
-        .mob_navbar a{
-          padding:2% 1%!important;
-        }
-   .hr_line
-   {display: none;}
-   .f2{
-          margin: 5% 0% 10% 0%!important;
-        }
-  }
+    <!-- -----------------------------slick carousel---------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ---------------------------------------------------------------------------------------- -->
 
-      .img {
-        padding-left: 0% 5%;
-      }
-   
-      .img img {
-        /* width: 80%; */
-        height: 60px;
-        padding-left: 3%;
-        float: right;
-      }
-   .hamburger{
-   display:none;  
-   }
-      .navbar {
-        overflow: hidden;
-        display: flex;
-        padding-left: 5%;
-        padding-top: 2%;
-      }
-      .navbar a {
-  
-        display: block;
-        text-decoration: none;
-        color: rgb(53, 51, 51);
-        padding: 0% 2%;
-        font-family: "Inter", sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-      }
-   
-      .header {
-        position: sticky;
-        top: 0px;
-        z-index: 10;
-        left: 0px;
-        background-color: white;
-        padding: 0% 0%;
-      }
-        .our_story_sec1
-        {
-            padding:2% 4%;
-        }
-        .story
-        {
-            padding:0% 3%;
-            text-align: justify;
-            line-height: 1.5;
-            color: grey;
-            font-size: 16px;
-        }
-        .photo img
-        {
-              border-radius: 3%;
-         
-              
-        }
-        .our_story_sec2
-        {
-            background-color:#f8f8f8;
-            padding:4% 6%;
-            text-align: center;
-        }
-        .our_story_sec2 h4
-        {
-            color: black;
-            font-size: 30px;
-
-            font-weight: 500;
-            
-        }
-        .our_story_sec2 h3{
-            
-            color: rgb(77, 76, 76);
-            font-size: 20px;
-             font-weight: 500;
-        }
-        .nation
-        {
-            padding :1% 2%;
-            background-color: white;
-            border-radius: 3%;
-            font-family: 'Baloo Bhai 2';
-            box-shadow: 2px 2px 4px grey;
-            margin-bottom: 2px;
-        }
-        .nation h4
-        {
-            font-size: 110%;
-        }
-        .row2 img
-        {
-           width: 45%!important;
-           
-        }
-         
-        .nation_img
-        {
-        padding: 3%;
-            
-   }
-   .img_shadow
-   {
-       box-shadow: 2px 2px 5px grey;
-   }
-        .nation_img img
-        {
-            border-radius: 100%;
-            width: 65%;
-            height:57%
-        }
-        .hr_line hr
-        {
-            width: 5px;
-            background-color:#006630;
-            height: 480px;
-        
-            color: black;
-        }
-        .hr_line
-        {
-            position:relative;
-            padding-left: 20%;
-       
-        }
-      
-        .radio1,.radio2,.radio3,.radio4,.radio5,
-        .radio5,.radio6
-        {
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            color: black;
-            background-color: white;
-            border:1px solid black ;
-            border-radius: 10px;
-        }
-        .radio1
-        {
-            top: 32px;
-            left: 7px;
-        }
-        .radio2
-        {
-            top: 108px;
-            left: 7px;
-        }
-        .radio3
-        {
-            top: 185px;
-            left: 7px;
-        }
-        .radio4
-        {
-            top: 265px;
-            left: 7px;
-        }
-        .radio5
-        {
-            top: 340px;
-            left: 7px;
-        }
-        .radio6
-        {
-            top: 415px;
-            left: 7px;
-        }
-        .bx1,.bx2,.bx3,.bx4,.bx5,.bx6
-        {
-            position: relative;
-            
-        }
-        .triangle1,.triangle2,.triangle3,.triangle4,.triangle5,.triangle6
-         {
-             position: relative;
-
-             width: 12px;
-             height: 12px;
-            border: none!important;
-             border-bottom: 12px solid white;
-             background-color: white;
-             transform: rotate(45deg);
-             left: -3.5%;
-             top: -5px;
-         }
-       h1{
-             font-size: 160%;
-         }
-        .story h2{
-             font-size: 190%;
-             color: black;
-         }
-         .journey h1{
-             text-align: left;
-         }
-        .pad
-        {
-            padding:1.5% 2%;
-            font-size: 15px;
-            margin: 5px;
-            font-family: 'Baloo Bhai 2';
-            font-weight: 600;
-            background-color: white;
-            color: #006630;
-            border-radius:10px ;
-            margin: 1%;
-            box-shadow: 0px 2px 10px grey;
-            text-align: left;
-        }
-        .pad h3
-        {
-            color: #006630;
-            font-size: 21px;
-            padding: 0%;
-            margin: 0;
-            font-weight: bold;
-        }
-        .pad p
-        {
-            color: rgb(61, 60, 60);
-            font-size: 16px;
-            padding: 0%;
-            margin: 0;
-            font-weight: bold;
-        }
-        .deals
-      {
-        /* padding: 2% 1%; */
-        background-color: white;
-      }
-      .deal_row
-      {
-          background-color: white;
-      }
-      .deals_pad
-      {
-        padding: 1%;
-      }
-      .deals_pad img
-      {
-        width: 100%;
-        border-radius: 10px;
-      }
-        .explore
-       {
-            
-           padding: 1%;
-           background-color: #f7f7f7;
-       }
-       .explore h2{
-             text-align: left;
-             padding-left: 3%;
-       }
-       .i1
-       {
-         
-          padding: 2%;
-       }
-       .i1 img
-       {
-           width: 100%;
-           border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-       }
-       .i1 h3{
-           text-align: center;
-           font-size: 15px;
-           color: #201C1D;
-       }
-       .i1 img:hover{
-           transform: scale(1.02);
-       }
-        .footer
-    {
-        background-color: #00572d;
-        height: 50%;
-        padding:3% 9%;
-        color: white;
-    }
-    .f1 a
-    {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-    }
-    .f2 img{
-        border-radius: 4px;
-    }
-    .f3
-    {
-        font-size: 14px;
-        
-    }
-    .f3 a{
-        text-decoration: none;
-        color: white;
-    }
-    .f3 i{
-        margin: 2.5%!important;
-    }
-    .last_line
-   {
-       color: black;
-       font-size: 15px;
-       text-align: center;
-   }
-   .last_line a
-   {
-       text-decoration: none;
-       color: white;
-       font-size: 16px;
-       font-weight: 500;
-       margin-right: 1%;
-   }  .slide_bar
-      {
-        display: flex;
-        gap: 5px;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-      #div1,#div2,#div3{
-        background-color: rgba(245, 240, 240, 0.3);
-        box-shadow: 0px 1px 1px rgba(255, 254, 254, 0.3);
-        width: 35px;
-        height: 5px;
-        
-      }
-      
-      #div1:hover,#div2:hover,#div3:hover
-    
-      {
-        background-color: whitesmoke;
-      }
-
-    </style>
     <script>
-      $(document).ready(function(){
-        $(".fa-bars").click(function(){
-          $(".mob_navbar").toggle();    
-            
-        })
-      
-      })
+      $(document).ready(function () {
+        $(".fa-bars").click(function () {
+          $(".mob_navbar").toggle();
+        });
+      });
     </script>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-            <div class="row header">
-           
-         
+      <div class="row header">
         <div class="col-s-2 col-2 img">
-         <img src="lapinoz-logo.png" alt="">                
+          <img src="images/lapinoz-logo.png" alt="" />
         </div>
-        <div class="hamburger col-s-2 col-2"><i class="fa fa-bars" style="font-size:24px!important;color: grey;"></i>
+        <div class="hamburger col-s-2 col-2">
+          <i
+            class="fa fa-bars"
+            style="font-size: 24px !important; color: grey"
+          ></i>
         </div>
-      
-    <div class=" col-9 navbar mob_navbar">
-        <a href="Homepage.html">Home</a>
-        <a href="Our_Story.html">Our Story</a>
-        <a href="Store_Locator.html">Store Locator</a>
-        <a href="Contact_us.html">Contact Us</a>
-        <a href="Franchise_enquiry.html">Franchise Enquiry</a>
-        <a href="order_online.html">Order Online</a>
-  
-        <a href="#" style="padding-left: 3%">
+
+        <div class="col-9 navbar mob_navbar">
+          <a href="Homepage.html">Home</a>
+          <a href="Our_Story.html">Our Story</a>
+          <a href="Store_Locator.html">Store Locator</a>
+          <a href="Contact_us.html">Contact Us</a>
+          <a href="Franchise_enquiry.html">Franchise Enquiry</a>
+          <a href="order_online.html">Order Online</a>
+
+          <a href="#" style="padding-left: 3%">
             <i class="fa fa-power-off" style="font-size: 24px; color: grey"></i
           ></a>
-           
-                
-           
-    </div>
-</div>
+        </div>
+      </div>
 
-<div class="row our_story_sec1">
-   <div class="col-s-12 col-6 story">
-       <h2>Our Story</h2>
-       <p>The story of India's fastest growing pizza place started back in 2011 when Sanam Kapoor opened his very first pizzeria in his hometown Chandigarh. Inspired by his own search for delicious pizza options, he started to wonder if there was a better way of doing pizza – and business. The last thing the world needed was another pizzeria, but maybe this one could be different and everyone could get exactly what they wanted, made fresh on demand. It all started sounding pretty great, and soon Sanam was opening the first La Pino'z in his hometown Chandigarh and there was no looking back. As of today, La Pino'z has 350+ outlets across India with the recent one opening in London.</p>
-   </div>
-   <div class="col-s-12 col-6 photo">
-       <img src="owner.jpg" alt="">
-   </div>
-</div>
+      <div class="row our_story_sec1">
+        <div class="col-s-12 col-6 story">
+          <h2>Our Story</h2>
+          <p>
+            The story of India's fastest growing pizza place started back in
+            2011 when Sanam Kapoor opened his very first pizzeria in his
+            hometown Chandigarh. Inspired by his own search for delicious pizza
+            options, he started to wonder if there was a better way of doing
+            pizza – and business. The last thing the world needed was another
+            pizzeria, but maybe this one could be different and everyone could
+            get exactly what they wanted, made fresh on demand. It all started
+            sounding pretty great, and soon Sanam was opening the first La
+            Pino'z in his hometown Chandigarh and there was no looking back. As
+            of today, La Pino'z has 350+ outlets across India with the recent
+            one opening in London.
+          </p>
+        </div>
+        <div class="col-s-12 col-6 photo">
+          <img src="images/owner.jpg" alt="" />
+        </div>
+      </div>
 
-<div class="our_story_sec2 row">
-    <div class="col-s-12 col-6 journey">
-       <h1> La Pino'z Pizza Growth journey</h1>
-       <div class="row">
-           <div class="col-s-1 col-1">
-                  <div class="row hr_line">
-                       <div class="col-s-1 col-1">
-                     
-                          <hr>
-                         <div class="radio1"></div>
-                         <div class="radio2"></div>
-                         <div class="radio3"></div>
-                         <div class="radio4"></div>
-                         <div class="radio5"></div>
-                         <div class="radio6"></div>
-                         
-
-                        </div>
-                    </div>
-            </div>
-         
-        <div class="col-9 col-s-9">
-            <div class="row bx1">
-              <div class="col-s-12 col-12">
-               <div class="pad">
-               <h3>2011</h3>
-               <div class="triangle1"></div>
-               <p>Lauched the 1st Outlet in Chandigarh</p>
-               </div>
+      <div class="our_story_sec2 row">
+        <div class="col-s-12 col-6 journey">
+          <h1>La Pino'z Pizza Growth journey</h1>
+          <div class="row">
+            <div class="col-s-1 col-1">
+              <div class="row hr_line">
+                <div class="col-s-1 col-1">
+                  <hr />
+                  <div class="radio1"></div>
+                  <div class="radio2"></div>
+                  <div class="radio3"></div>
+                  <div class="radio4"></div>
+                  <div class="radio5"></div>
+                  <div class="radio6"></div>
+                </div>
               </div>
-           </div>
+            </div>
 
-      
-       <div class="row bx2">
-          <div class="col-s-12 col-12">
-            <div class="pad">
-            <h3>2013</h3>
-            <div class="triangle2"></div>
-            <p>Lauched the 1st Franchise Outlet</p>
+            <div class="col-9 col-s-9">
+              <div class="row bx1">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2011</h3>
+                    <div class="triangle1"></div>
+                    <p>Lauched the 1st Outlet in Chandigarh</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bx2">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2013</h3>
+                    <div class="triangle2"></div>
+                    <p>Lauched the 1st Franchise Outlet</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bx3">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2017</h3>
+                    <div class="triangle3"></div>
+                    <p>Crossed 100 Outlets All Over India</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bx4">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2019</h3>
+                    <div class="triangle4"></div>
+                    <p>Crossed 200 Outlets All Over India</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bx5">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2021</h3>
+                    <div class="triangle5"></div>
+                    <p>Crossed 300 Outlets All Over India</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row bx6">
+                <div class="col-s-12 col-12">
+                  <div class="pad">
+                    <h3>2022</h3>
+                    <div class="triangle6"></div>
+                    <p>La Pino'z Goes International</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-    <div class="row bx3" >
-        <div class="col-s-12 col-12">
-            <div class="pad">
-               
-            <h3>2017</h3>
-            <div class="triangle3"></div>
-            <p>Crossed 100 Outlets All Over India</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="row bx4" >
-        <div class="col-s-12 col-12">
-            <div class="pad">
-            <h3>2019</h3>
-            <div class="triangle4"></div>
-            <p>Crossed 200 Outlets All Over India</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="row bx5" >
-        <div class="col-s-12 col-12">
-            <div class="pad">
-                
-            <h3>2021</h3>
-            <div class="triangle5"></div>
-            <p>Crossed 300 Outlets All Over India</p>
-        </div>
-     </div>
-    </div>
-
-    <div class="row bx6">
-        <div class="col-s-12 col-12">
-            <div class="pad">
-            <h3>2022</h3>
-            <div class="triangle6"></div>
-            <p>La Pino'z Goes International</p>
-        </div>
-     </div>
-    </div>
-
-</div>
-</div>
-    </div>
-    
-    <div class="col-s-12 col-6 nation">
-        <h1>La Pino'z Goes International</h1>
-        <h3>Launching Soon in</h3>
-        <div class="row nation_img">
+        <div class="col-s-12 col-6 nation">
+          <h1>La Pino'z Goes International</h1>
+          <h3>Launching Soon in</h3>
+          <div class="row nation_img">
             <div class="col-s-4 col-4">
-                <img src="united-kingdom.png" class="img_shadow"  alt="">
-                <h4>United Kingdom</h4>
+              <img src="images/united-kingdom.png" class="img_shadow" alt="" />
+              <h4>United Kingdom</h4>
             </div>
-        
-            <div class="col-s-4 col-4">
-                <img src="canada.png" class="img_shadow"  alt="">
-                <h4>Canada</h4>
-            </div> 
-            <div class="col-s-4 col-4">
-                <img src="australia.png" class="img_shadow"  alt="">
-                <h4>Australia</h4>
-            </div>
-        </div>
-        <div class="row nation_img ">
-            <div class="col-s-6 col-6 row2">
-                <img src="dubai.png" class="img_shadow" alt="">
-                <h4>Dubai</h4>
-            </div>
-            <div class="col-s-6 col-6 row2">
-                <img src="tanzania.png" class="img_shadow"  alt="">
-                <h4>Tanzania</h4>
-            </div>
-            
-       </div>   
 
-    </div>
-</div>
-<div class="row deals">
-    <div class="row deals_pad">
-    <div class="col-12 col-s-12 ">
-      <h2>Deals and Offers</h2>
-    </div>
-    </div>
-    <div class="row">
-      
-        <div class="row ">
-          <div class="col-s-4 col-4 deals_pad">
-              <img src="deals.jpg" alt="">
+            <div class="col-s-4 col-4">
+              <img src="images/canada.png" class="img_shadow" alt="" />
+              <h4>Canada</h4>
+            </div>
+            <div class="col-s-4 col-4">
+              <img src="images/australia.png" class="img_shadow" alt="" />
+              <h4>Australia</h4>
+            </div>
           </div>
-          <div class="col-s-4 col-4 deals_pad">
-           <img src="deals.jpg" alt="">
-       </div>
-       <div class="col-s-4 col-4 deals_pad">
-         <img src="deals.jpg" alt="">
-     </div>
+          <div class="row nation_img">
+            <div class="col-s-6 col-6 row2">
+              <img src="images/dubai.png" class="img_shadow" alt="" />
+              <h4>Dubai</h4>
+            </div>
+            <div class="col-s-6 col-6 row2">
+              <img src="images/tanzania.png" class="img_shadow" alt="" />
+              <h4>Tanzania</h4>
+            </div>
+          </div>
         </div>
-      
-    </div>
-  </div>
-
-<div class="explore row">
-    <div class="col-s-12 col-12">
-           <div class="row ">
-               <div class="col-s-12 col-12">
-                   <h2>Explore</h2>
-
-               </div>
-           </div>
+      </div>
+      <div class="row deals">
+        <div class="row deals_pad">
+          <div class="col-12 col-s-12">
+            <h2>Deals and Offers</h2>
+          </div>
         </div>
-    <div class="row">
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i1.png" alt="">
+        <div class="row">
+          <div class="row">
+            <div class="col-s-4 col-4 deals_pad">
+              <img src="images/deals.jpg" alt="" />
+            </div>
+            <div class="col-s-4 col-4 deals_pad">
+              <img src="images/deals2.jpg" alt="" />
+            </div>
+            <div class="col-s-4 col-4 deals_pad">
+              <img src="images/deals3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore row">
+        <div class="col-s-12 col-12">
+          <div class="row">
+            <div class="col-s-12 col-12">
+              <h2>Explore</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i1.png" alt="" />
             <h3>Veg Pizza</h3>
-        </div>
-   
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i2.png" alt="">
+          </div>
+
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i2.png" alt="" />
             <h3>Classic Pizzas for Classic Maniacs</h3>
-        </div>
-    
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i3.png" alt="">
+          </div>
+
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i3.png" alt="" />
             <h3>Sides</h3>
-        </div>
-   
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i4.png" alt="">
+          </div>
+
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i4.png" alt="" />
             <h3>Classic Pizza Pack Of 4</h3>
-        </div>
-   
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i5.png" alt="">
+          </div>
+
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i5.png" alt="" />
             <h3>Pasta</h3>
+          </div>
+
+          <div class="i1 col-s-4 col-2 explr_img">
+            <img src="images/explore_i6.png" alt="" />
+            <h3>BOGO</h3>
+          </div>
         </div>
-   
-        <div class="i1 col-s-4 col-2 explr_img">
-            <img src="explore_i6.png" alt="">
-            <h3>BOGO </h3>
+      </div>
+      <div class="row footer">
+        <div class="col-s-6 col-4 f1">
+          <p>
+            <a href="#">
+              <i class="fa fa-lightbulb-o" style="font-size: 15px"></i> Useful
+              Links</a
+            >
+          </p>
+          <p>
+            <a href="./Refund_policy.html" target="_blank"> Refund Policy</a>
+          </p>
+          <p>
+            <a href="./Terms_and_conditions.html" target="_blank">
+              Terms & Conditions</a
+            >
+          </p>
+          <p><a href="#"> Privacy Policy</a></p>
+          <p><a href="#"> Promo Codes</a></p>
         </div>
-  
-    </div>
-    </div>
-<div class="row footer">
-    <div class="col-s-6 col-4 f1">
-          <p><a href="#"> <i class="fa fa-lightbulb-o" style="font-size:15px"></i> Useful Links</a></p>
-          <p><a href="./Refund_policy.html" target="_blank">  Refund Policy</a></p>
-          <p><a href="./Terms_and_conditions.html" target="_blank">  Terms & Conditions</a></p>
-          <p> <a href="#"> Privacy Policy</a></p>
-           <p><a href="#">  Promo Codes</a></p>
-    </div>
-    <div class="col-s-6 col-4 f2">
-        <p><i class='fas fa-hand-holding-usd' style='font-size:24px'></i>Payment Methods</p>
-        <a href="#"><img src="visa.png" alt=""></a>
-        <a href="#"><img src="google-pay.png" alt=""></a>
-        <a href="#"><img src="paytm.png" alt=""></a>
-        <a href="#"><img src="master-card.png" alt=""></a>
-    </div>
-    <div class="col-s-6 col-4 f3">
-        <p style="margin:1%; font-weight: bold;">@ Contact With Us</p>
-         
-        <a href="https:/www.facebook.com" target="_blank"> <i class="fa fa-facebook-f" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 3%;border-radius: 25px;"></i></a>
-        <a href="https:/www.instagram.com"target="_blank"> <i class="fa fa-instagram" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.5%;border-radius: 25px;"></i></a>
-        <a href="https:/www.youtube.com"target="_blank"> <i class="fa fa-youtube-play" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.2%;border-radius: 25px;"></i></a>
-        <a href="https:/www.pinterest.com"target="_blank"> <i class="fa fa-pinterest" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.5%;border-radius: 25px;"></i></a>
-         <a href="https:/www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:17px;border:3px solid white;margin:1%; padding:2% 2.4%;border-radius: 25px;"></i></a> <br>
-        <i class="fa fa-envelope" style="font-size:12px;margin:1%;color:#00572d;background-color:white;"></i>
-        <span style="font-size: 14px;margin:3% 0%;">copenhagenhospitalityandretail@yahoo.com</span>
-       <div> <i class="fa fa-phone" style="font-size:15px"></i><span> +9101762509231</span></div>
-    </div>
-    <div class="col-s-12 col-12">
-        <hr >
-    </div>
+        <div class="col-s-6 col-4 f2">
+          <p>
+            <i class="fas fa-hand-holding-usd" style="font-size: 24px"></i
+            >Payment Methods
+          </p>
+          <a href="#"><img src="images/visa.png" alt="" /></a>
+          <a href="#"><img src="images/google-pay.png" alt="" /></a>
+          <a href="#"><img src="images/paytm.png" alt="" /></a>
+          <a href="#"><img src="images/master-card.png" alt="" /></a>
+        </div>
+        <div class="col-s-6 col-4 f3">
+          <p style="margin: 1%; font-weight: bold">@ Contact With Us</p>
+
+          <a href="https:/www.facebook.com" target="_blank">
+            <i
+              class="fa fa-facebook-f"
+              style="
+                font-size: 17px;
+                border: 3px solid white;
+                margin: 1%;
+                padding: 2% 3%;
+                border-radius: 25px;
+              "
+            ></i
+          ></a>
+          <a href="https:/www.instagram.com" target="_blank">
+            <i
+              class="fa fa-instagram"
+              style="
+                font-size: 17px;
+                border: 3px solid white;
+                margin: 1%;
+                padding: 2% 2.5%;
+                border-radius: 25px;
+              "
+            ></i
+          ></a>
+          <a href="https:/www.youtube.com" target="_blank">
+            <i
+              class="fa fa-youtube-play"
+              style="
+                font-size: 17px;
+                border: 3px solid white;
+                margin: 1%;
+                padding: 2% 2.2%;
+                border-radius: 25px;
+              "
+            ></i
+          ></a>
+          <a href="https:/www.pinterest.com" target="_blank">
+            <i
+              class="fa fa-pinterest"
+              style="
+                font-size: 17px;
+                border: 3px solid white;
+                margin: 1%;
+                padding: 2% 2.5%;
+                border-radius: 25px;
+              "
+            ></i
+          ></a>
+          <a href="https:/www.twitter.com" target="_blank"
+            ><i
+              class="fa fa-twitter"
+              style="
+                font-size: 17px;
+                border: 3px solid white;
+                margin: 1%;
+                padding: 2% 2.4%;
+                border-radius: 25px;
+              "
+            ></i
+          ></a>
+          <br />
+          <i
+            class="fa fa-envelope"
+            style="
+              font-size: 12px;
+              margin: 1%;
+              color: #00572d;
+              background-color: white;
+            "
+          ></i>
+          <span style="font-size: 14px; margin: 3% 0%"
+            >copenhagenhospitalityandretail@yahoo.com</span
+          >
+          <div>
+            <i class="fa fa-phone" style="font-size: 15px"></i
+            ><span> +9101762509231</span>
+          </div>
+        </div>
+        <div class="col-s-12 col-12">
+          <hr />
+        </div>
         <div class="col-s-12 col-12 last_line">
-            Made with Love in India by <a href="https://www.uengage.in/"> Uengage</a> Copyright. All Rights Researved
+          Made with Love in India by
+          <a href="https://www.uengage.in/"> Uengage</a> Copyright. All Rights
+          Researved
         </div>
-</div>
-</div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
