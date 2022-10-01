@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+.oneplus_heading{
+    font-size: 45px;
+    font-weight: 300!important;
+   letter-spacing:0px!important;
+}
+h5{
+    font-weight: 400!important;
+}
+.border
+{
+    border: 2px solid green;
+}
+@media only screen and (max-width:1025px)
+{
+ 
+}
+/* ------------------------Navbar-------------------- */
+.navbar
+{
+    background-color: white;
+    padding:0% 4%!important;
+    /* border: 2px solid red; */
+}
+.navbar li
+{
+    padding: 1%;
+}
+.navbar li:hover
+{
+    border-bottom: 1px solid red;
+}
+/* -----------Utility Class For Navbar Menu :Menu-------------------------- */
+.menu .card
+{
+    border: none;
+}
+.menu img:hover{
+    transform: scale(1.05);
+}
+.menu span:hover{
+    color: blue ;
+}
+/* ---------------------PHONE MENU--------------------- */
+
+.Phone_menu
+{
+    display: none;
+}
+/* ---------------------TV MENU--------------------- */
+.tv_menu
+{
+    display:none;
+}
+/* ---------------------audio MENU--------------------- */
+
+.audio_menu
+{
+    display:none;
+}
+/* ---------------------wearables MENU--------------------- */
+.wearables_menu
+{
+    display: none;
+}
+/* ---------------------Accessories MENU--------------------- */
+.accessories_menu
+{
+    display: none;
+}
+/* ---------------------Offers MENU--------------------- */
+.offers_menu
+{
+    display: none;
+}
+/* ----------------------Search Area---------------------------------- */
+.searcharea dt
+{
+    color: rgb(170, 168, 168);
+    font-weight: 400;
+    padding:3% 0%;
+}
+
+.search_menu
+{
+  position: absolute;
+  top:8%;
+  right: 0%;
+  z-index: 100;
+  background-color: white;
+  width: 30%;
+  border-top: 1px solid lightgrey;
+}
+    .searchbar
+    {
+      position: absolute;
+      top: 9%;
+      right:88%;
+   
+    }
+    .searcharea
+    {
+      background-color: white;  
+    display: none;
+    }
+    
+.textarea
+{
+    border: 1px solid lightgrey;
+    font-size: 17px;
+    font-weight: 300;
+    width: 100%;
+    position: relative;
+}
+.textarea::placeholder
+{
+    color: lightgray;
+}
+/* ------------cart------------------------ */
+.cart_menu
+{
+  position: absolute;
+  top:8%;
+  right: 0%;
+  z-index: 100;
+  background-color: white;
+  width: 30%;  
+  border-top: 1px solid lightgrey;
+  display: none;
+}
+
+/* ------------User Accounts------------------------ */
+.useracc_menu
+{
+  position: absolute;
+  top:8%;
+  right: 0%;
+  z-index: 100;
+  background-color: white;
+  width: 25%;  
+  border-top: 1px solid lightgrey;
+  display: none;
+}
+.border_bottom
+{
+    border-bottom: 1px solid lightgrey;
+}
+.useracc_menu span:hover
+{
+    color: blue!important;
+    border-bottom: 1px solid blue!important;
+    cursor: pointer;
+}
+/* -------------------SEC-1----------------------------- */
+
+.buy_now
+{
+    color: white;
+    width: 48%;
+    border: 1px solid black;
+    padding: 2% 0%;
+    background-color: black;
+}
+.buy_now:hover
+{
+   background-color: rgb(32, 32, 32);
+}
+.learn_more
+{
+   background-color:white;
+   width: 48%;
+   border: 1px solid black;
+   padding: 2% 0%;
+}
+.learn_more:hover
+{
+   background-color: rgb(238, 230, 230);
+}
+.sec-3 li{
+    display: inline-flex;
+    padding:0% 1%;
+    text-decoration: none;
+}
+.sec-3 a{
+    text-decoration: none;
+    color: #000000F2;
+    font-size: 18px;
+    font-weight: 500;
+ 
+}
+.sec-3 li:active
+{
+    border-bottom:1px solid red;
+    color: #000000F2!important;
+}
+.card{
+    width: 100%;
+}
+.card a{
+    font-weight: 400;
+}
+.card a:hover{
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding:3% ;
+}

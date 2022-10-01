@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePlus Official Site | OnePlus India</title>
+    <!-- <-----------------CSS File Link-------------- -->
+        <link rel="stylesheet" href="./CSS/index.css">
+    <!--fav Icon Link-->
+    <!-- <link rel="icon" href="./Images/favicon.png" type="image/png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- --------------------------Font Awesome------------------------------ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<!--Bootstrap link-->
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<!--Jquery Link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Google Fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Bree Serif', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; -->
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .navbar{
+      position: relative;
+    }
+    .menu
+    {
+      position: absolute;
+      top:8%;
+      left: 0%;
+      z-index: 100;
+      background-color: white;
+      width: 100%;
+    }
+    
+.slide1
+{
+    content: "";
+    /* z-index: -1; */
+    background: url("./Images/Banner1.webp")no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+/* -----------------------Animation for Scale up Sec-1 img--------------- */
+.kenburns-top:hover{
+	-webkit-animation: kenburns-top 0.2s ease-out both;
+	        animation: kenburns-top 0.2s ease-out both;
+}
+
+ @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.10) translateY(-15px);
+            transform: scale(1.10) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.10) translateY(-15px);
+            transform: scale(1.10) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+
+</style>
+ <script>
+     $(document).ready(function(){
+      //---------------For Phone Menu---------------------
+         $("#phone").mouseenter(function(){
+             $(".Phone_menu").show();
+         })
+         $("#phone").mouseleave(function(){
+             $(".Phone_menu").hide();
+         })
+         $(".Phone_menu").mouseenter(function(){
+          $(".Phone_menu").show();
+         })
+         $(".Phone_menu").mouseleave(function(){
+          $(".Phone_menu").hide();
+         })
+         //---------------For TV Menu---------------------
+         $("#tv").mouseenter(function(){
+             $(".tv_menu").show();
+         })
+         $("#tv").mouseleave(function(){
+             $(".tv_menu").hide();
+         })
+         $(".tv_menu").mouseenter(function(){
+          $(".tv_menu").show();
+         })
+         $(".tv_menu").mouseleave(function(){
+          $(".tv_menu").hide();
+         })
+         //---------------For Audio Menu---------------------
+         $("#audio").mouseenter(function(){
+             $(".audio_menu").show();
+         })
+         $("#audio").mouseleave(function(){
+             $(".audio_menu").hide();
+         })
+         $(".audio_menu").mouseenter(function(){
+          $(".audio_menu").show();
+         })
+         $(".audio_menu").mouseleave(function(){
+          $(".audio_menu").hide();
+         })
+            //---------------For Wearables Menu---------------------
+            $("#wearables").mouseenter(function(){
+             $(".wearables_menu").show();
+         })
+         $("#wearables").mouseleave(function(){
+             $(".wearables_menu").hide();
+         })
+         $(".wearables_menu").mouseenter(function(){
+          $(".wearables_menu").show();
+         })
+         $(".wearables_menu").mouseleave(function(){
+          $(".wearables_menu").hide();
+         })
+             //---------------For Accessories Menu---------------------
+             $("#accessories").mouseenter(function(){
+             $(".accessories_menu").show();
+         })
+         $("#accessories").mouseleave(function(){
+             $(".accessories_menu").hide();
+         })
+         $(".accessories_menu").mouseenter(function(){
+          $(".accessories_menu").show();
+         })
+         $(".accessories_menu").mouseleave(function(){
+          $(".accessories_menu").hide();
+         })
+                //---------------For offers Menu---------------------
+                $("#offers").mouseenter(function(){
+             $(".offers_menu").show();
+         })
+         $("#offers").mouseleave(function(){
+             $(".offers_menu").hide();
+         })
+         $(".offers_menu").mouseenter(function(){
+          $(".offers_menu").show();
+         })
+         $(".offers_menu").mouseleave(function(){
+          $(".offers_menu").hide();
+         })
+ //---------------For Search---------------------
+         $("#search_icn").mouseenter(function(){
+             $(".searcharea").show();
+         })
+         $("#search_icn").mouseleave(function(){
+             $(".searcharea").hide();
+         })
+         $(".searcharea").mouseenter(function(){
+          $(".searcharea").show();
+         })
+         $(".searcharea").mouseleave(function(){
+          $(".searcharea").hide();
+         })
+        
+          //---------------For Search---------------------
+         $("#useracc").mouseenter(function(){
+             $(".useracc_menu").show();
+         })
+         $("#useracc").mouseleave(function(){
+             $(".useracc_menu").hide();
+         })
+         $(".useracc_menu").mouseenter(function(){
+          $(".useracc_menu").show();
+         })
+         $(".useracc_menu").mouseleave(function(){
+          $(".useracc_menu").hide();
+         })
+         //---------------For Search---------------------
+         $("#cart").mouseenter(function(){
+             $(".cart_menu").show();
+         })
+         $("#cart").mouseleave(function(){
+             $(".cart_menu").hide();
+         })
+         $(".cart_menu").mouseenter(function(){
+          $(".cart_menu").show();
+         })
+         $(".useracc_menu").mouseleave(function(){
+          $(".cart_menu").hide();
+         })
+     })
+
+ </script>
+</head>
+
+<body>
+ <!-- -----------------NAVBAR-------------->
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo_nav.webp" alt="" style="width: 110px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" id="phone">
+            <a class="nav-link text-dark" href="#" >Phone</a>
+          </li>
+          <li class="nav-item"id="tv">
+            <a class="nav-link text-dark"  href="#">TV</a>
+          </li>
+          <li class="nav-item" id="audio">
+            <a class="nav-link text-dark"href="#">Audio</a>
+          </li>
+          <li class="nav-item" id="wearables">
+            <a class="nav-link text-dark"  href="#">Wearables</a>
+          </li>
+          <li class="nav-item" id="accessories">
+            <a class="nav-link text-dark" href="#">Accessories</a>
+          </li>
+          <li class="nav-item" id="offers">
+            <a class="nav-link text-dark" href="#">Offers</a>
+          </li>
+        </ul>
+     
+        
+        
+        <ul class="navbar-nav " style="padding-left:15%!important">
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">OneTopia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Support</a>
+            </li>
+            <li class="nav-item"id="search_icn">
+              <a class="nav-link text-dark" href="#" ><i class="bi bi-search"style="font-size:17px;"></i></a>
+            </li>
+            <li class="nav-item" id="cart">
+              <a class="nav-link text-dark" href="#" ><i class="bi bi-cart3"style="font-size:20px;"></i></a>
+            </li>
+
+            <li class="nav-item" id="useracc">
+                <a class="nav-link text-dark" href="#"><i class="bi bi-person-circle"style="font-size:20px;"></i></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+   <!-- -----------------Phone------------------------ -->
+   <div class="Phone_menu menu">
+   <div class="container">
+    <div class="row"> 
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+             OnePlus Nord CE 2 Lite 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img2.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus 10R 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img3.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus Nord 2T 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card" >
+             <img src="./Images/Phone_img4.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+              OnePlus Nord CE 2 5G
+         
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card" >
+             <img src="./Images/Phone_img5.png" class="card-img-top" alt="...">
+             <div class="card-body text-center  p-0 ">
+              OnePlus 10Pro 5G
+             
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img6.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus Nord CE 2 Lite 5G
+             </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+<div class="container">
+    <div class="row pb-3">
+        <div class="col-md-8 col-sm-8"><span class="p1">Flagship<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+          </svg></span>
+          <span class="p1">Nord Series<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+          </svg></span>
+        </div>
+        <div class="col-sm-4 col-md-4 ">
+            <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+            <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+        </div>
+    </div>
+ </div>
+</div>
+</div>
+
+    <!-- --------------------------TV------------------------------ -->
+    <div class="tv_menu menu">
+      <div class="container">
+       <div class="row"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv1.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                OnePlus TV Q1 Series
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv2.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV U1S
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv3.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV Y1S
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card" >
+                <img src="./Images/tv4.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                 OnePlus TV Y1S Edge
+            
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card" >
+                <img src="./Images/tv6.png" class="card-img-top" alt="...">
+                <div class="card-body text-center  p-0 ">
+                 OnePlus TV Y1
+                
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv5.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV Y1s Pro
+                </div>
+              </div>
+           </div>
+       </div>
+      </div>
+       <hr>
+   <div class="container">
+        <div class="row d-flex pb-2 justify-content-end">
+           <div class=" col-md-4 col-sm-4">
+               <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+               <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+           </div>
+          </div>
+      </div>
+   </div>
+  </div>
+      <!-- --------------------------Audio------------------------------ -->
+      <div class="audio_menu menu">
+        <div class="container">
+         <div class="row"> 
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                  OnePlus Buds Pro
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Buds Z2
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio3.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Bullets Wireless Z2
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card" >
+                  <img src="./Images/audio4.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                   OnePlus Nord Buds
+              
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card" >
+                  <img src="./Images/audio5.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center  p-0 ">
+                   OnePlus Nord Buds CE
+                  
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio6.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Nored Wired Earphones
+                  </div>
+                </div>
+             </div>
+         </div>
+        </div>
+         <hr>
+     <div class="container">
+          <div class="row d-flex pb-2 justify-content-end">
+             <div class=" col-md-4 col-sm-4">
+                 <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+                 <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+             </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    <!-- --------------------------Wearables------------------------------ -->
+    <div class="wearables_menu menu pb-2">
+      <div class="container">
+       <div class="row justify-content-center"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlusBand.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                OnePlus Band
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlusWatch.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus Watch
+               
+                </div>
+              </div>
+           </div>
+       </div>
+       </div>
+      </div>
+          <!-- --------------------------Accessories------------------------------ -->
+    <div class="accessories_menu menu pb-3">
+      <div class="container">
+       <div class="row justify-content-center"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/Bundles.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                Bundles
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+
+                <img src="./Images/Power-Cables.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  Power & Cables
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/Gear.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  Gears
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlus_10Tcase.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                 Cases & Protection
+                </div>
+              </div>
+           </div>
+       </div>
+       </div>
+      </div>
+      <!-- --------------------------Offers------------------------------ -->
+      <div class="offers_menu menu p-5">
+        <div class="container">
+         <div class="row justify-content-center"> 
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/offers.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-2 ">
+                  Exchange Offers
+                 
+                  </div>
+                </div>
+             </div>
+             </div>
+             </div>
+           </div>
+
+    <!-- --------------------------SearchBar------------------------------ -->
+    <div class="searcharea search_menu float-end p-3">
+      <input type="textbox" class="textarea px-5 py-2" placeholder="OnePlus 10 Pro">
+      <a class="nav-link text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"width="16" height="16" fill="currentColor" class="bi bi-search searchbar" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></a>
+      <dl>
+          <dt>Popular</dt>
+          <dd class="p-1">OnePlus 10Pro</dd>
+          <dd class="p-1">OnePlus 10R</dd>
+          <dd class="p-1">OnePlus 10T</dd>
+          <dd class="p-1">OnePlus Nord 2T 5G</dd>
+          <dd class="p-1">OnePlus Nord CE 2 Lite</dd>
+      </dl>
+    </div>
+    <!-- --------------------------User Accounts------------------------------ -->
+    <div class="useracc_menu">
+      <div class="sign p-4 border_bottom">
+        <img src="./Images/user-icon.webp" width="15%" alt="" style="border-radius:50%;">
+        <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1"> Sign up  </span>or  <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1">  Sign in</span>
+      </div>
+      <ul class="nav flex-column p-2">
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-file-text p-2 text-dark" style="font-size:22px;"></i>Orders<i class="bi bi-caret-right float-end"></i></a>
+          
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-person-circle p-2 text-dark" style="font-size:22px;"></i>Accounts<i class="bi bi-caret-right float-end"></i></a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-coin p-2 text-dark" style="font-size:22px;"></i>Red coins<i class="bi bi-caret-right float-end"></i></a>
+        </li> 
+        <li class="nav-item p-1">
+          <a class="nav-link" href="#" style="font-weight:500;color: grey;"><i class="bi bi-record-circle p-2 text-dark" style="font-size:22px;"></i>Red Cable Club<i class="bi bi-caret-right float-end"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- --------------------------Cart------------------------------ -->
+    <div class="cart_menu p-3">
+      <h5 class="p-2" style="text-align:center;">Your Cart is Empty</h5>
+      <img src="./Images/emptycart.png" style="width: 70%;margin: auto;" class="p-2 d-block" alt="">
+      <p  class="p-2" style="text-align:center;">You are  &#8377;499 away from free shipping</p>
+    </div>
+    <!-- --------------------------Carousel------------------------------ -->
+    <!-- <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="./Images/Banner1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+           <h6>Evolve Beyond speed</h6>
+           <h1>OnePlus10TT<sup>5G</sup> </h1>
+           <p>Save extra &#8377;5000 with exchange bonus on select devices. <br>Add Screen Protection Plan at <del>&#8377;2799</del> &#8377;99</p>
+           <img src="" alt="">
+           <p>From &#8377;44 999*</p>
+           <button class="btn btn-outline-secondary">Buy now</button>
+           <button class="btn btn-outline-secondary">Learn more</button>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./Images/banner2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="Images/Banner3.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      -->
+      <div class="row slide1 px-5 py-3">
+            <div class="col-sm-6 col-md-6">
+                <h6>Evolve Beyond speed</h6>
+                <h1>OnePlus10TT<sup>5G</sup> </h1>
+                <p>Save extra &#8377;5000 with exchange bonus on select devices. <br>Add Screen Protection Plan at <del>&#8377;2799</del> &#8377;99</p>
+                <img src="./Images/banner1label.webp" alt="">
+                <p>From &#8377;44 999*</p>
+                <button class="btn btn-outline-secondary">Buy now</button>
+                <button class="btn btn-outline-secondary">Learn more</button>
+
+        </div>
+        </div>
+        <!-- --------------------SEC 1---------------------------------------- -->
+        <div class="container-fluid p-5 sec-1 ">
+            <div class="row p-3">
+              <div class="col-sm-12 col-lg-4">
+                    <h4 style="font-weight:400;padding-top:0px;">Capture Every Horizon</h4>
+                    <h1 class="oneplus_heading">OnePlus 10 Pro<sup>5G</sup> </h1>
+                    <h5 style="padding-top:26%;"class="m-0 pb-0" >Co-developed with</h5>
+                    <img src="./Images/hasselblad.svg" alt="">
+                    <p class="pt-4">Save extra ₹10000 with exchange bonus on select devices. <br> Add Screen Protection   Plan at <del>₹3499</del> ₹99.</p>
+                    <h5>From ₹55 999* <br>
+                    *Incl. bank discount</h5>
+                    <button class="buy_now">Buy now</button>
+                    <button class="learn_more">Learn more</button>
+              </div>
+      
+              <div class="col-sm-12 col-lg-8">
+                <div style="overflow: hidden!important;">
+                 <img src="./Images/LargeCardProduct_PC_10pro.jpg.thumb.webp" width="100%" class="kenburns-top" alt="">
+                </div>
+              </div>
+            </div> 
+        </div>
+           <!-- --------------------SEC 2---------------------------------------- -->
+        <div class="container-fluid px-5 sec-2">
+          <div class="row p-2">         
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              <div style="background-color:#F8F8F8;padding: 3%;">
+               <div class="row">
+                 <div class="col-sm-12 col-lg-6">
+
+                
+                  <h5 style="font-weight:400;">Imagination & Intelligence</h5>
+                  <h1 style="font-weight:300;font-size:32px; letter-spacing:0px!important;">OnePlus TV 43| <br>50Y1S Pro</h1>
+                  
+                  <p class="pt-4">Save additional up to ₹1000 with <br>RedCoins.</p>
+                  <h5>From ₹29 999 ₹24 499*<br>
+                    *Incl. bank discount & limited <br>period offer</h5>
+                  <button class="buy_now">Buy now</button>
+                  <button class="learn_more">Learn more</button>
+            </div>
+    
+            <div class="col-xs-12 col-lg-6">
+              <div style="overflow: hidden!important;">
+               <img src="./Images/SmallCardProduct_PC_y1spro.png.thumb.webp" width="100%" class="kenburns-top" alt="">
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div> 
+
+        <div class="col-xs-12 col-md-6 col-lg-6 ">
+          <div style="background-color:#F8F8F8;padding: 3%;">
+          <div class="row p-2">
+            <div class="col-sm-12 col-lg-6 p-2">
+
+           
+             <h5 style="font-weight:400;">Hear the Unheard</h5>
+             <h1 style="font-weight:300;font-size:32px; letter-spacing:0px!important;">OnePlus Buds Pro</h1>
+             
+             
+             <h5 style="padding-top:46%;">From ₹11 990 ₹6 990*<br>
+              *Incl. bank discount</h5>
+             <button class="buy_now">Buy now</button>
+             <button class="learn_more">Learn more</button>
+       </div>
+
+       <div class="col-xs-12 col-lg-6">
+         <div style="overflow: hidden!important;">
+          <img src="./Images/SmallCardProduct_PC.png.thumb.webp" width="100%" class="kenburns-top" alt="">
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+        <!-- --------------------SEC 2---------------------------------------- -->
+        <div class="container-fluid p-3 sec-3">
+          <div class="row py-2">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5>This Week's Hot Picks</h5>
+                <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <ul style="padding:0;">
+                <li style="padding-left: 0px!important;"> <a href="">Highlights</a> </li>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> TV</a></li>
+                <li><a href="#"> Audio</a></li>
+                <li><a href="#"> Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="card p-0" style="width: 19rem;border: none;">
+              <div style="background-color:#F8F8F8;">
+              <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656_420_420.png" class="card-img-top kenburns-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">OnePlus Nord 2T 5G</h5>
+                <p class="card-text">Save with RedCoins<br>
+                  Save up to ₹4000 with bank discount.</p>
+                  <div class="card" style="border: none;">
+                <a href="#"><i class="bi bi-cart3"style="font-size:20px;border: none;"> </i> From ₹28999</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card p-0" style="width: 19rem;border: none;">
+              <div style="background-color:#F8F8F8;">
+              <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130_420_420.png" class="card-img-top kenburns-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">OnePlus 10R 5G</h5>
+                <p class="card-text">Save with RedCoins<br>
+                  Save extra ₹3000 with exchange bonus on select devices.</p>
+                  <div class="card" style="border: none;">
+                <a href="#"><i class="bi bi-cart3"style="font-size:20px;"> </i> From ₹32999</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0" style="width: 19rem;border: none;">
+              <div style="background-color:#F8F8F8;">
+              <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926_420_420.png" class="card-img-top kenburns-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">OnePlus TV U Series 50 | 55 | 65 U1S</h5>
+                <p class="card-text">Save with RedCoins<br>
+                  Smarter 4k Cinematic Experience</p>
+                  <div class="card" style="border: none;">
+                <a href="#"><i class="bi bi-cart3"style="font-size:20px;"> </i> From ₹36999</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-0" style="width: 19rem;border: none;">
+              <div style="background-color:#F8F8F8;">
+              <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750_420_420.png" class="card-img-top kenburns-top" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">OnePlus Nord Buds</h5>
+         
+                  <div class="card" style="border: none;">
+                <a href="#"><i class="bi bi-cart3"style="font-size:20px;"> </i> From ₹2399</a>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+</body>
+</html>
