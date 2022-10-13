@@ -9,8 +9,35 @@
     font-weight: 300!important;
    letter-spacing:0px!important;
 }
-h5{
+h5,h2{
     font-weight: 400!important;
+}
+h2{
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif ;
+}
+.h1_changed{
+    font-size: 42px!important;
+    font-weight:bold!important;
+    font-family: 'Open Sans', sans-serif;
+}
+h5{
+    color: grey;
+}
+.span_learn_more
+{
+     text-decoration: underline;
+    line-height: 1.5;
+}
+.span_learn_more:hover
+{
+    color: rgba(58, 58, 248, 0.822);
+     
+}
+.bg_black
+{
+    background-color: black;
+    color: white;
 }
 .border
 {
@@ -18,8 +45,16 @@ h5{
 }
 @media only screen and (max-width:1025px)
 {
- 
+ .show_img
+ {
+     display: none;
+ }
+ .hidden_img
+ {
+     display: block!important;
+ }
 }
+.hidden_img{display:none}
 /* ------------------------Navbar-------------------- */
 .navbar
 {
@@ -94,6 +129,7 @@ h5{
   z-index: 100;
   background-color: white;
   width: 30%;
+
   border-top: 1px solid lightgrey;
 }
     .searchbar
@@ -124,12 +160,13 @@ h5{
 /* ------------cart------------------------ */
 .cart_menu
 {
-  position: absolute;
+  /* position: absolute;
   top:8%;
-  right: 0%;
+  right: 0%; */
   z-index: 100;
   background-color: white;
   width: 30%;  
+float:right!important;
   border-top: 1px solid lightgrey;
   display: none;
 }
@@ -143,6 +180,7 @@ h5{
   z-index: 100;
   background-color: white;
   width: 25%;  
+  float:right!important;
   border-top: 1px solid lightgrey;
   display: none;
 }
@@ -161,7 +199,7 @@ h5{
 .buy_now
 {
     color: white;
-    width: 48%;
+    width: 49%;
     border: 1px solid black;
     padding: 2% 0%;
     background-color: black;
@@ -173,7 +211,7 @@ h5{
 .learn_more
 {
    background-color:white;
-   width: 48%;
+   width: 49%;
    border: 1px solid black;
    padding: 2% 0%;
 }
@@ -186,12 +224,13 @@ h5{
     padding:0% 1%;
     text-decoration: none;
 }
-.sec-3 a{
+.sec-3 li{
     text-decoration: none;
-    color: #000000F2;
+    color: #2c2a2af2;
     font-size: 18px;
     font-weight: 500;
- 
+    cursor: pointer;
+    
 }
 .sec-3 li:active
 {
@@ -201,7 +240,7 @@ h5{
 .card{
     width: 100%;
 }
-.card a{
+.card li{
     font-weight: 400;
 }
 .card a:hover{
@@ -210,4 +249,102 @@ h5{
     background-color: black;
     color: white;
     padding:3% ;
+}
+
+.highlights_menu
+{
+    position: relative;
+    background-color: white;
+}
+
+.align_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+/* -------stay connected---------------- */
+.stay_conn input
+{
+    width: 80%;
+    border: 1px solid rgb(206, 200, 200);
+    height: 50PX;
+    padding: 0% 5%;
+    border-radius: 2px;
+    font-size: 16px;
+    color: grey;
+    background-color: transparent;
+    font-weight: bold;
+    border-right: 0;
+}
+.stay_conn h6{
+    color: grey;
+    font-size: 12px;
+}
+.stay_conn h2
+{
+    letter-spacing: -1px;
+}
+
+.stay_conn_email_addr span{
+    width: 20%;
+    border: 1px solid rgb(206, 200, 200);
+    border-left: 0;
+   height: 50px;
+    /* padding: 5%; */
+}
+.stay_conn_email_addr i{
+    height: 50px;
+}
+/* -------------Footer----------------- */
+.footer1 li
+{
+   list-style: none;
+   color: rgb(145, 143, 143);
+   font-weight: bold;
+   padding: 0;
+   line-height: 2.5;
+   font-size: 18x;
+   font-family:  'Open Sans', sans-serif;
+   cursor: pointer;
+}
+.footer1 li:hover
+{
+    color: black;
+}
+.contact_us
+{
+ cursor: pointer;
+ font-size: 20px;
+}
+.contact i
+{
+    color: grey;
+    cursor: pointer;
+    font-size: 20px;
+}
+.contact i:hover{
+    color: black;
+    
+}
+/* -----footer2-------------------- */
+.footer3
+{
+    background-color:#F9F9F9;
+    border-top: 1px solid lightgray;
+}
+.list ul 
+{
+    list-style: none!important;
+    display:flex;
+}
+.list li{
+    padding:0% 1%;
+    font-size: 12px;
+}
+.copyright
+{
+    color: grey;
+    font-size: 12px;
+
 }
