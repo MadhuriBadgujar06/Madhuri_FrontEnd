@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.items a
+{
+   text-decoration: none;
+   color: black;
+   font-size: 15px;
+}
+.items:hover
+{
+    color: black;
+    border-bottom: 1px solid red;
+    padding: 0;
+}
+.items a:hover
+{
+    color: black;
+}
+.items.active
+{
+    border-bottom: 1px solid red;
+}
+/* --------------------Display------------------------------- */
+.card
+{
+    position: relative;
+}
+.arrow
+{
+   position: absolute;
+   top: 28%;
+   font-size: 20px;
+   color: black;
+   
+}
+.left
+{
+    left: 5%;
+}
+.right
+{
+    right: 5%;
+}
+.arrow,.show_para
+{
+    /* display: none; */
+}

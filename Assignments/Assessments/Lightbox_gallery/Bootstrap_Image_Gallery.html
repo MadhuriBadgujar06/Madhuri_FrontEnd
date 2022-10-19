@@ -25,46 +25,42 @@
 
     <!-- ----------------CSS----------------------------------- -->
     <style>
-        img:hover
+        .demo img:hover
         {
-            transform: scale(1.5);
-            /* background: linear-gradient(0,0,0,0.5); */
-            
+            transform:scale(1.2);
         }
-        .bgdark{
-            background:rgb(0,0,0,0.8);
-            background-blend-mode: darken;
-            opacity:0.5;
-            z-index: -1;
-        }
-        .img-dark
+       
+        .demo img
         {
-            opacity: 1;
-            z-index: 100;
+            width: 100%;
         }
-
-    </style>
+      
+    </style> 
 
     <!-- ----------------JQuery----------------------------------- -->
-    <script>
+     <script>
         $(document).ready(function(){
-            $("img").hover(function(){
-                // $(".container-fluid").addClass(bgdark);
-                $("body").addClass("bgdark");
-                // $(this).addclass("img-dark");
-                $(this).fadeIn(5000);
+                $("img").mouseover(function(){
+                $("body").css( 'background','rgb(0,0,0,0.5)');
+                $('h1').css('color','white');
              
-            })
+        })
+        $("img").mouseleave(function(){
+                $("body").css( 'background','white');
+                $('h1').css('color','black');
+            
+        })
         })
     </script>
 
   </head>
   <body>
-       <div class="container-fluid p-5">
+       <div class="container-fluid p-5 demo">
             <div class="row ">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <h1 class="text-center">  PHOTO/GALLERY </h1>
                     <hr class="text-light">
+                </div>
                 </div>
                 <div class="row justify-content-between">
                     <div class="col-sm-2 col-md-4 col-lg-4">
@@ -88,6 +84,7 @@
                         <img src="./img6.webp" class="img-thumbnail" alt="">
                     </div>
                 </div>
+                
                 <div class="row justify-content-between">
                     <div class="col-sm-2 col-md-4 col-lg-4">
                         <img src="./img7.webp" class="img-thumbnail" alt="">
@@ -100,6 +97,7 @@
                     </div>
                 </div>
             </div>
-       </div>
+
+        
   </body>
 </html>

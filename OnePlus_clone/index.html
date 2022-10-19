@@ -7,6 +7,9 @@
     <title>OnePlus Official Site | OnePlus India</title>
     <!-- <-----------------CSS File Link-------------- -->
         <link rel="stylesheet" href="./CSS/index.css">
+
+    <!-- --------------------------Scrolling Animation Link------------------------------ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--fav Icon Link-->
     <!-- <link rel="icon" href="./Images/favicon.png" type="image/png"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
@@ -132,10 +135,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".Phone_menu").hide();
          })
          $(".Phone_menu").mouseenter(function(){
-          $(".Phone_menu").show();
+          $(this).show();
          })
          $(".Phone_menu").mouseleave(function(){
-          $(".Phone_menu").hide();
+          $(this).hide();
          })
          //---------------For TV Menu---------------------
          $("#tv").mouseenter(function(){
@@ -145,10 +148,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".tv_menu").hide();
          })
          $(".tv_menu").mouseenter(function(){
-          $(".tv_menu").show();
+          $(this).show();
          })
          $(".tv_menu").mouseleave(function(){
-          $(".tv_menu").hide();
+          $(this).hide();
          })
          //---------------For Audio Menu---------------------
          $("#audio").mouseenter(function(){
@@ -158,10 +161,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".audio_menu").hide();
          })
          $(".audio_menu").mouseenter(function(){
-          $(".audio_menu").show();
+          $(this).show();
          })
          $(".audio_menu").mouseleave(function(){
-          $(".audio_menu").hide();
+          $(this).hide();
          })
             //---------------For Wearables Menu---------------------
             $("#wearables").mouseenter(function(){
@@ -171,10 +174,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".wearables_menu").hide();
          })
          $(".wearables_menu").mouseenter(function(){
-          $(".wearables_menu").show();
+          $(this).show();
          })
          $(".wearables_menu").mouseleave(function(){
-          $(".wearables_menu").hide();
+          $(this).hide();
          })
              //---------------For Accessories Menu---------------------
              $("#accessories").mouseenter(function(){
@@ -184,10 +187,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".accessories_menu").hide();
          })
          $(".accessories_menu").mouseenter(function(){
-          $(".accessories_menu").show();
+          $(this).show();
          })
          $(".accessories_menu").mouseleave(function(){
-          $(".accessories_menu").hide();
+          $(this).hide();
          })
                 //---------------For offers Menu---------------------
                 $("#offers").mouseenter(function(){
@@ -197,10 +200,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".offers_menu").hide();
          })
          $(".offers_menu").mouseenter(function(){
-          $(".offers_menu").show();
+          $(this).show();
          })
          $(".offers_menu").mouseleave(function(){
-          $(".offers_menu").hide();
+          $(this).hide();
          })
  //---------------For Search---------------------
          $("#search_icn").mouseenter(function(){
@@ -210,10 +213,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".searcharea").hide();
          })
          $(".searcharea").mouseenter(function(){
-          $(".searcharea").show();
+          $(this).show();
          })
          $(".searcharea").mouseleave(function(){
-          $(".searcharea").hide();
+          $(this).hide();
          })
         
           //---------------For Search---------------------
@@ -224,10 +227,10 @@ font-family: 'Roboto', sans-serif; -->
              $(".useracc_menu").hide();
          })
          $(".useracc_menu").mouseenter(function(){
-          $(".useracc_menu").show();
+          $(this).show();
          })
          $(".useracc_menu").mouseleave(function(){
-          $(".useracc_menu").hide();
+          $(this).hide();
          })
          //---------------For Search---------------------
          $("#cart").mouseenter(function(){
@@ -237,7 +240,7 @@ font-family: 'Roboto', sans-serif; -->
              $(".cart_menu").hide();
          })
          $(".cart_menu").mouseenter(function(){
-          $(".cart_menu").show();
+          $(this).show();
          })
          $(".useracc_menu").mouseleave(function(){
           $(".cart_menu").hide();
@@ -738,29 +741,32 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       -->
       <div class="row slide1 px-5 py-3">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-sm-6 col-md-6 align-content" style="height: 550px;">
+              <div class="align-content"style="height:500px">
+              <div>
                 <h6>Evolve Beyond speed</h6>
                 <h1>OnePlus10TT<sup>5G</sup> </h1>
-                <p>Save extra &#8377;5000 with exchange bonus on select devices. <br>Add Screen Protection Plan at <del>&#8377;2799</del> &#8377;99</p>
+                <p>Save extra &#8377;5000 with exchange bonus on select devices. <br>Add Screen Protection Plan at <del>&#8377;2799</del> &#8377;99</p></div>
                 <img src="./Images/banner1label.webp" alt="">
-                <p>From &#8377;44 999*</p>
+                <div class=""></div>
                 <button class="btn btn-outline-secondary">Buy now</button>
                 <button class="btn btn-outline-secondary">Learn more</button>
+              </div>
 
         </div>
         </div>
         <!-- --------------------SEC 1---------------------------------------- -->
         <div class="container-fluid p-5 sec-1 ">
-            <div class="row ">
+            <div class="row " >
               <div class="col-sm-12 col-lg-4 align_content">
-                <div class="top">
+                <div class="top" data-aos="slide-right">
                 
                     <h4 style="font-weight:400;padding-top:0px;">Capture Every Horizon</h4>
                     <h1 class="oneplus_heading">OnePlus 10 Pro<sup>5G</sup> </h1>
                  
                 </div>
                
-                  <div class="col-sm-8 col-md-8 col-lg-12">
+                  <div class="col-sm-8 col-md-8 col-lg-12" data-aos="slide-right">
                     <div style="overflow: hidden!important;" class="hidden_img">
                       <img src="./Images/LargeCardProduct_PC_10pro.jpg.thumb.webp" width="100%" class="kenburns-top" alt="">
                      </div>
@@ -783,7 +789,7 @@ font-family: 'Roboto', sans-serif; -->
       
               <div class="col-lg-8 show_img">
                 <div style="overflow: hidden!important;">
-                 <img src="./Images/LargeCardProduct_PC_10pro.jpg.thumb.webp" width="100%" height="400px" class="kenburns-top" alt="">
+                 <img src="./Images/LargeCardProduct_PC_10pro.jpg.thumb.webp" width="100%" height="400px" class="kenburns-top"  data-aos="slide-right" alt="">
                 </div>
               </div>
             </div> 
@@ -797,7 +803,7 @@ font-family: 'Roboto', sans-serif; -->
                  <div class="col-sm-12 col-lg-6 align_content">
                          <div>
                   <h5 style="font-weight:400;">Imagination & Intelligence</h5>
-                  <h1 style="font-weight:300;font-size:30px; letter-spacing:0px!important;">OnePlus TV 43| <br>50Y1S Pro</h1>
+                  <h1 style="font-weight:300;font-size:30px; letter-spacing:0px!important;"    data-aos="slide-right">OnePlus TV 43| <br>50Y1S Pro</h1>
                     </div>
                  <div style="overflow: hidden!important;" class="hidden_img">
                           <img src="./Images/SmallCardProduct_PC_y1spro.png.thumb.webp" width="100%" class="kenburns-top" alt="">
@@ -813,7 +819,7 @@ font-family: 'Roboto', sans-serif; -->
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 show_img">
               <div style="overflow: hidden!important;">
-               <img src="./Images/SmallCardProduct_PC_y1spro.png.thumb.webp" width="100%" class="kenburns-top" alt="">
+               <img src="./Images/SmallCardProduct_PC_y1spro.png.thumb.webp" width="100%" class="kenburns-top" data-aos="slide-right" alt="">
               </div>
             </div>
           </div> 
@@ -827,11 +833,11 @@ font-family: 'Roboto', sans-serif; -->
 
            <div class="top">
              <h5 style="font-weight:400;">Hear the Unheard</h5>
-             <h1 style="font-weight:300;font-size:32px; letter-spacing:0px!important;">OnePlus Buds Pro</h1>
+             <h1 style="font-weight:300;font-size:32px; letter-spacing:0px!important;" data-aos="slide-right">OnePlus Buds Pro</h1>
             </div>
     
               <div style="overflow: hidden!important;" class="hidden_img">
-                <img src="./Images/SmallCardProduct_PC.png.thumb.webp" width="100%" class="kenburns-top" alt="">
+                <img src="./Images/SmallCardProduct_PC.png.thumb.webp" width="100%" class="kenburns-top" data-aos="slide-right" alt="">
                </div>
   
              <div>
@@ -843,7 +849,7 @@ font-family: 'Roboto', sans-serif; -->
        </div>
        <div class="col-lg-6 show_img">
          <div style="overflow: hidden!important;">
-          <img src="./Images/SmallCardProduct_PC.png.thumb.webp" width="100%" class="kenburns-top" alt="">
+          <img src="./Images/SmallCardProduct_PC.png.thumb.webp" width="100%" class="kenburns-top" data-aos="slide-right"alt="">
          </div>
       </div>
       </div>
@@ -870,11 +876,12 @@ font-family: 'Roboto', sans-serif; -->
               </ul>
             </div>
           </div>
+          </div>
           <!-- --------------------------Highlights------------------------------ -->
           <div class="row justify-content-evenly highlights_menu">
             <div class="card" style="width: 19rem;border: none;">
               <div style="background-color:#F8F8F8;">
-              <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656_420_420.png" class="card-img-top kenburns-top" alt="...">
+              <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
                 <h5 class="card-title">OnePlus Nord 2T 5G</h5>
@@ -888,7 +895,7 @@ font-family: 'Roboto', sans-serif; -->
             
             <div class="card p-0" style="width: 19rem;border: none;">
               <div style="background-color:#F8F8F8;">
-              <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130_420_420.png" class="card-img-top kenburns-top" alt="...">
+              <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130_420_420.png"  data-aos="slide-right"class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
                 <h5 class="card-title">OnePlus 10R 5G</h5>
@@ -902,7 +909,7 @@ font-family: 'Roboto', sans-serif; -->
 
             <div class="card p-0" style="width: 19rem;border: none;">
               <div style="background-color:#F8F8F8;">
-              <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926_420_420.png" class="card-img-top kenburns-top" alt="...">
+              <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
                 <h5 class="card-title">OnePlus TV U Series 50 | 55 | 65 U1S</h5>
@@ -916,7 +923,7 @@ font-family: 'Roboto', sans-serif; -->
 
             <div class="card p-0" style="width: 19rem;border: none;">
               <div style="background-color:#F8F8F8;">
-              <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750_420_420.png" class="card-img-top kenburns-top" alt="...">
+              <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
                 <h5 class="card-title">OnePlus Nord Buds</h5>
@@ -932,7 +939,7 @@ font-family: 'Roboto', sans-serif; -->
      <div class="row justify-content-evenly phone2_menu">
       <div class="card" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3d-17-cpgm7mlpjvyadbdqaal4taem8ii614.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3d-17-cpgm7mlpjvyadbdqaal4taem8ii614.png" class="card-img-top kenburns-top" data-aos="slide-right"  alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus 10T 5G</h5>
@@ -946,7 +953,7 @@ font-family: 'Roboto', sans-serif; -->
       
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Nord 2T 5G</h5>
@@ -960,7 +967,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus 10R 5G</h5>
@@ -974,7 +981,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3a-8f-rb8bwmjzh4oapzgdaajutoxvm4w472.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3a-8f-rb8bwmjzh4oapzgdaajutoxvm4w472.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Nord CE 2 5G</h5>
@@ -989,7 +996,7 @@ font-family: 'Roboto', sans-serif; -->
     <div class="row justify-content-evenly tv2_menu">
       <div class="card" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-40-6e-cpgm7wmdbicad1ltaak5unk3l_y854.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-40-6e-cpgm7wmdbicad1ltaak5unk3l_y854.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus TV 43 | 50 Y1S Pro</h5>
@@ -1003,7 +1010,7 @@ font-family: 'Roboto', sans-serif; -->
       
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-2d-66-rb8lb2fxcqaag34xaadhkgarnxg568.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-2d-66-rb8lb2fxcqaag34xaadhkgarnxg568.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Y Series TV 32 | 40 | 43 Y1</h5>
@@ -1017,7 +1024,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus TV U Series 50 | 55 | 65 U1S</h5>
@@ -1031,7 +1038,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-40-7b-cpgm7wmemg-aax-baalrvohrjkc619.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-40-7b-cpgm7wmemg-aax-baalrvohrjkc619.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus TV Y Series 32 | 43 Y1S Edge</h5>
@@ -1047,7 +1054,7 @@ font-family: 'Roboto', sans-serif; -->
     <div class="row justify-content-evenly audio2_menu">
       <div class="card" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3d-2a-cpgm7mlq03waeebbaakjwc-ne78516.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3d-2a-cpgm7mlq03waeebbaakjwc-ne78516.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Nord Buds CE</h5>
@@ -1061,7 +1068,7 @@ font-family: 'Roboto', sans-serif; -->
       
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Nord Buds</h5>
@@ -1074,7 +1081,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-32-80-rb8bwmhjizwaojghaaj424wpt0y995.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-32-80-rb8bwmhjizwaojghaaj424wpt0y995.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Buds Pro</h5>
@@ -1087,7 +1094,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3c-27-cpgm7mk-ru-afzmxaam7ntavfjs206.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3c-27-cpgm7mk-ru-afzmxaam7ntavfjs206.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Bullets Wireless Z2</h5>
@@ -1103,12 +1110,10 @@ font-family: 'Roboto', sans-serif; -->
      <div class="row justify-content-evenly accessories2_menu">
       <div class="card" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3d-27-cpgm7wlqzooackqjaaooticy1ja863.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3d-27-cpgm7wlqzooackqjaaooticy1ja863.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus 10T 5G Glacier Mat Case</h5>
-          <!-- <p class="card-text">Save with RedCoins<br>
-            4K UHD | Smarter Connectivity | 24W Speaker.</p> -->
             <div class="card" style="border: none;">
           <a href="#"><i class="bi bi-cart3"style="font-size:20px;border: none;"> </i> From ₹1499</a><del>2999</del>
           </div>
@@ -1117,7 +1122,7 @@ font-family: 'Roboto', sans-serif; -->
       
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-3e-79-cpgm7wlntn6asz2iaavchsjvmv0799.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-3e-79-cpgm7wlntn6asz2iaavchsjvmv0799.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus 10T 5G Bumper Case Sandstone</h5>
@@ -1130,7 +1135,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-19-89-rb8lb19fe5caamihaaejqzqt3b4262.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-19-89-rb8lb19fe5caamihaaejqzqt3b4262.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Warp Charge 65 Power Adapter</h5>
@@ -1144,7 +1149,7 @@ font-family: 'Roboto', sans-serif; -->
 
       <div class="card p-0" style="width: 19rem;border: none;">
         <div style="background-color:#F8F8F8;">
-        <img src="./Images/1-m00-31-c7-rb8lb2g4nm2ae1v0aagdd7hu-mq210.png" class="card-img-top kenburns-top" alt="...">
+        <img src="./Images/1-m00-31-c7-rb8lb2g4nm2ae1v0aagdd7hu-mq210.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Gaming Triggers</h5>
@@ -1158,7 +1163,7 @@ font-family: 'Roboto', sans-serif; -->
         </div>
         <!-- --------------------------Never Settle------------------------------ -->
         <div class="container-fluid p-5  bg_black">
-          <div class="row" >
+          <div class="row"  data-aos="slide-right" >
             <div class="col-sm-12 col-md-12 col-lg-12">
              <h6> OneTopia</h6>
               <hr>
@@ -1168,7 +1173,7 @@ font-family: 'Roboto', sans-serif; -->
           </div>
           <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 overflow-hidden">
-              <img src="./Images/never_settle_img.webp" width="100%"class="kenburns-top a" alt="">
+              <img src="./Images/never_settle_img.webp" width="100%"class="kenburns-top" data-aos="slide-right" alt="">
             </div>
             <div class="col-md-4 col-lg-4 overflow-hidden align_content">
                   <div>
@@ -1188,7 +1193,7 @@ font-family: 'Roboto', sans-serif; -->
               <div class="col-sm-3 col-md-3 col-lg-3 align_content p-4" style="background-color: #302d2df5;">
                    <div class="top">
                      <h5>OxygenOS 13</h5>
-                     <h2 class="h2">Inspired by nature</h2>
+                     <h2 class="h2" data-aos="slide-right">Inspired by nature</h2>
                    </div>
                    <div class="bottom">
                      <p>OxygenOS 13 welcomes you with a visually refreshed and bold design. Every intuitive element, every streamlined step, is faster, smoother, and burdenless.</p>
@@ -1196,12 +1201,12 @@ font-family: 'Roboto', sans-serif; -->
                    </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 overflow-hidden">
-                  <img src="./Images/oxygenos13-pc.jpg.thumb (1).webp" width="100%" class="kenburns-top" alt="">
+                  <img src="./Images/oxygenos13-pc.jpg.thumb (1).webp" width="100%" class="kenburns-top" data-aos="slide-right" alt="">
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 align_content p-4" style="background-color: #302d2df5;">
                    <div>
                      <h5>Capture Every Horizon</h5>
-                      <h2>2022 OnePlus Photography Awards Winners</h2>
+                      <h2 data-aos="slide-right">2022 OnePlus Photography Awards Winners</h2>
                    </div>
                    <div>
                         <p>The 2022 OnePlus Photography Awards is dedicated to honoring everyone to use their phones to create their own works, to capture wonderful moments, and to tell the stories behind the lens.</p>
@@ -1209,7 +1214,7 @@ font-family: 'Roboto', sans-serif; -->
                    </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 overflow-hidden">
-                <img src="./Images/photo-new-PC.jpg.thumb.webp" width="100%" class="kenburns-top" alt="">
+                <img src="./Images/photo-new-PC.jpg.thumb.webp" width="100%" class="kenburns-top" data-aos="slide-right" alt="">
               </div>
           </div>
         </div>
@@ -1219,17 +1224,17 @@ font-family: 'Roboto', sans-serif; -->
             <div class="col-sm-12 col-md-12 col-lg-12">
              <h6>Red Cable Club</h6>
               <hr>
-              <h1 class="h1_changed">Unlock exclusive benefits, early access to products, and unique<br> experiences.
+              <h1 class="h1_changed" data-aos="slide-right">Unlock exclusive benefits, early access to products, and unique<br> experiences.
                 <span style="color: red;font-size:40px;">Join the Club <i class="bi bi-arrow-right-short"style="font-size:60px;" ></i></span></h1>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-12 col-md-8 col-lg-8 overflow-hidden">
-              <img src="./Images/RCC-pc.jpg.thumb.webp" width="100%"class="kenburns-top" alt="">
+              <img src="./Images/RCC-pc.jpg.thumb.webp" width="100%"class="kenburns-top" data-aos="slide-right" alt="">
             </div>
             <div class="col-md-4 col-lg-4 overflow-hidden align_content">
                   <div>
-                  <h1 class="h1_changed">One community, limitless passion</h1>
+                  <h1 class="h1_changed" data-aos="slide-right">One community, limitless passion</h1>
                 </div>
                 <div>
                  <p>United by one common belief - 'Great happens when we're all wired together'.</p>
@@ -1251,7 +1256,7 @@ font-family: 'Roboto', sans-serif; -->
            
             <div class="col-md-4 col-lg-4 overflow-hidden align_content">
                   <div>
-                  <h1 class="h1_changed">The Power of Community</h1>
+                  <h1 class="h1_changed" data-aos="slide-right">The Power of Community</h1>
                 </div>
                 <div>
                  <p>Our biggest community-driven project - Power of Community, has the ambitious goal of bringing the concept of co-creation to life.</p>
@@ -1260,7 +1265,7 @@ font-family: 'Roboto', sans-serif; -->
            
            </div>
                <div class="col-sm-12 col-md-8 col-lg-8 overflow-hidden">
-              <img src="./Images/POC-pc.jpg.thumb.webp" width="100%"class="kenburns-top" alt="">
+              <img src="./Images/POC-pc.jpg.thumb.webp" width="100%"class="kenburns-top" data-aos="slide-right" alt="">
             </div>
           </div>
         </div>
@@ -1269,25 +1274,25 @@ font-family: 'Roboto', sans-serif; -->
           <div class="row justify-content-evenly ">
           
           <div class="card col-lg-4 col-md-4 overflow-hidden border-0">
-            <img src="Images/Community-1-desktop.jpg.thumb.webp" class="card-img-top kenburns-top" alt="...">
+            <img src="Images/Community-1-desktop.jpg.thumb.webp" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
             <div class="card-body">
-              <h2 class="card-title">2022 Core User Meet-up New York City</h2>
+              <h2 class="card-title" data-aos="slide-right">2022 Core User Meet-up New York City</h2>
               <p class="card-text">Returning to BIG offline Community events..</p>
               <a href="#" class="span_learn_more">Read more</a>
             </div>
           </div>
           <div class="card col-lg-4 col-md-4 overflow-hidden border-0">
-            <img src="Images/Community-2-desktop.jpg.thumb.webp" class="card-img-top kenburns-top alt="...">
+            <img src="Images/Community-2-desktop.jpg.thumb.webp" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
             <div class="card-body">
-              <h2 class="card-title">[Reviews Posted] The Lab - OnePlus 10T 5G Edition</h2>
+              <h2 class="card-title" data-aos="slide-right">[Reviews Posted] The Lab - OnePlus 10T 5G Edition</h2>
               <p class="card-text">It's been a while since the last edition of The Lab, but here we are again!.</p>
               <a href="#" class="span_learn_more">Read more</a>
             </div>
           </div>
           <div class="card col-lg-4 col-md-4 overflow-hidden border-0">
-            <img src="Images/Community-3-desktop.jpg.thumb.webp" class="card-img-top kenburns-top" alt="...">
+            <img src="Images/Community-3-desktop.jpg.thumb.webp" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
             <div class="card-body">
-              <h2 class="card-title">[Vlog] What happened in ____, stays in ____</h2>
+              <h2 class="card-title" data-aos="slide-right">[Vlog] What happened in ____, stays in ____</h2>
               <p class="card-text">Our trip to New York City had its fair share of wild rides..</p>
               <a href="#" class="span_learn_more">Read more</a>
             </div>
@@ -1296,6 +1301,7 @@ font-family: 'Roboto', sans-serif; -->
         </div>
         <!-- --------------------------Helpdesk----------------------------- -->
         <div class="container-fluid px-5">
+          <div class="row align_content">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
               <h5>Support</h5>
@@ -1306,7 +1312,7 @@ font-family: 'Roboto', sans-serif; -->
               <div class="col-sm-3 col-md-3 col-lg-3 align_content p-4" style="background-color: #F8F8F8;">
                    <div class="top">
                      <h5>One-on-One with OnePlus</h5>
-                     <h2 class="h2">Your personal helpdesk.</h2>
+                     <h2 class="h2" data-aos="slide-right">Your personal helpdesk.</h2>
                    </div>
                    <div class="bottom">
                      <p>From finding the perfect phone to quickly resolving queries, we're always ready to help.</p>
@@ -1314,12 +1320,12 @@ font-family: 'Roboto', sans-serif; -->
                    </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 overflow-hidden">
-                  <img src="./Images/Helpdesk-PC.jpg.thumb.webp" width="100%" class="kenburns-top" alt="">
+                  <img src="./Images/Helpdesk-PC.jpg.thumb.webp" width="100%" height="auto" class="kenburns-top img-fluid" data-aos="slide-right" alt="">
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 align_content p-4" style="background-color:  #F8F8F8;">
                    <div>
                      <h5>OnePlus Service Center</h5>
-                      <h2>Our technical team is here to help</h2>
+                      <h2 data-aos="slide-right">Our technical team is here to help</h2>
                    </div>
                    <div>
                         <p>We have over 250 authorized service centers across India. All the fully-trained OnePlus staff are at your service..</p>
@@ -1327,7 +1333,7 @@ font-family: 'Roboto', sans-serif; -->
                    </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 overflow-hidden">
-                <img src="./Images/Service-Center-desktop.jpg.thumb.webp" width="100%" class="kenburns-top" alt="">
+                <img src="./Images/Service-Center-desktop.jpg.thumb.webp" width="100%" class="kenburns-top" data-aos="slide-right" alt="">
               </div>
           </div>
           <div class="row py-5">
@@ -1345,6 +1351,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
           </div>
         </div>
+      </div>
         <!-- ------------------------Stay Connected-------------------------------- -->
        <div class="container-fluid p-5 text-light bg_black stay_conn" style="height:auto;">
           <div class="row col-sm-12 col-md-12 col-lg-12">
@@ -1355,28 +1362,28 @@ font-family: 'Roboto', sans-serif; -->
 
               <div class="col-sm-6 col-md-6 col-lg-6 p-3"style="background-image: url(./Images/stay_connected_bg1.jpg);background-size:cover;">
                   <div class="row p-2">
-                    <div class="col-sm-12 col-md-6 col-lg-6 align_content"style="height:280px;">
+                    <div class="col-sm-12 col-md-10 col-lg-6 align_content"style="height:280px;">
                      <div>
-                        <h2>Shop with exclusive perks.</h2>
+                        <h2 data-aos="slide-right">Shop with exclusive perks.</h2>
                         <p>Download the OnePlus store app on Google Play.</p>
                      </div>
 
                      <a href="https://play.google.com/store/apps/details?id=com.oneplus.mall" target="_blank" class="btn btn-outline-secondary text-light"   style="width:100%;"><div>  <i class='fab fa-google-play'></i> Google Play
-                     </div>   </a>  
+                     </div>  </a>  
                     </div>
                </div>
                </div>
 
             <div class="col-sm-6 col-md-6 col-lg-6 p-3" style="background-image: url(./Images/stay_connected_bg2.jpg);background-size:cover;">
                   <div class="row p-2">
-                    <div class="col-sm-12 col-md-6 col-lg-6 align_content" style="height: 280px;">
+                    <div class="col-sm-12 col-md-10 col-lg-6 align_content" style="height: 280px;">
                      <div>
-                        <h2>You deserve the best.</h2>
+                        <h2 data-aos="slide-right">You deserve the best.</h2>
                         <p>Sign up for our newsletter!</p>
                      </div>
                      <div class="stay_conn_email_addr">
                        <h6>Subscribe to receive news, promotions and recommendations about OnePlus products and services from OnePlus, its agencies and partners</h6>
-                      <input type="text" placeholder="Email address"><span ><i class='fas fa-arrow-right right' style='font-size:16px;height: 50px;'></i></span>
+                      <input type="text" placeholder="Email address"><span ><i class='fas fa-arrow-right right' style='font-size:16px;'></i></span>
                      </button>
                      </div>     
                    </div>
@@ -1390,15 +1397,15 @@ font-family: 'Roboto', sans-serif; -->
         <div class="container-fluid text-center p-5" style="background-image: url(./Images/SMS-Subscribe-L.jpg);background-size:cover;">
           <div class="row ">
             <div class="col-sm-12 col-md-12 col-lg-12">
-            <h1 style="font-size: 50px;color:white">Always be the first to know</h1>
+            <h1 style="font-size: 50px;color:white" data-aos="slide-right">Always be the first to know</h1>
             <h6 class="text-light">Sign Up for SMS Alerts</h6>
-            <button class="btn btn-light mt-5 p-3 cursor-pointer" style="width: 18%;">Subscribe Now</button>
+            <button class="btn btn-light mt-5 px-5  cursor-pointer">Subscribe Now</button>
         </div>
       </div>
       </div>
 
       <!-- --------------------------Footer------------------------------ -->
-      <div class="container-fluid px-5">
+      <div class="container-fluid pt-5 py-5">
         <div class="row footer1 justify-content-around">
         
           <div class="col-md-2 col-lg-2">
@@ -1417,7 +1424,7 @@ font-family: 'Roboto', sans-serif; -->
                 <li>OnePlus 9 5G</li>
                 </ul>
               </div>
-            <div class="col-md-2 col-lg-2">
+            <div class="col-sm-2 col-md-2 col-lg-2">
                 <h5 class="text-dark py-2">Store</h5>
             <ul class="p-0">
                <li> TV</li>
@@ -1430,7 +1437,7 @@ font-family: 'Roboto', sans-serif; -->
                
             </ul>
           </div>
-          <div class="col-md-2 col-lg-2">
+          <div class="col-sm-2 col-md-2 col-lg-2">
             <h5 class="text-dark py-2">Support</h5>
             <ul class="p-0">
                <li>Shopping FAQs</li>
@@ -1443,7 +1450,7 @@ font-family: 'Roboto', sans-serif; -->
                
             </ul>
           </div>
-          <div class="col-md-2 col-lg-2">
+          <div class="col-sm-2 col-md-2 col-lg-2">
             <h5 class="text-dark py-2">Explore</h5>
             <ul class="p-0">
                <li>About Oneplus</li>
@@ -1489,12 +1496,12 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       <!-- --------------------------Footer3------------------------------ -->
      
-      <div class="container-fluid p-3 footer3" >
+      <div class="container-fluid p-3 footer3 " >
         <div class="row p-4">
           <div class="col-sm-12 col-md-6 col-lg-6">
                <img src="images/india.png"width=25px alt=""> <span>India ( English / INR )</span>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 list">
+          <div class="col-sm-12 col-md-12 col-lg-6 list pt-3">
             <ul>
               <li>Privacy Policy</li>
               <li>|</li>
@@ -1519,5 +1526,14 @@ font-family: 'Roboto', sans-serif; -->
           </div>
         </div>
       </div>
+      <!-- --------------------------Scrolling Animation Script------------------------------ -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 500, 
+        });
+      </script>
 </body>
 </html>
