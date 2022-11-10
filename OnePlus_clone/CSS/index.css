@@ -1,13 +1,15 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 15px;
     font-weight: 400;
     font-family: 'Roboto';
 }
-.row,.card,div{
+.row
+{
     overflow: hidden;
 }
-
 .oneplus_heading{
     font-size: 42px;
     font-weight: 300!important;
@@ -57,22 +59,103 @@ h5{
  {
      display: block!important;
  }
+ .navbar
+ {
+     display: none!important;
+ }
+ .mob_navbar
+ {
+     display: block!important;
+ }
 }
-@media only screen and (max-width:800px)
+@media only screen and (max-width:735px)
 {
-.align_content
-{
-    display: block!important;
-}
-
-}
-.img_respo img
+    h5
+    {
+        font-size: 12px!important;
+    }
+ 
+.sale_live
 {
     width: 100%;
+    position:absolute;
+   top: 0%;
+   left: 0%;
 }
+.cookie_policy
+{
+    width: 100%!important;
+    position: fixed;
+    bottom: 0%;
+    background-color:white;
+    z-index: 100;
+    left: 0%!important;
+    
+}
+.oneplus_store
+{
+    width: 100%!important;
+    height: 10%;
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    border: 2px solid red;
+    background-color: black;
+}
+.oneplus_store img
+{
+    width: 40px;
+}
+}
+
+@media only screen and (max-width :1180px)
+{
+    .hide_nav_lap
+    {
+        display:none;
+    }
+}
+
+@media only screen and (max-width :1280px)
+{
+    .hide_footer{
+        display : block!important;
+    }
+    .footer1
+    {
+        display: none;
+    }
+    .card_emi_wallet,.contact
+    {
+        padding:1% ;
+        width: 100%;
+        text-align: center;
+    }
+    .card_emi_wallet
+    {
+    border-bottom: 1px solid rgb(224, 220, 220);
+}
+}
+
 
 .hidden_img{display:none}
 /* ------------------------Navbar-------------------- */
+.mob_menu
+{
+    display: none;
+}
+.mob_navbar{
+    display: none;
+}
+#hamburger i
+{
+    color: grey;
+    font-size: 25px;
+    border: 1px solid rgb(203, 195, 195);
+    border-radius: 3px;
+    padding:0.2% 1%;
+}
 .navbar
 {
     background-color: white;
@@ -98,6 +181,40 @@ h5{
 .menu span:hover{
     color: blue ;
 }
+/* --------------Toast-------------------------- */
+.oneplus_store
+{
+    width: 32%!important;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    position: fixed;
+    top: 60%;
+    right: 0%;
+}
+.cookie_policy
+{
+  width: 27%;
+    background-color:white;
+    z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    text-align: justify;
+    font-size: 12px;
+    /* display: none; */
+}
+.sale_live
+{
+  width: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    font-size: 12px;
+    /* display: none; */
+}
+
 /* ---------------------PHONE MENU--------------------- */
 
 .Phone_menu
@@ -211,6 +328,40 @@ float:right!important;
     border-bottom: 1px solid blue!important;
     cursor: pointer;
 }
+/* ---------------Animation-------------------------------------- */
+.kenburns-top:hover{
+	-webkit-animation: kenburns-top 0.2s ease-out both;
+	        animation: kenburns-top 0.2s ease-out both;
+}
+
+ @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.10) translateY(-15px);
+            transform: scale(1.10) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.10) translateY(-15px);
+            transform: scale(1.10) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
 /* -------------------SEC-1----------------------------- */
 
 .buy_now
@@ -254,11 +405,16 @@ float:right!important;
     border-bottom:1px solid red;
     color: #000000F2!important;
 }
+
 .card{
     width: 100%;
 }
 .card li{
     font-weight: 400;
+}
+.card a{
+    color: black;
+    text-decoration: none;
 }
 .card a:hover{
 
@@ -302,17 +458,42 @@ float:right!important;
     letter-spacing: -1px;
 }
 
-.stay_conn_email_addr span{
+#submit{
     width: 20%;
     border: 1px solid rgb(206, 200, 200);
-    border-left: 0;
-   height: 50px;
-    /* padding: 5%; */
+    padding:15.5px;
 }
-.stay_conn_email_addr i{
-    height: 50px;
+#ifwrong,#ifright
+{
+    display: none;
+}
+
+/* -------------Toast--------------------- */
+#close_btn,#close_btn2,#close_btn3
+{
+    background-color:transparent;
+    color: #F8F8F8;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
 }
 /* -------------Footer----------------- */
+.hide_footer
+{
+    display: none;
+}
+.hide_footer li
+{
+   list-style: none;
+   padding: 1%;
+   font-size: 16px;
+
+}
+.accordion-button.collapsed 
+{
+    font-weight: 600!important;
+    font-size: 18px;
+}
 .footer1 li
 {
    list-style: none;

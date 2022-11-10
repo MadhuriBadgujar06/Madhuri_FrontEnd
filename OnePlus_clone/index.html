@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnePlus Official Site | OnePlus India</title>
-    <!-- <-----------------CSS File Link-------------- -->
+    <!-- <-----------------File Link-------------- -->
         <link rel="stylesheet" href="./CSS/index.css">
+        <script src="./JS/index.js"></script>
+        
 
     <!-- --------------------------Scrolling Animation Link------------------------------ -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -84,7 +86,7 @@ font-family: 'Roboto', sans-serif; -->
     background-size: cover;
 }
 
-/* -----------------------Animation for Scale up Sec-1 img--------------- */
+/* -----------------------Animation for Scale up imgs--------------- */
 .kenburns-top:hover{
 	-webkit-animation: kenburns-top 0.2s ease-out both;
 	        animation: kenburns-top 0.2s ease-out both;
@@ -124,176 +126,430 @@ font-family: 'Roboto', sans-serif; -->
     width: 100%;
     display: none;
 }
+
 </style>
- <script>
-     $(document).ready(function(){
-      //---------------For Phone Menu---------------------
-         $("#phone").mouseenter(function(){
-             $(".Phone_menu").show();
-         })
-         $("#phone").mouseleave(function(){
-             $(".Phone_menu").hide();
-         })
-         $(".Phone_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".Phone_menu").mouseleave(function(){
-          $(this).hide();
-         })
-         //---------------For TV Menu---------------------
-         $("#tv").mouseenter(function(){
-             $(".tv_menu").show();
-         })
-         $("#tv").mouseleave(function(){
-             $(".tv_menu").hide();
-         })
-         $(".tv_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".tv_menu").mouseleave(function(){
-          $(this).hide();
-         })
-         //---------------For Audio Menu---------------------
-         $("#audio").mouseenter(function(){
-             $(".audio_menu").show();
-         })
-         $("#audio").mouseleave(function(){
-             $(".audio_menu").hide();
-         })
-         $(".audio_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".audio_menu").mouseleave(function(){
-          $(this).hide();
-         })
-            //---------------For Wearables Menu---------------------
-            $("#wearables").mouseenter(function(){
-             $(".wearables_menu").show();
-         })
-         $("#wearables").mouseleave(function(){
-             $(".wearables_menu").hide();
-         })
-         $(".wearables_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".wearables_menu").mouseleave(function(){
-          $(this).hide();
-         })
-             //---------------For Accessories Menu---------------------
-             $("#accessories").mouseenter(function(){
-             $(".accessories_menu").show();
-         })
-         $("#accessories").mouseleave(function(){
-             $(".accessories_menu").hide();
-         })
-         $(".accessories_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".accessories_menu").mouseleave(function(){
-          $(this).hide();
-         })
-                //---------------For offers Menu---------------------
-                $("#offers").mouseenter(function(){
-             $(".offers_menu").show();
-         })
-         $("#offers").mouseleave(function(){
-             $(".offers_menu").hide();
-         })
-         $(".offers_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".offers_menu").mouseleave(function(){
-          $(this).hide();
-         })
- //---------------For Search---------------------
-         $("#search_icn").mouseenter(function(){
-             $(".searcharea").show();
-         })
-         $("#search_icn").mouseleave(function(){
-             $(".searcharea").hide();
-         })
-         $(".searcharea").mouseenter(function(){
-          $(this).show();
-         })
-         $(".searcharea").mouseleave(function(){
-          $(this).hide();
-         })
-        
-          //---------------For Search---------------------
-         $("#useracc").mouseenter(function(){
-             $(".useracc_menu").show();
-         })
-         $("#useracc").mouseleave(function(){
-             $(".useracc_menu").hide();
-         })
-         $(".useracc_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".useracc_menu").mouseleave(function(){
-          $(this).hide();
-         })
-         //---------------For Search---------------------
-         $("#cart").mouseenter(function(){
-             $(".cart_menu").show();
-         })
-         $("#cart").mouseleave(function(){
-             $(".cart_menu").hide();
-         })
-         $(".cart_menu").mouseenter(function(){
-          $(this).show();
-         })
-         $(".useracc_menu").mouseleave(function(){
-          $(".cart_menu").hide();
-         })
-        //  -----------------Highlights----------------------------
-          
-        $("#highlights").click(function(){
-            $(".phone2_menu").hide();
-            $(".highlights_menu").show();
-            $(".tv2_menu").hide();
-            $(".audio2_menu").hide();
-            $(".accessories2_menu").hide();
-          })
-          $("#phone2").click(function(){
-            $(".phone2_menu").show();
-            $(".highlights_menu").hide();
-            $(".tv2_menu").hide();
-            $(".audio2_menu").hide();
-            $(".accessories2_menu").hide();
-          })
-          $("#tv2").click(function(){
-            $(".tv2_menu").show();
-            $(".phone2_menu").hide();
-            $(".highlights_menu").hide();
-            $(".assesories2_menu").hide();
-            $(".audio2_menu").hide();
-          })
-          $("#audio2").click(function(){
-            $(".audio2_menu").show();
-            $(".phone2_menu").hide();
-            $(".highlights_menu").hide();
-            $(".tv2_menu").hide();
-            $(".accessories2_menu").hide();
-            
-          })
-          $("#accessories2").click(function(){
-            $(".accessories2_menu").show();
-            $(".phone2_menu").hide();
-            $(".highlights_menu").hide();
-            $(".tv2_menu").hide();
-            $(".audio2_menu").hide();
-           
-          })
-   
-     })
-
-
-
- </script>
-
+ 
+<script>
+  $(document).ready(function(){
+    $("#hamburger").click(function(){
+      $(".mob_menu").toggle();
+    })
+    
+  })
+</script>
 </head>
 
 <body>
+  <!-- ---------Mob Navbar------------------------------------- -->
+  <div class="container-fluid mob_navbar">
+    <div class="row">
+      <div class="col-4 col-sm-4"id="hamburger">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="col-4 col-sm-4">
+        <img src="./Images/logo_nav.webp" alt="" style="width: 110px;">
+      </div>
+      <div class="col-4  col-sm-4">
+       <div class="float-end"><i class="bi bi-cart" style="font-size:25px ;"></i></div> 
+      </div>
+    </div>
+  </div>
+
+ <div class="container-fluid mob_menu bg-light">
+  <div class="accordion border-0" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+          Phone
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+         <!-- --------------------------- -->
+         <div class="row text-center">
+           <div class="col-sm-3 col-6">
+            <div class="card border-0">
+              <img src="./Images/Phone_img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus Nord CE 2 Lite 5G</h5>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-3 col-6">
+            <div class="card border-0">
+              <img src="./Images/Phone_img2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus Nord 2T 5G</h5>
+              </div>
+            </div>
+           </div>
+         </div>
+         <div class="row text-center">
+          <div class="col-sm-3 col-6">
+           <div class="card border-0">
+             <img src="./Images/Phone_img3.png" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">  OnePlus 10R 5G</h5>
+             </div>
+           </div>
+          </div>
+          <div class="col-sm-3 col-6">
+           <div class="card border-0">
+             <img src="./Images/Phone_img4.png" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">  OnePlus 10 Pro</h5>
+             </div>
+           </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-3 col-6">
+           <div class="card border-0">
+             <img src="./Images/Phone_img5.png" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">  OnePlus Nord CE 2 Lite 5G</h5>
+             </div>
+           </div>
+          </div>
+          <div class="col-sm-3 col-6">
+           <div class="card border-0">
+             <img src="./Images/Phone_img6.png" class="card-img-top" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">  OnePlus Nord CE 2 5G</h5>
+             </div>
+           </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 col-sm-12">
+              Flagship Series <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col-12 col-sm-12">
+              Nord Series <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-6 ">
+              <button class="btn btn-outline-secondary" style="width: 100%; color: black!important;">Compare</button>
+              </div>
+              <div class="col-sm-6 col-6 ">
+              <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View All</button>
+          </div>
+          </div>
+        </div>
+         <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          TV
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center">
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/tv1.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">  OnePlus TV Y1S Pro</h5>
+               </div>
+             </div>
+            </div>
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/tv2.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">  OnePlus TV Y1S</h5>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div class="row text-center">
+           <div class="col-sm-6 col-6">
+            <div class="card border-0">
+              <img src="./Images/tv3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus TV Y1S Edge</h5>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-6 col-6">
+            <div class="card border-0">
+              <img src="./Images/tv4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus TV U1S</h5>
+              </div>
+            </div>
+           </div>
+         </div>
+         <div class="row text-center">
+           <div class="col-sm-6 col-6">
+            <div class="card border-0">
+              <img src="./Images/tv5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus TV Y1</h5>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-6 col-6">
+            <div class="card border-0">
+              <img src="./Images/tv6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">  OnePlus TV Q1 Series</h5>
+              </div>
+            </div>
+           </div>
+           <div class="row text-center">
+             <div class="col-sm-6 col-6 ">
+               <button class="btn btn-outline-secondary" style="width: 100%; color: black!important;">Compare</button>
+               </div>
+               <div class="col-sm-6 col-6 ">
+               <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View All</button>
+           </div>
+           </div>
+         </div>
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+          Audio
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+        <div class="accordion-body">
+                    <!-- --------------------------- -->
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-6">
+                       <div class="card border-0">
+                         <img src="./Images/audio1.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">  OnePlus Nored Wired<br>Earphones</h5>
+                         </div>
+                       </div>
+                      </div>
+                      <div class="col-sm-6 col-6">
+                       <div class="card border-0">
+                         <img src="./Images/audio2.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">  OnePlus Nord Buds CE</h5>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+                    <div class="row  text-center">
+                     <div class="col-sm-6 col-6">
+                      <div class="card border-0">
+                        <img src="./Images/audio3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">  OnePlus Nord Buds</h5>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="col-sm-6 col-6">
+                      <div class="card border-0">
+                        <img src="./Images/audio4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">  OnePlus Bullets<br>Wireless Z2</h5>
+                        </div>
+                      </div>
+                     </div>
+                   </div>
+                   <div class="row text-center">
+                     <div class="col-sm-6 col-6">
+                      <div class="card border-0">
+                        <img src="./Images/audio5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">  OnePlus Buds Pro</h5>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="col-sm-6 col-6">
+                      <div class="card border-0">
+                        <img src="./Images/audio6.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">  OnePlus Buds Z2</h5>
+                        </div>
+                      </div>
+                     </div>
+                     <div class="row text-center">
+                       <div class="col-sm-6 col-6 ">
+                         <button class="btn btn-outline-secondary" style="width: 100%; color: black!important;">Compare</button>
+                         </div>
+                         <div class="col-sm-6 col-6 ">
+                         <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View All</button>
+                     </div>
+                     </div>
+                   </div>
+                    <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+          Wearables
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+        <div class="accordion-body">
+                    <!-- --------------------------- -->
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-6">
+                       <div class="card border-0">
+                         <img src="./Images/OnePlusWatch.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Watch</h5>
+                         </div>
+                       </div>
+                      </div>
+                      <div class="col-sm-6 col-6">
+                       <div class="card border-0">
+                         <img src="./Images/OnePlusBand.png" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">  OnePlus Band</h5>
+                         </div>
+                       </div>
+                      </div>
+                    </div>
+        
+                    <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+          Accessories
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+        <div class="accordion-body">
+           <!-- --------------------------- -->
+           <div class="row text-center">
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/OnePlus_10Tcase.png.thumb.webp" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Cases & Protection</h5>
+               </div>
+             </div>
+            </div>
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/Power-Cables.png.thumb.webp" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title"> Power & Cables/h5>
+               </div>
+             </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/Bundles.png.thumb.webp" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Bundles</h5>
+               </div>
+             </div>
+            </div>
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/Gear.png.thumb.webp" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">  Gear</h5>
+               </div>
+             </div>
+            </div>
+          </div>
+
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+          Offers
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+        <div class="accordion-body">
+          <div class="row text-center">
+            <div class="col-sm-6 col-6">
+             <div class="card border-0">
+               <img src="./Images/offers.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Offers</h5>
+               </div>
+             </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="container-fluid border bg-white mt-3  px-4 py-2">
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6>Store<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6>OneTopia<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6>Community<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6>Support<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid border bg-white mt-3  px-4 py-2">
+  <div class="row p-2">
+    <div class="sign border_bottom">
+      <img src="./Images/user-icon.webp" width="7%" alt="" style="border-radius:50%;">
+      <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1"> Sign up  </span>or  <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1">  Sign in</span>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6><i class="bi bi-file-text p-2 text-dark" style="font-size:20px;"></i>Order<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6><i class="bi bi-person-circle p-2 text-dark" style="font-size:20px;"></i>Account<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6><i class="bi bi-coin p-2 text-dark" style="font-size:20px;"></i>RedCoins<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="col-sm-12 col-12">
+      <h6><i class="bi bi-record-circle p-2 text-dark" style="font-size:20px;"></i>Red Cable Club<span class="float-end">&#10095;</span></h6>
+    </div>
+  </div>
+</div>
+
+ </div>
  <!-- -----------------NAVBAR-------------->
  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -306,28 +562,28 @@ font-family: 'Roboto', sans-serif; -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item" id="phone">
-            <a class="nav-link text-dark" href="#" >Phone</a>
+            <a class="nav-link text-dark" href="./phone.html" >Phone</a>
           </li>
           <li class="nav-item"id="tv">
-            <a class="nav-link text-dark"  href="#">TV</a>
+            <a class="nav-link text-dark"  href="./tv.html">TV</a>
           </li>
           <li class="nav-item" id="audio">
-            <a class="nav-link text-dark"href="#">Audio</a>
+            <a class="nav-link text-dark"href="./audio.html">Audio</a>
           </li>
           <li class="nav-item" id="wearables">
-            <a class="nav-link text-dark"  href="#">Wearables</a>
+            <a class="nav-link text-dark"  href="./wearables.html">Wearables</a>
           </li>
           <li class="nav-item" id="accessories">
-            <a class="nav-link text-dark" href="#">Accessories</a>
+            <a class="nav-link text-dark" href="./accessories.html">Accessories</a>
           </li>
           <li class="nav-item" id="offers">
-            <a class="nav-link text-dark" href="#">Offers</a>
+            <a class="nav-link text-dark" href="./offers.html">Offers</a>
           </li>
         </ul>
      
         
         
-        <ul class="navbar-nav " style="padding-left:15%!important">
+        <ul class="navbar-nav hide_nav_lap " style="padding-left:15%!important">
             <li class="nav-item ">
               <a class="nav-link text-dark" href="#">Store</a>
             </li>
@@ -755,6 +1011,7 @@ font-family: 'Roboto', sans-serif; -->
 
         </div>
         </div>
+
         <!-- --------------------SEC 1---------------------------------------- -->
         <div class="container-fluid p-5 sec-1 ">
             <div class="row " >
@@ -878,9 +1135,9 @@ font-family: 'Roboto', sans-serif; -->
           </div>
           </div>
           <!-- --------------------------Highlights------------------------------ -->
-          <div class="row justify-content-evenly highlights_menu">
-            <div class="card" style="width: 19rem;border: none;">
-              <div style="background-color:#F8F8F8;">
+          <div class="row justify-content-evenly highlights_menu" style="width: 100%;">
+            <div class="card p-0" style="width: 18rem;border: none;">
+              <div class="bg-light">
               <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
@@ -893,8 +1150,8 @@ font-family: 'Roboto', sans-serif; -->
               </div>
             </div>
             
-            <div class="card p-0" style="width: 19rem;border: none;">
-              <div style="background-color:#F8F8F8;">
+            <div class="card p-0" style="width: 18rem;border: none;">
+              <div  class="bg-light">
               <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130_420_420.png"  data-aos="slide-right"class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
@@ -907,8 +1164,8 @@ font-family: 'Roboto', sans-serif; -->
               </div>
             </div>
 
-            <div class="card p-0" style="width: 19rem;border: none;">
-              <div style="background-color:#F8F8F8;">
+            <div class="card p-0" style="width: 18rem;border: none;">
+              <div  class="bg-light">
               <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
@@ -921,8 +1178,8 @@ font-family: 'Roboto', sans-serif; -->
               </div>
             </div>
 
-            <div class="card p-0" style="width: 19rem;border: none;">
-              <div style="background-color:#F8F8F8;">
+            <div class="card p-0" style="width: 18rem;border: none;">
+              <div  class="bg-light">
               <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750_420_420.png" data-aos="slide-right" class="card-img-top kenburns-top" alt="...">
             </div>
               <div class="card-body">
@@ -935,10 +1192,11 @@ font-family: 'Roboto', sans-serif; -->
             </div>
           </div>
           
-     <!-- --------------------------Phonee------------------------------ -->
-     <div class="row justify-content-evenly phone2_menu">
-      <div class="card" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+     <!-- --------------------------Phone------------------------------ -->
+     <div class="row phone2_menu">
+     <div class="row justify-content-evenly">
+      <div class="card p-0" style="width: 19rem;border: none;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3d-17-cpgm7mlpjvyadbdqaal4taem8ii614.png" class="card-img-top kenburns-top" data-aos="slide-right"  alt="...">
       </div>
         <div class="card-body">
@@ -952,7 +1210,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3b-dd-cpgm7mk5vmiawm_aaainunb6sqg656.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -966,7 +1224,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3a-03-rb8bwmjnz4aawz6aaaorqdzzzgk130.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -980,7 +1238,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-3a-8f-rb8bwmjzh4oapzgdaajutoxvm4w472.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -992,10 +1250,13 @@ font-family: 'Roboto', sans-serif; -->
         </div>
       </div>
     </div>
+
+  </div>
     <!-- ----------------TV-------------- -->
-    <div class="row justify-content-evenly tv2_menu">
-      <div class="card" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+    <div class="row tv2_menu">
+    <div class="row justify-content-evenly">
+      <div class="card p-0" style="width: 19rem;border: none;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-40-6e-cpgm7wmdbicad1ltaak5unk3l_y854.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1009,7 +1270,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-2d-66-rb8lb2fxcqaag34xaadhkgarnxg568.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1023,7 +1284,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-27-69-rb8bwmdzqd2aifxbaadx_lh1oai926.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1037,7 +1298,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-40-7b-cpgm7wmemg-aax-baalrvohrjkc619.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1049,17 +1310,16 @@ font-family: 'Roboto', sans-serif; -->
         </div>
       </div>
     </div>
-    
+    </div>
     <!-- ----------------Audio-------------- -->
-    <div class="row justify-content-evenly audio2_menu">
-      <div class="card" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+    <div class="row audio2_menu">
+    <div class="row justify-content-evenly">
+      <div class="card p-0" style="width: 19rem;border: none;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3d-2a-cpgm7mlq03waeebbaakjwc-ne78516.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
           <h5 class="card-title">OnePlus Nord Buds CE</h5>
-          <!-- <p class="card-text">Save with RedCoins<br>
-            4K UHD | Smarter Connectivity | 24W Speaker.</p> -->
             <div class="card" style="border: none;">
           <a href="#"><i class="bi bi-cart3"style="font-size:20px;border: none;"> </i> From ₹1899</a><del>2699</del>
           </div>
@@ -1067,7 +1327,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3c-27-cpgm7mk-rmeazkndaadr_gdtqd0750.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1080,7 +1340,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-32-80-rb8bwmhjizwaojghaaj424wpt0y995.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1093,7 +1353,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-3c-27-cpgm7mk-ru-afzmxaam7ntavfjs206.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1105,11 +1365,12 @@ font-family: 'Roboto', sans-serif; -->
         </div>
       </div>
     </div>
-
+    </div>
      <!-- ----------------Accessories-------------- -->
-     <div class="row justify-content-evenly accessories2_menu">
-      <div class="card" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+     <div class="row accessories2_menu">
+     <div class="row justify-content-evenly">
+      <div class="card p-0" style="width: 19rem;border: none;align-content:space-between ;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3d-27-cpgm7wlqzooackqjaaooticy1ja863.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1121,7 +1382,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-3e-79-cpgm7wlntn6asz2iaavchsjvmv0799.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1134,7 +1395,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div  class="bg-light">
         <img src="./Images/1-m00-19-89-rb8lb19fe5caamihaaejqzqt3b4262.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1148,7 +1409,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
 
       <div class="card p-0" style="width: 19rem;border: none;">
-        <div style="background-color:#F8F8F8;">
+        <div class="bg-light">
         <img src="./Images/1-m00-31-c7-rb8lb2g4nm2ae1v0aagdd7hu-mq210.png" class="card-img-top kenburns-top" data-aos="slide-right" alt="...">
       </div>
         <div class="card-body">
@@ -1161,6 +1422,7 @@ font-family: 'Roboto', sans-serif; -->
       </div>
     </div>
         </div>
+      </div>
         <!-- --------------------------Never Settle------------------------------ -->
         <div class="container-fluid p-5  bg_black">
           <div class="row"  data-aos="slide-right" >
@@ -1382,8 +1644,13 @@ font-family: 'Roboto', sans-serif; -->
                         <p>Sign up for our newsletter!</p>
                      </div>
                      <div class="stay_conn_email_addr">
-                       <h6>Subscribe to receive news, promotions and recommendations about OnePlus products and services from OnePlus, its agencies and partners</h6>
-                      <input type="text" placeholder="Email address"><span ><i class='fas fa-arrow-right right' style='font-size:16px;'></i></span>
+                       <small class="text-secondary">Subscribe to receive news, promotions and recommendations about OnePlus products and services from OnePlus, its agencies and partners</small>
+                       <form action="">
+                      <input type="text" placeholder="Email address" id="text">
+                      <span id="submit" onclick="validate()"><i class='fas fa-arrow-right right' style='font-size:16px;'></i></span>
+                      <div class="text-secondary" id="ifright"><small>thanks for subscribing</small></div>
+                      <div class="text-danger" id="ifwrong"><small>Invalid email address. Please retry</small></div>
+                    </form>
                      </button>
                      </div>     
                    </div>
@@ -1404,9 +1671,144 @@ font-family: 'Roboto', sans-serif; -->
       </div>
       </div>
 
+      <!-- ---------------------------Toast----------------------------------------- -->
+      <!-- ---------------------------oneplus store----------------------------------------- -->
+     <!-- <div id="toast1">
+      <div class="oneplus_store text-light py-2 rounded d-flex" data-aos="slide-left">
+           <button id="close_btn">&#x2715</button>
+          <img src="./Images/logo.png" width="60px" class="rounded m-3" alt="...">
+          <div class="pt-3">            
+             <strong>OnePlus Store </strong>
+              <div style="font-size:10px ;">Shop anytime,anywhere on OnePlus Store app</div>
+          </div>
+          <img src="./Images/QRCode1.png" width="60px" class="rounded m-3" alt="...">
+    </div>
+  </div> -->
+  <!-- ---------------------------Cookie Policy----------------------------------------- -->
+  <!-- <div id="toast2">
+    <div class="cookie_policy p-4" data-aos="slide-right">
+      <button id="close_btn2"class="my-1 text-dark">&#x2715</button>
+      <p class="py-2">This site uses cookies and related technologies, as described in our<span class="text-primary border-bottom"> Cookie Policy</span>, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.</p>
+        <button class="buy_now">MANAGE CHOICES</button>
+        <button class="learn_more">AGREE & PROCEED</button>
+        
+    </div>
+
+</div> -->
+<!-- ---------------------------sale is live--------------------------------------- -->
+<!-- <div id="toast3">
+  <div class="sale_live p-1 bg-primary">
+    <button id="close_btn3" class="my-1 border-0 text-light bg-primary float-end">&#x2715</button>
+    <h5 class="py-2 text-light">OnePlus 10T 5G sale is live.Buy now&#8250;</h5>
+  </div>
+
+</div> -->
+      <!-- --------------------------Tablet Footer-------------------------------- -->
+      <div class="container-fluid pt-3 text-dark hide_footer">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Phone
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  <ul class="p-0">
+              <li>OnePlus 10T 5G</li>
+              <li>OnePlus Nord 2T 5G</li>
+              <li>OnePlus 10R 5G</li>
+              <li>OnePlus Nord CE 2 Lite 5G</li>
+              <li>OnePlus 10 Pro 5G</li>
+              <li>OnePlus Nord CE 2 5G</li>
+              <li>OnePlus Nord 2 5G</li>
+              <li>OnePlus Nord CE 5G</li>
+              <li>OnePlus 9 Pro 5G</li>
+              <li>OnePlus 9 5G</li>
+              </ul></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Store
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> <ul class="p-0">
+              <li> TV</li>
+              <li>Audio</li>
+              <li>Wearables</li>
+              <li>Cases &  Protection</li>
+              <li>Power & Cables</li>
+              <li>Bundles</li>
+              <li>Gear</li>
+              
+           </ul></div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Support
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><ul class="p-0">
+              <li>Shopping FAQs</li>
+              <li>User Manuals</li>
+              <li>Service Centers</li>
+              <li>Affilate Program</li>
+              <li>Repairs Services</li>
+              <li>Repair Pricing</li>
+              <li>Software Update</li>
+              
+           </ul></div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+             Explore
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><ul class="p-0">
+              <li>About Oneplus</li>
+              <li>Community</li>
+              <li>Find a store</li>
+              <li>OnePlus Store app</li>
+              <li>OxygenOS</li>
+              <li>Press</li>
+              <li>Blog</li>
+              <li>Careers</li>
+              <li>Campus Opportunity</li>
+              
+           </ul></div>
+          </div>
+        </div>
+        <div class="accordion-item" style="border-bottom: 1px solid rgb(224, 220, 220);">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              Programs
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul class="p-0">
+                <li>Exchange Program</li>
+                <li>Red Cable Club</li>     
+             </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
       <!-- --------------------------Footer------------------------------ -->
-      <div class="container-fluid pt-5 py-5">
-        <div class="row footer1 justify-content-around">
+
+      <div class="container-fluid pt-2 footer1">
+        <div class="row justify-content-around">
         
           <div class="col-md-2 col-lg-2">
   
@@ -1473,16 +1875,18 @@ font-family: 'Roboto', sans-serif; -->
             </ul>
           </div>
         </div>
+      </div>
         <!-- --------------------------Footer2------------------------------ -->
-        <div class="row text-secondary p-3">
-          <div class="col-sm-12 col-md-6 col-lg-6">
+        <div class="container-fluid">
+        <div class="row text-secondary px-3">
+          <div class="col-lg-6 card_emi_wallet">
           <p><i class="fa fa-credit-card p-2" style="color: rgb(6, 173, 123);"></i>Credit/Debit Card 
              <i class="fa fa-bank p-2" style="color: rgb(6, 173, 123);"></i> NetBanking
              <i class="bi bi-cash-coin p-2" style="color: rgb(6, 173, 123);"></i>EMI
              <i class='fas fa-wallet p-2' style="color: rgb(6, 173, 123);"></i>Wallet
           </p>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 contact">
+        <div class="col-lg-6 contact">
           <div class="float-end contact">
           <span class="text-primary cursor-pointer contact_us p-2">Contact Us</span>
           <span class="px-2">|</span>
@@ -1492,7 +1896,7 @@ font-family: 'Roboto', sans-serif; -->
         </div>
       </div>
         </div>
-
+      </div>
       </div>
       <!-- --------------------------Footer3------------------------------ -->
      
@@ -1526,7 +1930,181 @@ font-family: 'Roboto', sans-serif; -->
           </div>
         </div>
       </div>
+<!-- ---------------------------Script For Hide and Show--------------------------- -->
+
+     <script>
+        $(document).ready(function(){
+         //---------------For Phone Menu---------------------
+            $("#phone").mouseenter(function(){
+                $(".Phone_menu").show();
+            })
+            $("#phone").mouseleave(function(){
+                $(".Phone_menu").hide();
+            })
+            $(".Phone_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".Phone_menu").mouseleave(function(){
+             $(this).hide();
+            })
+            //---------------For TV Menu---------------------
+            $("#tv").mouseenter(function(){
+                $(".tv_menu").show();
+            })
+            $("#tv").mouseleave(function(){
+                $(".tv_menu").hide();
+            })
+            $(".tv_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".tv_menu").mouseleave(function(){
+             $(this).hide();
+            })
+            //---------------For Audio Menu---------------------
+            $("#audio").mouseenter(function(){
+                $(".audio_menu").show();
+            })
+            $("#audio").mouseleave(function(){
+                $(".audio_menu").hide();
+            })
+            $(".audio_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".audio_menu").mouseleave(function(){
+             $(this).hide();
+            })
+               //---------------For Wearables Menu---------------------
+               $("#wearables").mouseenter(function(){
+                $(".wearables_menu").show();
+            })
+            $("#wearables").mouseleave(function(){
+                $(".wearables_menu").hide();
+            })
+            $(".wearables_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".wearables_menu").mouseleave(function(){
+             $(this).hide();
+            })
+                //---------------For Accessories Menu---------------------
+                $("#accessories").mouseenter(function(){
+                $(".accessories_menu").show();
+            })
+            $("#accessories").mouseleave(function(){
+                $(".accessories_menu").hide();
+            })
+            $(".accessories_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".accessories_menu").mouseleave(function(){
+             $(this).hide();
+            })
+                   //---------------For offers Menu---------------------
+                   $("#offers").mouseenter(function(){
+                $(".offers_menu").show();
+            })
+            $("#offers").mouseleave(function(){
+                $(".offers_menu").hide();
+            })
+            $(".offers_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".offers_menu").mouseleave(function(){
+             $(this).hide();
+            })
+    //---------------For Search---------------------
+            $("#search_icn").mouseenter(function(){
+                $(".searcharea").show();
+            })
+            $("#search_icn").mouseleave(function(){
+                $(".searcharea").hide();
+            })
+            $(".searcharea").mouseenter(function(){
+             $(this).show();
+            })
+            $(".searcharea").mouseleave(function(){
+             $(this).hide();
+            })
+           
+             //---------------For Search---------------------
+            $("#useracc").mouseenter(function(){
+                $(".useracc_menu").show();
+            })
+            $("#useracc").mouseleave(function(){
+                $(".useracc_menu").hide();
+            })
+            $(".useracc_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".useracc_menu").mouseleave(function(){
+             $(this).hide();
+            })
+            //---------------For Search---------------------
+            $("#cart").mouseenter(function(){
+                $(".cart_menu").show();
+            })
+            $("#cart").mouseleave(function(){
+                $(".cart_menu").hide();
+            })
+            $(".cart_menu").mouseenter(function(){
+             $(this).show();
+            })
+            $(".useracc_menu").mouseleave(function(){
+             $(".cart_menu").hide();
+            })
+           //  -----------------Highlights----------------------------
+             
+           $("#highlights").click(function(){
+               $(".phone2_menu").hide();
+               $(".highlights_menu").show();
+               $(".tv2_menu").hide();
+               $(".audio2_menu").hide();
+               $(".accessories2_menu").hide();
+             })
+             $("#phone2").click(function(){
+               $(".phone2_menu").show();
+               $(".highlights_menu").hide();
+               $(".tv2_menu").hide();
+               $(".audio2_menu").hide();
+               $(".accessories2_menu").hide();
+             })
+             $("#tv2").click(function(){
+               $(".tv2_menu").show();
+               $(".phone2_menu").hide();
+               $(".highlights_menu").hide();
+               $(".assesories2_menu").hide();
+               $(".audio2_menu").hide();
+             })
+             $("#audio2").click(function(){
+               $(".audio2_menu").show();
+               $(".phone2_menu").hide();
+               $(".highlights_menu").hide();
+               $(".tv2_menu").hide();
+               $(".accessories2_menu").hide();
+               
+             })
+             $("#accessories2").click(function(){
+               $(".accessories2_menu").show();
+               $(".phone2_menu").hide();
+               $(".highlights_menu").hide();
+               $(".tv2_menu").hide();
+               $(".audio2_menu").hide();
+              
+             })
+             // ------for Oneplus_store Toast-------
+             $("#close_btn").click(function(){
+               $("#toast1").hide();
+               $("#toast2").show(1000);
+             })
+             $("#close_btn2").click(function(){
+               $("#toast2").hide(1000);
+             })
+
+      
+        }) 
+    </script>
       <!-- --------------------------Scrolling Animation Script------------------------------ -->
+      
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         AOS.init({

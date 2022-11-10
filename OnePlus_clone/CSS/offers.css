@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.navbar{
+  position: relative;
+}
+.menu
+{
+  position: absolute;
+  top:8%;
+  left: 0%;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+}
+.discount img
+{
+    width: 80%;
+}
+@media only screen and (max-width:600px)
+{
+    h1{font-size: 16px;
+    }
+    p,h5,h6,a
+    {
+        font-size: 10px;
+    }
+    h2,h3,h4
+    {
+        font-size: 13px;
+    }
+  
+}
+.table2
+{
+    display: none;
+}
+#oneplus_device,#other_brands
+{
+  cursor: pointer;
+}

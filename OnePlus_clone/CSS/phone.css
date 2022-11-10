@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -28,14 +27,25 @@
 .card
 {
     position: relative;
+    cursor:pointer;
+}
+.card .btn{
+    
+    border-radius: 0px;
+    background-color: black;
+    
+    padding:4%;
+}
+.card a
+{ 
+    width: 100%;
 }
 .arrow
 {
    position: absolute;
    top: 28%;
    font-size: 20px;
-   color: black;
-   
+   color: black; 
 }
 .left
 {
@@ -45,7 +55,37 @@
 {
     right: 5%;
 }
+
 .arrow,.show_para
 {
-    /* display: none; */
+    display: none;
+
 }
+.card p{
+    font-size: 15px;
+}
+/* --------------------Sidebar-> Form------------------------------- */
+.form-check-input:hover{
+    
+    border: 3px solid black;
+  
+  }
+  .form-check-input:checked{
+    
+    background-color:red;
+    border:none;
+  
+  }
+  .form-check-input
+  {
+     border-radius: 0px!important;
+  }
+  .main_label
+  {
+      font-size: 17px;
+  }
+  #reset
+  {
+      width:70%;
+      display:none;
+  }

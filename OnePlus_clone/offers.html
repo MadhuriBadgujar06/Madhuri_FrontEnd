@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV</title>
+    <title>Offers</title>
      <!-- <-----------------File Link-------------- -->
         <link rel="stylesheet" href="./CSS/index.css">
         <script src="./JS/index.js"></script>
+        <link rel="stylesheet" href="./CSS/offers.css">
     <!-- --------------------------Scrolling Animation Link------------------------------ -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--fav Icon Link-->
@@ -45,28 +46,37 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; -->
 
 <style>
-    *{
-        box-sizing: border-box;
-    }
-    .navbar{
-      position: relative;
-    }
-    .menu
+   
+    .offer_banner
     {
-      position: absolute;
-      top:8%;
-      left: 0%;
-      z-index: 100;
-      background-color: white;
-      width: 100%;
+        content: "";
+        background:url(https://oasis.opstatics.com/content/dam/oasis/page/2022/in/exchange/1104/pc.jpg)no-repeat center center/cover;
+        z-index: -1;
+        width: 100%;
+        
     }
+    .table2
+{
+    display: none;
+}
     </style>
     <script>
         $(document).ready(function(){
           $("#hamburger").click(function(){
             $(".mob_menu").toggle();
           })
-          
+          $("#oneplus_device").click(function(){
+            $(".table1").show();
+            $(".table2").hide();
+            $("#oneplus_device").css("color","grey");
+            $("#other_brands").css("color","black");
+          })
+          $("#other_brands").click(function(){
+            $(".table2").show();
+            $(".table1").hide();
+            $("#other_brands").css("color","grey");
+            $("#oneplus_device").css("color","black");
+          })
         })
       </script>
 </head>
@@ -480,7 +490,7 @@ font-family: 'Roboto', sans-serif; -->
   </div>
 </div>
 
- </div>
+ </div> 
  <!-- -----------------NAVBAR-------------->
  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -888,13 +898,399 @@ font-family: 'Roboto', sans-serif; -->
     </div>
     <!-- -----other code---------------------------------------- -->
 
-<div style="background-color: yellow;height:400px"></div>
+
+    <div class="container-fluid offer_banner">
+        <div class="row justify-content-center pe-5 align-items-center"style="height:550px">
+            <div class="col-sm-8 col--md-8 col-lg-8 pe-5 text-light">
+              
+                 <h1 >Oneplus Exchange Program</h1>
+                 <h3  style="line-height:1.5;">Exchange your used smartphone to get a new<br> OnePlus device at a discounted price.</h3>
+               
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------OnePlus Store-------------------------------------- -->
+<div class="container-fluid bg-light py-3">
+        <div class="row justify-content-center align-items-center bg-white" >
+            <div class="col-sm-12 col--md-12 col-lg-12 py-5 text-dark text-center">
+              
+                 <a href="https://play.google.com/store/apps/details?id=com.oneplus.mall"><img src="./Images/oneplus_logo_1.webp" width="6%" alt=""></a>
+                 <h1 class="p-3" style="text-decoration: bold;">OnePlus Store</h1>
+                 <h3 class="pb-2">See the value of your phone immediately</h3>
+                 <img src="./Images/googleplay.png"width="20%" alt="">
+            </div>
+        </div>
+    
+    </div>
+<!-- ------------------------------Devices & Brands------------------------------------ -->
+<div class="container-fluid bg-light">
+   <div class="row justify-content-center align-items-center p-3">
+       <div class="col-sm-6 col-md-6 col-lg-6">
+           <div class="d-inline-block px-3" id="oneplus_device"><h1>OnePlus Devices</h1></div>
+           <div class="d-inline-block px-3"id="other_brands"><h1>Other Brands</h1></div>      
+       </div> 
+   </div>
+   <!-- ------------Table1--------------- -->
+   <div class="table2">
+   <table class="table table-light table-striped">
+    <thead>
+      <tr>       
+        <th scope="col">Model</th>
+        <th scope="col" colspan="2">Estimated Exchange Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>    
+        <td colspan="2">Apple iPhone 14 Pro Max</td>
+        <td>Up to &#8377;70,000</td>
+      </tr>
+      <tr>   
+        <td colspan="2">Apple iPhone 14 Pro</td>
+        <td>Up to &#8377;66,000</td>
+      </tr>
+      <tr>
+        <td colspan="2">Apple iPhone 13 Pro Max</td>
+        <td>Up to &#8377;55,000</td>
+      </tr>
+
+      <tr>    
+        <td colspan="2">Apple iPhone 13 Pro</td>
+        <td>Up to &#8377;53,000</td>
+      </tr>
+      <tr>   
+        <td colspan="2">Apple iPhone 14</td>
+        <td>Up to &#8377;48,850</td>
+      </tr>
+      <tr>
+        <td colspan="2">Apple iPhone 12 Pro Max</td>
+        <td>Up to &#8377;48,400</td>
+      </tr>
+
+      <tr>    
+        <td colspan="2">Apple iPhone 12 Pro</td>
+        <td>Up to &#8377;45,070</td>
+      </tr>
+      <tr>   
+        <td colspan="2">Sumsung Galaxy S22 Ultra 5G</td>
+        <td>Up to &#8377;36,500</td>
+      </tr>
+      <tr>
+        <td colspan="2">Apple iphone 13</td>
+        <td>Up to &#8377;33,540</td>
+      </tr>
+
+      <tr>    
+        <td colspan="2">Apple iPhone 11 Pro Max</td>
+        <td>Up to &#8377;33,280</td>
+      </tr>
+      <tr>   
+        <td colspan="2">Sumsung Galaxy S21 Ultra 5G</td>
+        <td>Up to &#8377;30,500</td>
+      </tr>
+      <tr>
+        <td colspan="2">Apple iPhone 13 Mini</td>
+        <td>Up to &#8377;29,800</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+           <!-- --------------------------- -->
+           <div class="table1">
+           <table class="table table-light table-striped">
+            <thead>
+              <tr>       
+                <th scope="col">Model</th>
+                <th scope="col" colspan="2">Estimated Exchange Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>    
+                <td colspan="2">OnePlus 10 Pro 5G</td>
+                <td>Up to &#8377;28,620</td>
+              </tr>
+              <tr>   
+                <td colspan="2">OnePlus 9 Pro 5G</td>
+                <td>Up to &#8377;23,860</td>
+              </tr>
+              <tr>
+                <td colspan="2">OnePlus 10T 5G</td>
+                <td>Up to &#8377;23,520</td>
+              </tr>
+        
+              <tr>    
+                <td colspan="2">OnePlus 8 Pro</td>
+                <td>Up to &#8377;19,500</td>
+              </tr>
+              <tr>   
+                <td colspan="2">OnePlus 9RT 5G</td>
+                <td>Up to &#8377;19,080</td>
+              </tr>
+              <tr>
+                <td colspan="2">OnePlus 9 5G</td>
+                <td>Up to &#8377;17,910</td>
+              </tr>
+        
+              <tr>    
+                <td colspan="2">OnePlus 7T Pro McLaren Edition</td>
+                <td>Up to &#8377;17,500</td>
+              </tr>
+              <tr>   
+                <td colspan="2">OnePlus 7T Pro</td>
+                <td>Up to &#8377;17,000</td>
+              </tr>
+              <tr>
+                <td colspan="2">OnePlus 10R 5G</td>
+                <td>Up to &#8377;16,230</td>
+              </tr>
+        
+              <tr>    
+                <td colspan="2">OnePlus 8</td>
+                <td>Up to &#8377;16,000</td>
+              </tr>
+              <tr>   
+                <td colspan="2">OnePlus 9R 5G</td>
+                <td>Up to &#8377;15,990</td>
+              </tr>
+              <tr>
+                <td colspan="2">OnePlus 8T</td>
+                <td>Up to &#8377;15,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+                   <!-- --------------------------- -->
+                   <div class="container-fluid bg-light discount">
+                       <div class="row text-center p-0">
+                           <div class="col-sm-12 col-md-12 col-lg-12">
+                               <h1 class="py-3">Buy with instant discount and limited-time bonus</h1>
+                               </div>
+                           </div>
+
+                           <div class="row justify-content-center">
+                               <div class="col-sm-4 col-md-4 col-lg-4 col-6">
+                                <div class="card border-0">
+                                    <img src="./Images/1-M00-3D-7D-rB8LB2Ls5r2AOriUAAL4TaEm8iI991.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-dark">OnePlus 10T 5G</h5>
+                                      <h5 class="card-title text-dark">From &#8377;44,999</h5>
+                                      <p class="card-text"><del>&#8377;49,999</del></p>
+                                      <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div> 
+                                    </div>
+                                  </div>
+                               </div>
+                               <div class="col-sm-4 col-md-4 col-lg-4  col-6">
+                                <div class="card border-0">
+                                    <img src="./Images/Phone_img2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-dark">OnePlus Nord 2T 5G</h5>
+                                      <h5 class="card-title text-dark">From &#8377;28,999</h5>
+                                      <p class="card-text" style="visibility:hidden"><del>&#8377;66,999</del></p>
+                                      <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div> 
+                                    </div>
+                                  </div>
+                               </div>
+                               <div class="col-sm-4 col-md-4 col-lg-4  col-6">
+                                <div class="card border-0">
+                                    <img src="./Images/Phone_img3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-dark">OnePlus 10R 5G</h5>
+                                      <h5 class="card-title text-dark">From &#8377;34,999</h5>
+                                      <p class="card-text"><del>&#8377;38,999</del></p>
+                                      <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div>        
+                                  </div>
+                                  </div>
+                               </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4  col-6 ">
+                             <div class="card border-0">
+                                 <img src="./Images/Phone_img4.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                   <h5 class="card-title text-dark">OnePlus Nord CE 2 Lite 5G</h5>
+                                   <h5 class="card-title text-dark">From &#8377;18,999</h5>
+                                   <p class="card-text"><del>&#8377;19,999</del></p>
+                                   <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div> 
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-6">
+                             <div class="card border-0">
+                                 <img src="./Images/Phone_img5.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                   <h5 class="card-title text-dark">OnePlus 10Pro 5G</h5>
+                                   <h5 class="card-title text-dark">From &#8377;61,999</h5>
+                                   <p class="card-text"><del>&#8377;66,999</del></p>
+                                   <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div> 
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-6">
+                             <div class="card border-0">
+                                 <img src="./Images/Phone_img6.png" class="card-img-top" alt="...">
+                                 <div class="card-body">
+                                   <h5 class="card-title text-dark">OnePlus Nord CE 2 5G</h5>
+                                   <h5 class="card-title text-dark">From &#8377;23,999</h5>
+                                   <p class="card-text" style="visibility:hidden"><del>&#8377;66,999</del></p>
+                                   <div class="d-grid"><a href="#" class="btn btn-outline-dark">Exchange now</a></div>        
+                               </div>
+                               </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+  
+</div>
+
+    <!-- ---------------------------------Exchange with Oneplus--------------------------------- -->
+    <div class="container-fluid bg-light py-5 border">
+        <div class="row justify-content-center bg-white align-items-center" >
+            <div class="col-sm-12 col--md-12 col-lg-12 text-dark text-center">
+    
+                 <h1 class="py-3" style="text-decoration: bold;">Exchange with OnePlus</h1>
+                 <div class="text-primary pb-3">Learn more &#10095
+                 </div>
+            </div>
+          <div class="row justify-content-center align-items-between">
+              <div class="col-sm-4 col-md-3 col-lg-3 col-4 text-center align-content">
+                    <div class="text-danger"><i class="bi bi-percent" style="font-size:32px;"></i>
+                    </div>
+                        <p>  Purchase with instant discount</p>    
+              </div>
+              <div class="col-sm-4 col-md-3 col-lg-3 col-4 text-center align-content">
+                    <div class="text-danger"><i class="bi bi-house-door" style="font-size:32px;"></i></div>
+                 <p>Have your Exchange device<br> collected at your doorstep</p>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-3 col-4 text-center align-content">
+                <div class="text-danger"><i class="bi bi-shield-check" style="font-size:32px;"></i></div>
+                <p>Simple and secure process</p>
+        </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- -------------------------Supported Brands------------------------------- -->
+        <div class="container-fluid py-3 bg-light">
+            <div class="row p-4 bg-white text-center">
+                <div class="col-md-12 col-lg-12 col-sm-12">
+                    <h1 class="py-4">Supported Brands</h1>
+                </div>
 
 
-    <!-- ------------------------------------------------------------------ -->
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">OnePlus</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Xiaomi</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Apple</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Sumsung</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">realme</button>
+                </div>
+
+                
+                
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">OPPO</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Vivo</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">IQOO</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Google</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Meizu</button>
+                </div>
+
+                
+                
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Lenovo</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">BlackBerry</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">CoolPad</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">HTC</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Huawei</button>
+                </div>
+
+                
+                
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Infinix</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">iVoomi</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Karbonn</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Lava</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Letv</button>
+                </div>
+
+                
+                
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">LG</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Micromax</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Moto</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Nokia</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">Panasonic</button>
+                </div>
+
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">POCO</button>
+                </div>
+
+                
+                
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Sony</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Tecno</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light p-3 my-2">Xolo</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">YU</button>
+                </div>
+                <div class="col-4 col-lg-2 col-md-3 col-sm-3 d-grid">
+                    <button type="button" class="btn btn-light py-3 my-2">ZTE</button>
+                </div>
+
+                
+     
+            </div>
+        </div>
   <!-- ---------------------------Toast----------------------------------------- -->
       <!-- ---------------------------oneplus store----------------------------------------- -->
-     <!-- <div id="toast1">
+     <div id="toast1">
       <div class="oneplus_store text-light py-2 rounded d-flex" data-aos="slide-left">
            <button id="close_btn">&#x2715</button>
           <img src="./Images/logo.png" width="60px" class="rounded m-3" alt="...">
@@ -904,9 +1300,9 @@ font-family: 'Roboto', sans-serif; -->
           </div>
           <img src="./Images/QRCode1.png" width="60px" class="rounded m-3" alt="...">
     </div>
-  </div> -->
+  </div>
   <!-- ---------------------------Cookie Policy----------------------------------------- -->
-  <!-- <div id="toast2">
+  <div id="toast2">
     <div class="cookie_policy p-4" data-aos="slide-right">
       <button id="close_btn2"class="my-1 text-dark">&#x2715</button>
       <p class="py-2">This site uses cookies and related technologies, as described in our<span class="text-primary border-bottom"> Cookie Policy</span>, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.</p>
@@ -915,15 +1311,15 @@ font-family: 'Roboto', sans-serif; -->
         
     </div>
 
-</div> -->
+</div>
 <!-- ---------------------------sale is live--------------------------------------- -->
-<!-- <div id="toast3">
+<div id="toast3">
   <div class="sale_live p-1 bg-primary">
     <button id="close_btn3" class="my-1 border-0 text-light bg-primary float-end">&#x2715</button>
     <h5 class="py-2 text-light">OnePlus 10T 5G sale is live.Buy now&#8250;</h5>
   </div>
 
-</div> -->
+</div>
       <!-- --------------------------Tablet Footer-------------------------------- -->
       <div class="container-fluid pt-3 text-dark hide_footer">
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -1283,82 +1679,20 @@ font-family: 'Roboto', sans-serif; -->
              $("#close_btn2").click(function(){
                $("#toast2").hide(1000);
              })
+             $("#close_btn3").click(function(){
+               $("#toast3").hide(1000);
+             })
             })
               </script>
+                  <!-- --------------------------Scrolling Animation Script------------------------------ -->
+      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 500, 
+        });
+      </script>241
 </body>
 </html>
-    <!-- <div class="container-fluid px-5 pt-3 border-bottom">
-       <div class="row px-5 pt-2 text-center justify-content-around" >
-           <div class="col-sm-1 col-lg-1 col-md-1 items">
-              <a href=""> <img src="./Images/phone imgs/all.svg" alt="">
-               <p class="p-2">All</p>
-           </a>
-        </div>
-           <div class="col-sm-1 col-lg-1 col-md-1 items">
-            <a href=""> <img src="./Images/phone imgs/phone.svg" alt="">
-            <p class="p-2">Phone</p>
-        </div></a>
-        <div class="col-sm-1 col-lg-1 col-md-1 items">
-          <a href="">  <img src="./Images/phone imgs/tv.svg" alt="">
-            <p class="p-2">TV</p>
-        </div></a>
-        <div class="col-sm-1 col-lg-1 col-md-1 items">
-          <a href="">  <img src="./Images/phone imgs/audio.svg" alt="">
-            <p class="p-2">Audio</p>
-        </div></a>
-        <div class="col-sm-1 col-lg-1 col-md-1 items">
-          <a href="">  <img src="./Images/phone imgs/1-M00-3D-EE-CpgM7mLek3SAVKlUAAAJrOjtRsE386.svg" alt="">
-            <p class="p-2">Wearables</p>
-       </a> </div>
-        <div class="col-sm-2 col-lg-2 col-md-2 items">
-           <a href=""> <img src="./Images/phone imgs/cases&protection.svg" alt="">
-            <p class="p-2">Cases & Protection</p></a>
-        </div>
-        <div class="col-sm-1 col-lg-1 col-md-1 items">
-          <a href="">  <img src="./Images/phone imgs/bundles.svg" alt="">
-            <p class="p-2">Bundles</p>
-        </a></div>
-        <div class="col-sm-2 col-lg-2 col-md-2 items">
-          <a href="">  <img src="./Images/phone imgs/power&cables.svg" alt="">
-            <p class="p-2">Power & Cables</p>
-          </a>     
-        </div>
-        <div class="col-sm-1 col-lg-1 col-md-1 items">
-          <a href="">  <img src="./Images/phone imgs/gear.svg" alt="">
-            <p>Gear</p></a>
-        </div>
-       </div>
-    </div>
-    <div class="container-fluid p-5">
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-3">
-
-            </div>
-             <div class="col-sm-9 col-md-9 col-lg-9">
-                 <div class="row">
-                     <div class="col-sm-12 col-md-12 col-lg-12">
-                         <h6 class="text-primary">Rank By <select class="border-0">
-                             <option class="p-5">Recommnded</option>
-                             <option class="p-5">Newest</option>
-                             <option class="p-5">Price(Low to High)</option>
-                             <option class="p-5">Price(HIgh to Low)</option>
-                         </select> </h6 >
-                     </div>
-                 </div>
-                 <div class="row">
-                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <div class="card bg-success">
-                           <span class="arrow left">&#10094</span> <img src="./Images/phone imgs/1-m00-3d-17-cpgm7mlpjvyadbdqaal4taem8ii614.png" class="card-img-top" alt="..."><span class="arrow right">&#10095</span>
-                            <div class="card-body">
-                              <h5 class="card-title">OnePlus 10T 5G</h5>
-                              <p class="card-text" class="hide_para"><i class="bi bi-cart"></i>From 49,999</p>
-                              <p class="show_para">Jade Green 8GB RAM + 128GB Storage</p>
-                              <a href="#" class="btn btn-dark show_para"><i class="bi bi-cart"></i>From 49,999</a>
-                            </div>
-                          </div>
-                     </div>
-                 </div>
-             </div>
-        </div>
-    </div> -->
-
