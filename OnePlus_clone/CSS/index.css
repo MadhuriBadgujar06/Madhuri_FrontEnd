@@ -49,6 +49,9 @@ h5{
 {
     border: 2px solid green;
 }
+
+/* ----Media Query for Different Dimensions------ */
+
 @media only screen and (max-width:1025px)
 {
  .show_img
@@ -68,20 +71,45 @@ h5{
      display: block!important;
  }
 }
+
 @media only screen and (max-width:735px)
 {
-    h5
+    #toast1
     {
-        font-size: 12px!important;
+        display: none!important;
     }
- 
-.sale_live
-{
-    width: 100%;
-    position:absolute;
-   top: 0%;
-   left: 0%;
-}
+    #toast2
+    {
+        display: block!important;
+    }
+    
+    .caption
+    {
+        width: 100%!important;
+        padding: 0%!important;
+    }
+    .caption button
+    {
+        width: 60px!important;
+        font-size: 10px;
+    }
+    
+    h5,a,button,li
+    { font-size: 12px!important;}
+    h1,.h1_changed
+    {  font-size:20px!important ; }
+     h2
+     {
+         font-size: 17px!important;
+     }
+     h4,h3
+     {
+         font-size: 14px!important;
+     }
+     h6
+     {
+         font-size: 10px!important;
+     }
 .cookie_policy
 {
     width: 100%!important;
@@ -137,8 +165,30 @@ h5{
     border-bottom: 1px solid rgb(224, 220, 220);
 }
 }
-
-
+/* ------other utility class for buttons------ */
+.buy_now
+{
+    color: white;
+    width: 49%;
+    border: 1px solid black;
+    padding: 2% 0%;
+    background-color: black;
+}
+.buy_now:hover
+{
+   background-color: rgb(32, 32, 32);
+}
+.learn_more
+{
+   background-color:white;
+   width: 49%;
+   border: 1px solid black;
+   padding: 2% 0%;
+}
+.learn_more:hover
+{
+   background-color: rgb(238, 230, 230);
+}
 .hidden_img{display:none}
 /* ------------------------Navbar-------------------- */
 .mob_menu
@@ -160,7 +210,7 @@ h5{
 {
     background-color: white;
     padding:0% 4%!important;
-    /* border: 2px solid red; */
+
 }
 .navbar li
 {
@@ -201,18 +251,7 @@ h5{
     left: 5%;
     text-align: justify;
     font-size: 12px;
-    /* display: none; */
-}
-.sale_live
-{
-  width: 100%;
-    z-index: 100;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    font-size: 12px;
-    /* display: none; */
+    display: none;
 }
 
 /* ---------------------PHONE MENU--------------------- */
@@ -294,9 +333,9 @@ h5{
 /* ------------cart------------------------ */
 .cart_menu
 {
-  /* position: absolute;
+  position: absolute;
   top:8%;
-  right: 0%; */
+  right: 0%;
   z-index: 100;
   background-color: white;
   width: 30%;  
@@ -362,31 +401,9 @@ float:right!important;
             transform-origin: top;
   }
 }
-/* -------------------SEC-1----------------------------- */
+/* -------------------SEC-3----------------------------- */
 
-.buy_now
-{
-    color: white;
-    width: 49%;
-    border: 1px solid black;
-    padding: 2% 0%;
-    background-color: black;
-}
-.buy_now:hover
-{
-   background-color: rgb(32, 32, 32);
-}
-.learn_more
-{
-   background-color:white;
-   width: 49%;
-   border: 1px solid black;
-   padding: 2% 0%;
-}
-.learn_more:hover
-{
-   background-color: rgb(238, 230, 230);
-}
+
 .sec-3 li{
     display: inline-flex;
     padding:0% 1%;
@@ -400,7 +417,7 @@ float:right!important;
     cursor: pointer;
     
 }
-.sec-3 li:active
+.sec-3 li.active
 {
     border-bottom:1px solid red;
     color: #000000F2!important;
@@ -457,12 +474,22 @@ float:right!important;
 {
     letter-spacing: -1px;
 }
-
-#submit{
-    width: 20%;
-    border: 1px solid rgb(206, 200, 200);
-    padding:15.5px;
+.email_form
+{
+    position: relative;
 }
+#text
+{
+    border: 1px solid white;
+    width: 100%;
+}
+#submit{
+   
+    position: absolute;
+    right: 7%;
+    top: 30%;
+}
+
 #ifwrong,#ifright
 {
     display: none;

@@ -1,0 +1,79 @@
+/* -----for Mobile Carousel------ */
+@media only screen and (max-width : 600px)
+{
+    .slider_container
+    {
+        height: 300px!important;
+    }
+    .slide img
+    {
+        height: 300px!important;
+    }
+    .caption{
+        height: 250px!important;
+        top: 35px!important;
+        width: 100%!important;
+        padding: 0!important;
+    }
+ 
+}
+body{
+    margin: 0;
+}
+.slider_container
+{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.slide img{
+    width: 100%;
+    height: 600px;
+}
+.arrow
+{
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.747);
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 1% 1.8%;
+    z-index: 100;
+}
+.prev
+{
+    left: 2%;
+}
+.next
+{
+    right: 2%;
+}
+.caption
+{
+    position: absolute;
+    top: 10%;
+    padding: 2% 3%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    height: 500px;
+}
+.caption button
+{
+    border-radius: 0px;
+    border: 1px solid white;
+    padding: 2%;
+}
+.caption button:hover
+{
+    background: transparent;
+    border: 1px solid white!important;
+    transition: all 0.5s;
+}
+.slide{
+    display: none;
+}
