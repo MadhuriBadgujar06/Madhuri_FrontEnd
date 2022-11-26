@@ -211,6 +211,7 @@ h5{
     background-color: white;
     padding:0% 4%!important;
 
+
 }
 .navbar li
 {
@@ -240,6 +241,9 @@ h5{
     position: fixed;
     top: 60%;
     right: 0%;
+}
+.navbar ul{
+    width: 100%;
 }
 .cookie_policy
 {
