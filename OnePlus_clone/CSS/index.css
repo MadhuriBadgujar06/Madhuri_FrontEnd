@@ -210,7 +210,7 @@ h5{
 {
     background-color: white;
     padding:0% 4%!important;
-
+    border : 2px solid red;
 }
 .navbar li
 {
@@ -221,6 +221,11 @@ h5{
     border-bottom: 1px solid red;
 }
 /* -----------Utility Class For Navbar Menu :Menu-------------------------- */
+.menu
+{
+    border : 2px solid green;
+    margin-top: 1%;
+}
 .menu .card
 {
     border: none;
@@ -259,6 +264,9 @@ h5{
 .Phone_menu
 {
     display: none;
+    border: 2px solid yellow;
+    position: absolute;
+    top: 30%;
 }
 /* ---------------------TV MENU--------------------- */
 .tv_menu
@@ -297,7 +305,7 @@ h5{
 .search_menu
 {
   position: absolute;
-  top:8%;
+  top:13%;
   right: 0%;
   z-index: 100;
   background-color: white;
@@ -334,11 +342,11 @@ h5{
 .cart_menu
 {
   position: absolute;
-  top:8%;
+  top:13%;
   right: 0%;
   z-index: 100;
   background-color: white;
-  width: 30%;  
+  width: 30%!important;  
 float:right!important;
   border-top: 1px solid lightgrey;
   display: none;
@@ -348,7 +356,7 @@ float:right!important;
 .useracc_menu
 {
   position: absolute;
-  top:8%;
+  top:13%;
   right: 0%;
   z-index: 100;
   background-color: white;
