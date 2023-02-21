@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Assignments</title>
 </head>
 <body>
-    <script> -->
+    <script>
         // 3)  Map to names
         //  let john = { name: "John", age: 25 };
         //   let pete = { name: "Pete", age: 30 };
@@ -21,28 +21,20 @@
         //     console.log(names);
 
 
-      //  Map to objects
-//  let john = { name: "John", surname: "Smith", id: 1 };
+        // Map to objects
+//          let john = { name: "John", surname: "Smith", id: 1 };
 //  let pete = { name: "Pete", surname: "Hunt", id: 2 };
 //  let mary = { name: "Mary", surname: "Key", id: 3 };
 //  let users = [ john, pete, mary ]; 
-// //let usersMapped = /* ... your code ... */
- /* usersMapped = [ { fullName: "John Smith", id: 1 }, { fullName: "Pete Hunt", id: 2 }, { fullName: "Mary Key", id: 3 } ] */
-  // alert( usersMapped[0].id ) // 1 
-  // alert( usersMapped[0].fullName ) // John Smith
+// let usersMapped = /* ... your code ... */ /* usersMapped = [ { fullName: "John Smith", id: 1 }, { fullName: "Pete Hunt", id: 2 }, { fullName: "Mary Key", id: 3 } ] */ alert( usersMapped[0].id ) // 1 alert( usersMapped[0].fullName ) // John Smith
 
 // let usersMapped = users.map((val)=>{
-//     console.log("Fullname : "+(val.name).concat(" "+val.surname)+","+"id : "+val.id);
+//     return("Fullname : "+(val.name).concat(" "+val.surname)+","+"id : "+val.id);
 // })
-// let userMapped =users;
-// for(let i in userMapped)
-//   {
 
-//     userMapped[i].fullname= userMapped[i].name +" "+ userMapped[i].surname;
-//   }   
-// console.log(userMapped);
-// console.log( userMapped[1].id )
-// console.log( userMapped[0].fullname )
+// let usersMapped = users.map((val)=>{
+   
+//          } )
 
   // Sum the properties There is a salaries object with arbitrary number of salaries. Write the 
   //function sumSalaries(salaries)
@@ -79,105 +71,11 @@
 //  b) Year’s property into the variable age.
 //   c) isAdmin property into the variable
 //    isAdmin (false, if no such property)
-// let user = { name: "John", years: 30};
-// //a)
-// let name = user.name;
-// console.log(name);
+//  d) let user = { name: "John", years: 30}; 
+// Turn the object into JSON and back Turn the user into JSON and then read it back into another variable.
+ user = { name: "John Smith", age: 35};
 
-// //b)
-// let age = user.years;
-// console.log(age);
 
-// //c)
-// let isAdmin=user.isAdmin;
-// if(isAdmin==true)
-// {
-//   console.log("true")
-// }
-// else
-// {
-//   console.log("False")
-// }
-// 6) Turn the object into JSON and back Turn the user into JSON and then read it back into another variable. 
-// user = { name: "John Smith", age: 35};
-// const myJSON =JSON.stringify(user);
-// console.log(myJSON);
-
-// const user1 =JSON.parse(myJSON);
-// console.log(user1);
-    
-    // PROMISES
-
-    // var promise =new Promise(function(resolve,reject)
-    // {
-    //   const x ="hii";
-    //   const y = "Hello";
-    //   if(x==y)
-    //   {
-    //     resolve();
-    //   }
-    //   else{
-    //     reject();
-    //   }
-    // });
-    // promise.then(function(){
-    //   console.log("Resolve Both vals are equal");
-    // })
-    // .catch(function()
-    // {
-    //   console.log("Reject..Both the vals are Unequal");
-    // })
-     <!-- </script> -->
-    <html>
-      <head>
-      <style>
-          #password
-          {
-              position: relative;
-          }
-          .bi
-          {
-          position: absolute;
-          top: 55%;
-          right: 5%;
-          cursor: pointer;
-          }
-          #hide
-          {
-              display: none;
-          }
-      </style>
-      
-      </head>
-      
-      <body>
-          <form style="width: 30%;margin:auto">
-           
-              <div class="mb-3"id="password">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                <i class="bi bi-eye"id="show" onclick="showpass()"></i>
-                <i class="bi bi-eye-slash"id="hide" onclick="hidepass()"></i>
-              </div>
-            </form>
-            <script>
-                const type1= document.getElementById("exampleInputPassword1").type;
-                function showpass()
-                {
-                    document.getElementById("exampleInputPassword1").type="text";
-                    document.getElementById("hide").style.display="block";
-                    document.getElementById("show").style.display="none";
-      
-                }
-                function hidepass()
-                {
-                    document.getElementById("exampleInputPassword1").type="password";
-                    document.getElementById("show").style.display="block";
-                    document.getElementById("hide").style.display="none";
-                }
-            </script>
-      </body>
-      </html>
-      
+//     </script>
 </body>
 </html>
