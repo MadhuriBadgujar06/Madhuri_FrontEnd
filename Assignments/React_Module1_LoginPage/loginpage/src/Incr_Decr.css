@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+*{
+    font-weight: bold;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+h1{
+    font-size: 50px;   
+}
+.form
+{
+    text-align: center;
+    margin-top:50px ;
+}
+.number{
+    font-size :35px;
+}
+button{
+    background-color: black;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}

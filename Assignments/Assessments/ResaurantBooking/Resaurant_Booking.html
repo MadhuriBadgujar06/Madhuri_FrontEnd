@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resaurant_Booking</title>
+
+
+    <!-- -----Bootstap----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- ------CSS----------- -->
+    <link rel="stylesheet" href="./Resaurant_booking.css">
+</head>
+<body>
+    <form class="container" style="width:30%">
+        <h3>Reasurant Booking Form</h3>
+        <div class="input-group flex-nowrap">
+            <input type="text" class="form-control width" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+  <div class="mb-3">
+    <input type="email" class="form-control width" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text width px-3">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="input-group flex-nowrap">
+    <input type="text" class="form-control width" placeholder="Mobile Number" aria-label="Username" aria-describedby="addon-wrapping">
+  </div>
+<div class="py-2">
+    <input type="text" class="form-control width" value="Number Of Person : "></input>
+    <input type="submit" value="+" onclick="incr()">
+	<span id="number">1</span>
+	<input type="submit" value="-" onclick="decr()">
+</div>
+  <select class="form-select p-2 my-2"id="select" aria-label="Default select example">
+    <option selected>Choice Of Booking</option>
+    <option value="1">Full Day Booking</option>
+    <option value="2">Half Day Booking</option>
+    <option value="3">Hourly Booking</option>
+  </select>
+  <div id="Booking_info">
+ </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<script src="./Resaurant_booking.js"></script>
+</body>
+</html>

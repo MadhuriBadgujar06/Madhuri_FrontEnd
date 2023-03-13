@@ -1,0 +1,28 @@
+form{
+    margin :auto;
+    margin-top: 100px;
+    padding: 30px!important;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+.width
+{
+    width: 90%;
+}
+h3
+{
+    text-align: center;
+}
+input{
+    margin: 10px;
+    border: 1px solid black!important;
+}
+select
+{
+    border: 1px solid black!important;
+}
+#Booking_info,#Booking_info input,select
+{
+    padding:10px ;
+}

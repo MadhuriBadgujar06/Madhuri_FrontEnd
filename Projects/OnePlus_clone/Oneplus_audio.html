@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+     <!-- <-----------------File Link-------------- -->
+        <link rel="stylesheet" href="./CSS/index.css">
+        <link rel="stylesheet" href="./CSS/menu_items_style.css">
+        <link rel="stylesheet" href="./range.css">
+
+       
+            <!-- -----------------------------slick carousel---------------------------------- -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --------------------------Scrolling Animation Link------------------------------ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--fav Icon Link-->
+    <!-- <link rel="icon" href="./Images/favicon.png" type="image/png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/site.webmanifest">
+<link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- --------------------------Font Awesome------------------------------ -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!--Bootstrap link-->
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<!--Jquery Link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Google Fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Bree Serif', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; -->
+
+<style>
+   
+    </style>
+    <script>
+        $(document).ready(function(){
+         
+            // --------Reset Button-------
+            $("input").click(function(){
+               $("#reset").show();
+             })
+
+            //  -----filter-----
+            $(".filter").click(function(){
+               $(".sidebar").toggle();
+            })
+
+
+        })
+      </script>
+</head>
+<body>
+     <!-- ---------Mob Navbar------------------------------------- -->
+ <div class="container-fluid mob_navbar">
+  <div class="row">
+    <div class="col-4 col-sm-4" id="hamburger">
+      <i class="bi bi-list"></i>
+    </div>
+    <div class="col-4 col-sm-4">
+      <img src="./Images/logo_nav.webp" alt="" style="width: 110px;">
+    </div>
+    <div class="col-4  col-sm-4">
+      <div class="float-end"><i class="bi bi-cart" style="font-size:25px ;"></i></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mob_menu bg-light">
+  <div class="accordion border-0" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseOne">
+          Phone
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center" style="border:2px solid red">
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord CE 2 Lite 5G</h5>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord 2T 5G</h5>
+                </div>
+              </div>
+        
+          </a>
+          </div>
+        
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus 10R 5G</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus 10 Pro</h5>
+                </div>
+              </div>
+              </a>
+                    </div>
+          
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord CE 2 Lite 5G</h5>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_phone.html">
+              <div class="card border-0">
+                <img src="./Images/Phone_img6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord CE 2 5G</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="row py-3">
+              <div class="col-12 col-sm-12">
+                <a href="./Oneplus_phone.html">
+                Flagship Series <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row py-3">
+              <div class="col-12 col-sm-12">
+                <a href="./Oneplus_phone.html">
+                Nord Series <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-6 ">
+                <button class="btn btn-outline-secondary"
+                  style="width: 100%; color: black!important;">Compare</button>
+              </div>
+              <div class="col-sm-6 col-6 ">
+                <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View
+                  All</button>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseTwo">
+          TV
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center">
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV Y1S Pro</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV Y1S</h5>
+                </div>
+              </div>
+              </a>
+            
+          </div>
+          
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV Y1S Edge</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV U1S</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV Y1</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_tv.html">
+              <div class="card border-0">
+                <img src="./Images/tv6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus TV Q1 Series</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="row text-center">
+              <div class="col-sm-6 col-6 ">
+                
+                <button class="btn btn-outline-secondary"
+                  style="width: 100%; color: black!important;">Compare</button>
+              </div>
+              <div class="col-sm-6 col-6 ">
+                <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View
+                  All</button>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseFour">
+          Audio
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingFour">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center">
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nored Wired<br>Earphones</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord Buds CE</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+          
+          
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Nord Buds</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Bullets<br>Wireless Z2</h5>
+                </div>
+              </div>
+              </a>
+            
+          </div>
+          
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Buds Pro</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_audio.html">
+              <div class="card border-0">
+                <img src="./Images/audio6.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Buds Z2</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="row text-center">
+              
+              <div class="col-sm-6 col-6 ">
+                <button class="btn btn-outline-secondary"
+                  style="width: 100%; color: black!important;">Compare</button>
+              </div>
+              <div class="col-sm-6 col-6 ">
+                <button class="btn btn-outline-secondary" style="width: 100%;color: black!important;">View
+                  All</button>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseFive">
+          Wearables
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingFive">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center">
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_wearables.html">
+              <div class="card border-0">
+                <img src="./Images/OnePlusWatch.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">OnePlus Watch</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_wearables.html">
+              <div class="card border-0">
+                <img src="./Images/OnePlusBand.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> OnePlus Band</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseSix">
+          Accessories
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingSix">
+        <div class="accordion-body">
+          <!-- --------------------------- -->
+          <div class="row text-center">
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_accessories.html">
+              <div class="card border-0">
+                <img src="./Images/OnePlus_10Tcase.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cases & Protection</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_accessories.html">
+              <div class="card border-0">
+                <img src="./Images/Power-Cables.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Power & Cables</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+          
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_accessories.html">
+              <div class="card border-0">
+                <img src="./Images/Bundles.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bundles</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class="col-sm-4 col-6">
+              <a href="./Oneplus_accessories.html">
+              <div class="card border-0">
+                <img src="./Images/Gear.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> Gear</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- --------------------------- -->
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h6 class="accordion-header" id="panelsStayOpen-headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+          aria-controls="panelsStayOpen-collapseSeven">
+          Offers
+        </button>
+      </h6>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+        aria-labelledby="panelsStayOpen-headingSeven">
+        <div class="accordion-body">
+          <div class="row text-center">
+            <div class="col-sm-6 col-6">
+              <a href="./Oneplus_offers.html">
+              <div class="card border-0">
+                <img src="./Images/offers.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Offers</h5>
+                </div>
+              </div>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid border bg-white mt-3  px-4 py-2">
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6>Store<span class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6>OneTopia<span class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6>Community<span class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6>Support<span class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid border bg-white mt-3  px-4 py-2">
+    <div class="row p-2">
+      <div class="sign border_bottom">
+        <img src="./Images/user-icon.webp" width="7%" alt="" style="border-radius:50%;">
+        <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1"> Sign up </span>or <span
+          style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1"> Sign in</span>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6><i class="bi bi-file-text p-2 text-dark" style="font-size:20px;"></i>Order<span
+            class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6><i class="bi bi-person-circle p-2 text-dark" style="font-size:20px;"></i>Account<span
+            class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6><i class="bi bi-coin p-2 text-dark" style="font-size:20px;"></i>RedCoins<span
+            class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+    <div class="row p-2">
+      <div class="col-sm-12 col-12">
+        <h6><i class="bi bi-record-circle p-2 text-dark" style="font-size:20px;"></i>Red Cable Club<span
+            class="float-end">&#10095;</span></h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <!-- -----------------NAVBAR-------------->
+ <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo_nav.webp" alt="" style="width: 110px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" id="phone">
+            <a class="nav-link text-dark" href="./Oneplus_phone.html" >Phone</a>
+          </li>
+          <li class="nav-item"id="tv">
+            <a class="nav-link text-dark"  href="./Oneplus_tv.html">TV</a>
+          </li>
+          <li class="nav-item" id="audio">
+            <a class="nav-link text-dark"href="./Oneplus_audio.html">Audio</a>
+          </li>
+          <li class="nav-item" id="wearables">
+            <a class="nav-link text-dark"  href="./Oneplus_wearables.html">Wearables</a>
+          </li>
+          <li class="nav-item" id="accessories">
+            <a class="nav-link text-dark" href="./Oneplus_accessories.html">Accessories</a>
+          </li>
+          <li class="nav-item" id="offers">
+            <a class="nav-link text-dark" href="./Oneplus_offers.html">Offers</a>
+          </li>
+        </ul>
+     
+        
+        
+        <ul class="navbar-nav hide_nav_lap " style="padding-left:15%!important">
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">OneTopia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Support</a>
+            </li>
+            <li class="nav-item"id="search_icn">
+              <a class="nav-link text-dark" href="#" ><i class="bi bi-search"style="font-size:17px;"></i></a>
+            </li>
+            <li class="nav-item" id="cart">
+              <a class="nav-link text-dark" href="#" ><i class="bi bi-cart3"style="font-size:20px;"></i></a>
+            </li>
+
+            <li class="nav-item" id="useracc">
+                <a class="nav-link text-dark" href="#"><i class="bi bi-person-circle"style="font-size:20px;"></i></a>
+              </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+   <!-- -----------------Phone------------------------ -->
+   <div class="Phone_menu menu">
+   <div class="container">
+    <div class="row"> 
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+             OnePlus Nord CE 2 Lite 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img2.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus 10R 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img3.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus Nord 2T 5G
+            
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card" >
+             <img src="./Images/Phone_img4.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+              OnePlus Nord CE 2 5G
+         
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card" >
+             <img src="./Images/Phone_img5.png" class="card-img-top" alt="...">
+             <div class="card-body text-center  p-0 ">
+              OnePlus 10Pro 5G
+             
+             </div>
+           </div>
+        </div>
+        <div class="col-sm-2 col-md-2">
+         <div class="card">
+             <img src="./Images/Phone_img6.png" class="card-img-top" alt="...">
+             <div class="card-body text-center p-0 ">
+               OnePlus Nord CE 2 Lite 5G
+             </div>
+           </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+<div class="container">
+    <div class="row pb-3">
+        <div class="col-md-8 col-sm-8"><span class="p1">Flagship<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+          </svg></span>
+          <span class="p1">Nord Series<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+          </svg></span>
+        </div>
+        <div class="col-sm-4 col-md-4 ">
+            <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+            <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+        </div>
+    </div>
+ </div>
+</div>
+</div>
+
+    <!-- --------------------------TV------------------------------ -->
+    <div class="tv_menu menu">
+      <div class="container">
+       <div class="row"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv1.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                OnePlus TV Q1 Series
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv2.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV U1S
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv3.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV Y1S
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card" >
+                <img src="./Images/tv4.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                 OnePlus TV Y1S Edge
+            
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card" >
+                <img src="./Images/tv6.png" class="card-img-top" alt="...">
+                <div class="card-body text-center  p-0 ">
+                 OnePlus TV Y1
+                
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/tv5.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus TV Y1s Pro
+                </div>
+              </div>
+           </div>
+       </div>
+      </div>
+       <hr>
+   <div class="container">
+        <div class="row d-flex pb-2 justify-content-end">
+           <div class=" col-md-4 col-sm-4">
+               <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+               <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+           </div>
+          </div>
+      </div>
+   </div>
+  </div>
+      <!-- --------------------------Audio------------------------------ -->
+      <div class="audio_menu menu">
+        <div class="container">
+         <div class="row"> 
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio1.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                  OnePlus Buds Pro
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio2.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Buds Z2
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio3.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Bullets Wireless Z2
+                 
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card" >
+                  <img src="./Images/audio4.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                   OnePlus Nord Buds
+              
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card" >
+                  <img src="./Images/audio5.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center  p-0 ">
+                   OnePlus Nord Buds CE
+                  
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/audio6.webp" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-0 ">
+                    OnePlus Nored Wired Earphones
+                  </div>
+                </div>
+             </div>
+         </div>
+        </div>
+         <hr>
+     <div class="container">
+          <div class="row d-flex pb-2 justify-content-end">
+             <div class=" col-md-4 col-sm-4">
+                 <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">Compare</button>
+                 <button class="btn btn-outline-secondary" style="width: 49%;color: black!important;">View All</button>
+             </div>
+            </div>
+        </div>
+     </div>
+    </div>
+    <!-- --------------------------Wearables------------------------------ -->
+    <div class="wearables_menu menu pb-2">
+      <div class="container">
+       <div class="row justify-content-center"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlusBand.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                OnePlus Band
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlusWatch.png" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  OnePlus Watch
+               
+                </div>
+              </div>
+           </div>
+       </div>
+       </div>
+      </div>
+          <!-- --------------------------Accessories------------------------------ -->
+    <div class="accessories_menu menu pb-3">
+      <div class="container">
+       <div class="row justify-content-center"> 
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/Bundles.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                Bundles
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+
+                <img src="./Images/Power-Cables.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  Power & Cables
+               
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/Gear.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                  Gears
+                </div>
+              </div>
+           </div>
+           <div class="col-sm-2 col-md-2">
+            <div class="card">
+                <img src="./Images/OnePlus_10Tcase.png.thumb.webp" class="card-img-top" alt="...">
+                <div class="card-body text-center p-0 ">
+                 Cases & Protection
+                </div>
+              </div>
+           </div>
+       </div>
+       </div>
+      </div>
+      <!-- --------------------------Offers------------------------------ -->
+      <div class="offers_menu menu p-5">
+        <div class="container">
+         <div class="row justify-content-center"> 
+             <div class="col-sm-2 col-md-2">
+              <div class="card">
+                  <img src="./Images/offers.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-center p-2 ">
+                  Exchange Offers
+                 
+                  </div>
+                </div>
+             </div>
+             </div>
+             </div>
+           </div>
+
+    <!-- --------------------------SearchBar------------------------------ -->
+    <div class="searcharea search_menu float-end p-3">
+      <input type="textbox" class="textarea px-5 py-2" placeholder="OnePlus 10 Pro">
+      <a class="nav-link text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg"width="16" height="16" fill="currentColor" class="bi bi-search searchbar" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></a>
+      <dl>
+          <dt>Popular</dt>
+          <dd class="p-1">OnePlus 10Pro</dd>
+          <dd class="p-1">OnePlus 10R</dd>
+          <dd class="p-1">OnePlus 10T</dd>
+          <dd class="p-1">OnePlus Nord 2T 5G</dd>
+          <dd class="p-1">OnePlus Nord CE 2 Lite</dd>
+      </dl>
+    </div>
+    <!-- --------------------------User Accounts------------------------------ -->
+    <div class="useracc_menu">
+      <div class="sign p-4 border_bottom">
+        <img src="./Images/user-icon.webp" width="15%" alt="" style="border-radius:50%;">
+        <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1"> Sign up  </span>or  <span style="border-bottom: 1px solid grey;font-weight:500;color: grey;" class="p-1">  Sign in</span>
+      </div>
+      <ul class="nav flex-column p-2">
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-file-text p-2 text-dark" style="font-size:22px;"></i>Orders<i class="bi bi-caret-right float-end"></i></a>
+          
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-person-circle p-2 text-dark" style="font-size:22px;"></i>Accounts<i class="bi bi-caret-right float-end"></i></a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link border_bottom" href="#" style="font-weight:500;color: grey;"><i class="bi bi-coin p-2 text-dark" style="font-size:22px;"></i>Red coins<i class="bi bi-caret-right float-end"></i></a>
+        </li> 
+        <li class="nav-item p-1">
+          <a class="nav-link" href="#" style="font-weight:500;color: grey;"><i class="bi bi-record-circle p-2 text-dark" style="font-size:22px;"></i>Red Cable Club<i class="bi bi-caret-right float-end"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- --------------------------Cart------------------------------ -->
+    <div class="cart_menu p-3">
+      <h5 class="p-2" style="text-align:center;">Your Cart is Empty</h5>
+      <img src="./Images/emptycart.png" style="width: 70%;margin: auto;" class="p-2 d-block" alt="">
+      <p  class="p-2" style="text-align:center;">You are  &#8377;499 away from free shipping</p>
+    </div>
+    <!-- --------------------Display---------------------------------------- -->
+
+        <div class="container-fluid px-3 pt-3 border-bottom">
+       <div class="row pt-2 text-center justify-content-around slider_nav" >
+           <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+              <a href="" class=" items"> <img src="./Images/phone imgs/all.svg" alt="">
+               <p class="pt-2">All</p>
+           </a>
+        </div>
+           <div class="col-sm-1 col-lg-1 col-md-1  col-1 items">
+            <a href="./Oneplus_phone.html" class=" items"> <img src="./Images/phone imgs/phone.svg" alt="">
+            <p class="pt-2">Phone</p>
+        </div></a>
+        <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+          <a href="./Oneplus_tv.html" class=" items">  <img src="./Images/phone imgs/tv.svg" alt="">
+            <p class="pt-2">TV</p>
+        </div></a>
+        <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+          <a href="./Oneplus_audio.html" class=" items">  <img src="./Images/phone imgs/audio.svg" alt="">
+            <p class="pt-2">Audio</p>
+        </div></a>
+        <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+          <a href="./Oneplus_wearables.html" class=" items">  <img src="./Images/phone imgs/1-M00-3D-EE-CpgM7mLek3SAVKlUAAAJrOjtRsE386.svg" alt="">
+            <p class="pt-2">Wearables</p>
+       </a> </div>
+        <div class="col-sm-1 col-lg-2 col-md-1 col-2 items">
+           <a href="./Oneplus_accessories.html" class=" items"> <img src="./Images/phone imgs/cases&protection.svg" alt="">
+            <p class="pt-2">Cases & Protection</p></a>
+        </div>
+        <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+          <a href="./Oneplus_accessories.html" class=" items">  <img src="./Images/phone imgs/bundles.svg" alt="">
+            <p class="pt-2">Bundles</p>
+        </a></div>
+        <div class="col-sm-1 col-lg-2 col-md-1 col-1 items">
+          <a href="./Oneplus_accessories.html" class=" items">  <img src="./Images/phone imgs/power&cables.svg" alt="">
+            <p class="pt-2">Power & Cables</p>
+          </a>     
+        </div>
+        <div class="col-sm-1 col-lg-1 col-md-1 col-1 items">
+          <a href="./Oneplus_accessories.html" class=" items">  <img src="./Images/phone imgs/gear.svg" alt="">
+            <p class="pt-2">Gear</p></a>
+        </div>
+       </div>
+    </div>
+    <!-- -------------Sort & Filter------------------------- -->
+    <div class="row px-5">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+           <h5 class="text-primary px-1">Rank By
+              <select class="border-0 p-1">
+               <option>Recommnded</option>
+               <option>Newest</option>
+               <option>Price(Low to High)</option>
+               <option>Price(HIgh to Low)</option>
+           </select>
+           <span class="filter p-2">sort & filter<i class="bi bi-funnel-fill p-2" id="filter_i"></i></span> </h5>     
+         </div>
+</div>
+    <!-- ------------------------SideBar---------------------- -->
+        <div class="row border-bottom p-2" >
+            <div class="col-sm-3 col-md-3 col-lg-3 px-3 sidebar border-end">
+              <form>
+               <div class="row p-3">
+                 <label for="">Series</label>
+                 <div class="form-check py-1">
+                  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                  <label class="form-check-label">Falgship Series</label>
+                </div>
+                <div class="form-check py-1">
+                  <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                  <label class="form-check-label">Nord Series</label>
+                </div>
+               </div>
+               <!-- -----Offers---- -->
+               <div class="row p-3">
+                <label for="">Offers</label>
+                <div class="form-check py-1">
+                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                 <label class="form-check-label">On Sale</label>
+               </div>
+               <div class="form-check py-1">
+                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                 <label class="form-check-label">Save with RedCoins</label>
+               </div>
+              </div>
+
+              <!-- -----RAM/Storage--- -->
+              <div class="row p-3">
+                <label for="">RAM/Storage</label>
+                <div class="form-check py-1">
+                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                 <label class="form-check-label">6+128 GB</label>
+               </div>
+               <div class="form-check py-1">
+                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                 <label class="form-check-label">8+128 GB</label>
+               </div>
+               <div class="form-check py-1">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                <label class="form-check-label">12+256 GB</label>
+              </div>
+               <div class="form-check py-1">
+                <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                <label class="form-check-label">16+256 GB</label>
+              </div>
+              </div>
+              <!-- -------Range-------- -->
+              <div class="row">
+                <div class="wrapper">
+                    <label>Price Range</label>
+            
+                  <div class="price-input d-flex py-3">
+                    <div class="field">
+                      <span>&#8377;</span>
+                      <input type="number" class="input-min" value="0">
+                    </div>
+                    <div class="field">
+                      <span>&#8377;</span>
+                      <input type="number" class="input-max" value="99999">
+                    </div>
+                  </div>
+                  <div class="range-input d-flex py-3">
+                    <input id="r1" type="range" class="range-min" min="0" max="50000" value="50000" step="100">
+                    <input id="r2" type="range" class="range-max" min="0" max="99999" value="99999" step="100">
+                  </div>
+                  
+                </div>
+              </div>
+              <!-- -------Availability------- -->
+              <div class="row p-3">
+                <label for="">Availability</label>
+                <div class="form-check py-1">
+                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                 <label class="form-check-label">In Stock</label>
+               </div>
+               </div>
+               <!-- ----Reset Button----- -->
+               <div class="d-grid px-3 py-2" id="reset_block">
+               <input class="btn btn-outline-dark" type="reset" value="Reset" id="reset">
+              </div>
+             </form>
+            </div>
+            <!-- -----------------Display Main--------------------------------- -->
+            <div class="col-sm-9 col-md-9 col-lg-9 col-12 px-3 py-0">
+            <!-- -----Row1----- -->
+                 <div class="row">
+             
+                     <div class="col-sm-4 col-md-4 col-lg-4 col-6 slider1">
+                        <div class="card border-0">
+                           <img src="./Images/audio7.png" class="card-img-top bg-light" alt="...">    <h5 class="card-title">OnePlus Nord Wired Earphones</h5>                                              
+                            <div class="card-body">                      
+                              <div class="d-grid">
+                              <button class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 799</button></div>
+                             
+                            </div>
+                          </div>
+
+                     </div>
+                    
+
+                     <div class="col-sm-4 col-md-4 col-lg-4 col-6 slider1">
+                      <div class="card border-0"> 
+                         <img src="./Images/audio8.png" class="card-img-top bg-light" alt="...">
+                         
+                          <div class="card-body">
+                            <h5 class="card-title">OnePlus Nord Buds CE</h5>
+                         
+                            <p class="show_para">Moonlight White</p>
+                            <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 2,299</a>
+                          </div>
+                        </div>
+                        <div class="card border-0">    
+                          <img src="./Images/audio8_1.png"class="card-img-top bg-light" alt="...">             
+                           <div class="card-body">
+                             <h5 class="card-title">OnePlus Nord Buds CE</h5>
+                          
+                             <p class="show_para">Mistry Grey</p>
+                             <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 2,299</a>
+                           </div>
+                         </div>
+                   </div>
+
+                   <div class="col-sm-4 col-6 col-md-4 col-lg-4 slider1">
+
+                    <div class="card border-0">        
+                       <img src="./Images/audio9.png" class="card-img-top bg-light" alt="...">              
+                        <div class="card-body">
+                          <h5 class="card-title">OnePlus Bullets Wireless Z2</h5>
+                          <p class="card-text" class="hide_para">
+                          <p class="show_para">Acoustic Red</p>
+                          <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 1,999</a>
+                        </div>
+                      </div>
+                      <div class="card border-0">        
+                        <img src="./Images/audio9_2.png" class="card-img-top bg-light" alt="...">              
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Bullets Wireless Z2</h5>
+                          
+                           <p class="show_para">Magico Black</p>
+                           <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 1,999</a>
+                         </div>
+                       </div>
+                     
+                       <div class="card border-0">        
+                        <img src="./Images/audio9_3.png" class="card-img-top bg-light" alt="...">              
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Bullets Wireless Z2</h5>
+                        
+                           <p class="show_para">Beam Blue</p>
+                           <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 1,999</a>
+                         </div>
+                       </div>
+                      
+                     
+                 </div>
+     
+                 <!-- -------row2------- -->
+           
+             
+                  <div class="col-sm-4 col-6 col-md-4 col-lg-4 slider1">
+                     <div class="card border-0">
+                        <img src="./Images/audio10.png" class="card-img-top bg-light" alt="...">                        
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Nord Buds</h5>
+                           
+                           <p class="show_para">Blue Agate</p>
+                           <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 2,799</a>
+                         </div>
+                       </div>
+                       <div class="card border-0">
+                        <img src="./Images/audio10_2.png" class="card-img-top bg-light" alt="...">                        
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Nord Buds</h5>
+                           
+                           <p class="show_para">Black Slate</p>
+                           <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 2,799</a>
+                         </div>
+                       </div>    
+                       <div class="card border-0">
+                        <img src="./Images/audio10_3.png" class="card-img-top bg-light" alt="...">                        
+                         <div class="card-body">
+                           <h5 class="card-title">OnePlus Nord Buds</h5>
+                           
+                           <p class="show_para">White Marble</p>
+                           <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 2,799</a>
+                         </div>
+                       </div>              
+                  </div>
+                 
+
+                  <div class="col-sm-4 col-6 col-md-4 col-lg-4 slider1">
+                   <div class="card border-0"> 
+                      <img src="./Images/audio11.png" class="card-img-top bg-light" alt="...">
+                      
+                       <div class="card-body">
+                         <h5 class="card-title">Oneplus Buds Pro</h5>
+                        
+                         <p class="show_para">Matte Black</p>
+                         <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 9,990</a>
+                       </div>
+                     </div>
+                     <div class="card border-0">    
+                       <img src="./Images/audio11_2.png"class="card-img-top bg-light" alt="...">             
+                        <div class="card-body">
+                          <h5 class="card-title">OnePlus Buds Pro</h5>
+                          <p class="card-text" class="hide_para"><i class="bi bi-cart"></i>From 49,999</p>
+                          <p class="show_para">Glossy White</p>
+                          <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 9,990</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-sm-4 col-6 col-md-4 col-lg-4 slider1">
+                 <div class="card border-0">        
+                    <img src="./Images/audio12.png" class="card-img-top bg-light" alt="...">              
+                     <div class="card-body">
+                       <h5 class="card-title">OnePlus Buds Z2</h5>
+                       <p class="show_para">Obsidian Black</p>
+                       <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 4,999</a>
+                     </div>
+                   </div>
+       
+                    <div class="card border-0">    
+                     <img src="./Images/audio11_2.png" class="card-img-top bg-light" alt="...">     
+                      <div class="card-body">
+                        <h5 class="card-title">OnePlus Z2</h5>
+                       
+                        <p class="show_para">Pearl White</p>
+                        <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 4,999</a>
+                      </div>
+                    </div>
+              </div>
+          
+              <!-- -------row3----- -->
+
+                <div class="col-sm-4 col-6 col-md-4 col-lg-4 slider1">
+                   <div class="card border-0">
+                      <img src="./Images/audio14.png" class="card-img-top bg-light" alt="...">                        
+                       <div class="card-body">
+                         <h5 class="card-title">OnePlus Type C Bullets Earphones </h5>
+                         <p class="card-text" class="hide_para">
+                         <a href="#" class="btn btn-dark text-light show_para"><i class="bi bi-cart"></i>From 1,299</a>
+                       </div>
+                     </div>              
+                </div>
+            </div>
+
+          <!-- ----row5-- -->
+
+             </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------- -->
+
+
+
+    <!-- ------------------------------------------------------------------ -->
+  <!-- ---------------------------Toast----------------------------------------- -->
+      <!-- ---------------------------oneplus store----------------------------------------- -->
+     <!-- <div id="toast1">
+      <div class="oneplus_store text-light py-2 rounded d-flex" data-aos="slide-left">
+           <button id="close_btn">&#x2715</button>
+          <img src="./Images/logo.png" width="60px" class="rounded m-3" alt="...">
+          <div class="pt-3">            
+             <strong>OnePlus Store </strong>
+              <div style="font-size:10px ;">Shop anytime,anywhere on OnePlus Store app</div>
+          </div>
+          <img src="./Images/QRCode1.png" width="60px" class="rounded m-3" alt="...">
+    </div>
+  </div> -->
+  <!-- ---------------------------Cookie Policy----------------------------------------- -->
+  <!-- <div id="toast2">
+    <div class="cookie_policy p-4" data-aos="slide-right">
+      <button id="close_btn2"class="my-1 text-dark">&#x2715</button>
+      <p class="py-2">This site uses cookies and related technologies, as described in our<span class="text-primary border-bottom"> Cookie Policy</span>, for purposes that may include site operation, analytics, enhanced user experience, or advertising. You may choose to consent to our use of these technologies, or manage your own preferences.</p>
+        <button class="buy_now">MANAGE CHOICES</button>
+        <button class="learn_more">AGREE & PROCEED</button>
+        
+    </div>
+
+</div> -->
+
+      <!-- --------------------------Tablet Footer-------------------------------- -->
+      <div class="container-fluid pt-3 text-dark hide_footer">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Phone
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">  <ul class="p-0">
+                <li>OnePlus 10T 5G</li>
+                <li>OnePlus Nord 2T 5G</li>
+                <li>OnePlus 10R 5G</li>
+                <li>OnePlus Nord CE 2 Lite 5G</li>
+                <li>OnePlus 10 Pro 5G</li>
+                <li>OnePlus Nord CE 2 5G</li>
+                <li>OnePlus Nord 2 5G</li>
+                <li>OnePlus Nord CE 5G</li>
+                <li>OnePlus 9 Pro 5G</li>
+                <li>OnePlus 9 5G</li>
+                </ul></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Store
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"> <ul class="p-0">
+                <li> TV</li>
+                <li>Audio</li>
+                <li>Wearables</li>
+                <li>Cases &  Protection</li>
+                <li>Power & Cables</li>
+                <li>Bundles</li>
+                <li>Gear</li>
+                
+             </ul></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Support
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><ul class="p-0">
+                <li>Shopping FAQs</li>
+                <li>User Manuals</li>
+                <li>Service Centers</li>
+                <li>Affilate Program</li>
+                <li>Repairs Services</li>
+                <li>Repair Pricing</li>
+                <li>Software Update</li>
+                
+             </ul></div>
+            </div>
+          </div>
+  
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+               Explore
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><ul class="p-0">
+                <li>About Oneplus</li>
+                <li>Community</li>
+                <li>Find a store</li>
+                <li>OnePlus Store app</li>
+                <li>OxygenOS</li>
+                <li>Press</li>
+                <li>Blog</li>
+                <li>Careers</li>
+                <li>Campus Opportunity</li>
+                
+             </ul></div>
+            </div>
+          </div>
+          <div class="accordion-item" style="border-bottom: 1px solid rgb(224, 220, 220);">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Programs
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="p-0">
+                  <li>Exchange Program</li>
+                  <li>Red Cable Club</li>     
+               </ul>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+        <!-- --------------------------Footer------------------------------ -->
+  
+        <div class="container-fluid pt-2 footer1">
+          <div class="row justify-content-around">
+          
+            <div class="col-md-2 col-lg-2">
+    
+                <h5 class="text-dark py-2">Phone</h5>
+               <ul class="p-0">
+                  <li>OnePlus 10T 5G</li>
+                  <li>OnePlus Nord 2T 5G</li>
+                  <li>OnePlus 10R 5G</li>
+                  <li>OnePlus Nord CE 2 Lite 5G</li>
+                  <li>OnePlus 10 Pro 5G</li>
+                  <li>OnePlus Nord CE 2 5G</li>
+                  <li>OnePlus Nord 2 5G</li>
+                  <li>OnePlus Nord CE 5G</li>
+                  <li>OnePlus 9 Pro 5G</li>
+                  <li>OnePlus 9 5G</li>
+                  </ul>
+                </div>
+              <div class="col-sm-2 col-md-2 col-lg-2">
+                  <h5 class="text-dark py-2">Store</h5>
+              <ul class="p-0">
+                 <li> TV</li>
+                 <li>Audio</li>
+                 <li>Wearables</li>
+                 <li>Cases &  Protection</li>
+                 <li>Power & Cables</li>
+                 <li>Bundles</li>
+                 <li>Gear</li>
+                 
+              </ul>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              <h5 class="text-dark py-2">Support</h5>
+              <ul class="p-0">
+                 <li>Shopping FAQs</li>
+                 <li>User Manuals</li>
+                 <li>Service Centers</li>
+                 <li>Affilate Program</li>
+                 <li>Repairs Services</li>
+                 <li>Repair Pricing</li>
+                 <li>Software Update</li>
+                 
+              </ul>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              <h5 class="text-dark py-2">Explore</h5>
+              <ul class="p-0">
+                 <li>About Oneplus</li>
+                 <li>Community</li>
+                 <li>Find a store</li>
+                 <li>OnePlus Store app</li>
+                 <li>OxygenOS</li>
+                 <li>Press</li>
+                 <li>Blog</li>
+                 <li>Careers</li>
+                 <li>Campus Opportunity</li>
+                 
+              </ul>
+            </div>
+            <div class="col-md-2 col-lg-2">
+              <h5 class="text-dark py-2">Programs</h5>
+              <ul class="p-0">
+                 <li>Exchange Program</li>
+                 <li>Red Cable Club</li>     
+              </ul>
+            </div>
+          </div>
+        </div>
+          <!-- --------------------------Footer2------------------------------ -->
+          <div class="container-fluid">
+          <div class="row text-secondary px-3">
+            <div class="col-lg-6 card_emi_wallet">
+            <p><i class="fa fa-credit-card p-2" style="color: rgb(6, 173, 123);"></i>Credit/Debit Card 
+               <i class="fa fa-bank p-2" style="color: rgb(6, 173, 123);"></i> NetBanking
+               <i class="bi bi-cash-coin p-2" style="color: rgb(6, 173, 123);"></i>EMI
+               <i class='fas fa-wallet p-2' style="color: rgb(6, 173, 123);"></i>Wallet
+            </p>
+          </div>
+          <div class="col-lg-6 contact">
+            <div class="float-end contact">
+            <span class="text-primary cursor-pointer contact_us p-2">Contact Us</span>
+            <span class="px-2">|</span>
+            <i class="bi bi-facebook px-2"></i>
+            <i class="bi bi-instagram px-2"></i>
+            <i class="bi bi-twitter px-2"></i>
+          </div>
+        </div>
+          </div>
+        </div>
+        </div>
+        <!-- --------------------------Footer3------------------------------ -->
+       
+        <div class="container-fluid p-3 footer3 " >
+          <div class="row p-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                 <img src="images/india.png"width=25px alt=""> <span>India ( English / INR )</span>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 list pt-3">
+              <ul>
+                <li>Privacy Policy</li>
+                <li>|</li>
+                <li>User Agreement</li>
+                <li>|</li>
+                <li>Terms of Sales</li>
+                <li>|</li>
+                <li>E-waste Management</li>
+                <li>|</li>
+                <li>Security of Feedback</li>
+              </ul>       
+            </div>
+          </div>
+          <div class="row p-4">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <p class="copyright"> © 2013 - 2022 OnePlus. All Rights Reserved.</p> 
+            </div>
+             <div class="col-sm-12 col-md-6 col-lg-6">
+             
+                <img src="Images/seal.svg" class="float-end" alt="">
+              
+            </div>
+          </div>
+        </div>
+ 
+              <!-- Other JS links -->
+              <script src="./JS/index.js"></script>
+              <script src="./range.js"></script>
+
+              <!-- Script For Responsive carousel Of Deals and Offers -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.slider1').slick({
+  dots: true,
+
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  autoplay :false,
+  // autoplaySpeed :5000,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows : true,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        arrows : true,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        arrows : true,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+    </script>
+ <script>
+  $('.slider_nav').slick({
+dots: true,
+infinite: true,
+speed: 300,
+slidesToShow: 9,
+autoplay :true,
+autoplaySpeed :5000,
+slidesToScroll: 1,
+arrows: false,
+responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 6,
+      arrows : true,
+      // slidey : true,
+
+autoplaySpeed :5000,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 4,
+      arrows : false,
+      slidesToScroll: 2,
+      autoplay : true,
+autoplaySpeed :5000,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 4,
+      arrows : false,
+      autoplay :true,
+autoplaySpeed :5000,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  }
+]
+});
+  </script>
+
+</body>
+</html>
+
+
