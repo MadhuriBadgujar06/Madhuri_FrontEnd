@@ -1,0 +1,35 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "Raghav",
+      "mobile": "9977585854",
+      "email": "raghav@gmail.com",
+      "password": "raghav@123"
+    },
+    {
+      "id": 2,
+      "name": "Madhav",
+      "mobile": "995452854",
+      "email": "madhav@gmail.com",
+      "password": "madhav@123"
+    },
+    {
+      "id": 3,
+      "name": "Sanjay",
+      "mobile": "6777885854",
+      "email": "sanjay@gmail.com",
+      "password": "sanjay@123"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

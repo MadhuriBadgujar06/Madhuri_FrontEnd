@@ -1,0 +1,107 @@
+{
+  "employee": [
+    {
+      "name": "Madhuri",
+      "mobile": "8511798977",
+      "email": "madhuri@gmail.com",
+      "password": "Madhuri123",
+      "id": "1679645958469",
+      "status": "Unblock"
+    },
+    {
+      "name": "Yashwar",
+      "mobile": "7798777898",
+      "email": "yash@gmail.com",
+      "password": "yash123",
+      "id": "1679646009611",
+      "status": "Unblock"
+    },
+    {
+      "name": "Swara",
+      "mobile": "9998330573",
+      "email": "swara@gmail.com",
+      "password": "swara123",
+      "id": "1679646089294",
+      "status": "Unblock"
+    },
+    {
+      "name": "Umang",
+      "mobile": "9679899788",
+      "email": "umang@gmail.com",
+      "password": "umang123",
+      "id": "1680262568757",
+      "status": "Unblock"
+    },
+    {
+      "name": "Jenica",
+      "mobile": "8897970000",
+      "email": "jenica@gmail.com",
+      "password": "Jenica123",
+      "id": "1681296556686",
+      "status": "Unblock"
+    }
+  ],
+  "user": [
+    {
+      "name": "Madhuri",
+      "mobile": "8511798877",
+      "email": "madhuri@gmail.com",
+      "password": "1234",
+      "id": "1679645958469"
+    },
+    {
+      "name": "Nivam Badgujar",
+      "mobile": "8511798977",
+      "email": "nivam@gmail.com",
+      "password": "1234",
+      "id": "1679645958489"
+    },
+    {
+      "name": "Swara",
+      "mobile": "9998330573",
+      "email": "swara@gmail.com",
+      "password": "swara123",
+      "id": "1679646089294"
+    },
+    {
+      "name": "Jenica",
+      "mobile": "8787446645",
+      "email": "jenica@gmail.com",
+      "password": "jeny123",
+      "id": "1680193499389"
+    }
+  ],
+  "admin": [
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin@123"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Umang",
+      "email": "umang@gmail.com",
+      "message": "About BOGO Offers",
+      "subject": "BOGO",
+      "id": "1680195177551"
+    },
+    {
+      "name": "Madhuri",
+      "email": "madhuri@gmail.com",
+      "message": "About Offers",
+      "subject": "Offer Enquiry",
+      "id": "1681805921027"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
