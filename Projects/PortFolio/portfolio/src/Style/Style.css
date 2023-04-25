@@ -1,10 +1,25 @@
 *{
     box-sizing: border-box;
     font-family:'Baloo Bhai 2';
+    margin: 0;
+    padding: 0;
+}
+.card{
+    background:#123266 ;
+    box-shadow: 1px solid black!important;
+}
+.card:hover
+{
+  background-color: #041a3c;;
+}
+.navbar
+{
+    margin: 0;
+    padding: 0;
 }
 h1
 {
-    font-size: 70px;
+    font-size: 30px;
     color: #ccd6f6;
 }
 h2
@@ -12,6 +27,12 @@ h2
     font-size: 50px;
     color: #a8b2d1;
 }
+a{
+    color: #a8b2d1;
+    text-decoration: none;
+    
+}
+
 p,h5,li,span{
     color: #a8b2d1 ;
     font-size: 20px;

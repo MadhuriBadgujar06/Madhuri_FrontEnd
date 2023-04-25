@@ -1,0 +1,103 @@
+{
+  "Gujrat": [
+    {
+      "name":"Ahmedabad"
+    },
+    {
+      "name":"Surat"
+    },
+    {
+      "name":"Vadodara"
+    },
+    {
+      "name":"Amreli"
+    },
+    {
+      "name":"Palanpur"
+    },{
+      "name":"Patan"
+    },
+    {
+      "name":"Mehsana"
+    },
+    {
+      "name":"Sanand"
+    },
+    {
+      "name":"Gandhinagar"
+    },
+    {
+      "name":"Mehmdabad"
+    },
+    {
+      "name":"Rajkot"
+    },
+    {
+      "name":"Anand"
+    },
+    {
+      "name":"Nadiad"
+    },
+    {
+      "name":"Thaltej"
+    },
+    {
+      "name":"Vapi"
+    },
+    {
+      "name":"Bhavnagar"
+    },
+    {
+      "name":"Porbandar"
+    },
+    {
+      "name":"Jamnagar"
+    },
+    {
+      "name":"Junagadh"
+    },
+    {
+      "name":"Navsari"
+    },
+    {
+      "name":"Bharuch"
+    },
+    {
+      "name":"Veraval"
+    },
+    {
+      "name":"Gandhidham"
+    },
+    {
+      "name":"Morbi"
+    },
+    {
+      "name":"Gondal"
+    },
+    {
+      "name":"Mandvi"
+    },
+    {
+      "name":"Jetpur"
+    },
+    {
+      "name":"Mandav"
+    },
+    {
+      "name":"Botad"
+    },
+    {
+      "name":"Dwarka"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

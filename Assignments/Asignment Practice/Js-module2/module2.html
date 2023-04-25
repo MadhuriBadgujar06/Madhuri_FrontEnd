@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types and objects</title>
+</head>
+<body>
+    <h1>
+        Module2
+    </h1>
+    <script>
+//      ● Write the code, one line for each action:
+    
+// a) Create an empty object user.
+// b) Add the property name with the value John.
+// c) Add the property surname with the value Smith.
+// d) Change the value of the name to Pete.
+// e) Remove the property name from the object.
+
+    // const user ={name:"John",surname:"Smith",};
+    // console.log(user)
+    // user.name="Pete";
+    // console.log(user)
+    // delete(user.name)
+    // console.log(user)
+
+// 2) Is array copied?
+// let fruits = ["Apples", "Pear", "Orange"];
+ // push a new value into the "copy" let shoppingCart = fruits;
+ // shoppingCart.push("Banana"); // what's in fruits?
+// alert( fruits.length ); // ?
+// const fruits =["Apple","Mango","Banana"];
+// let shoppingcart = fruits;
+
+// shoppingcart.push("Orange");
+// console.log(shoppingcart)
+// console.log(fruits);
+// console.log(fruits.length)
+
+// ● Map to names
+// let john = { name: "John", age: 25 };
+//  let pete = { name: "Pete", age: 30 };
+//   let mary = { name: "Mary", age: 28 };
+//    let users = [ john, pete, mary ];
+//     let names = /* ... your code */
+//      alert( names ); // John, Pete, Mary
+
+// let john = { name: "John", age: 25 };
+//   let pete = { name: "Pete", age: 30 };
+//    let mary = { name: "Mary", age: 28 };
+//     let users = [ john, pete, mary ];
+
+// users.map((item)=>{console.log(item.name)})
+
+// ● Map to objects
+// let john = { name: "John", surname: "Smith", id: 1 }; 
+// let pete = { name: "Pete", surname: "Hunt", id: 2 };
+//  let mary = { name: "Mary", surname: "Key", id: 3 };
+//   let users = [ john, pete, mary ];
+//    let usersMapped = /* ... your code ... */
+// usersMapped = [
+// { fullName: "John Smith", id: 1 },
+// { fullName: "Pete Hunt", id: 2 },
+// { fullName: "Mary Key", id: 3 }
+// ]
+// */ alert( usersMapped[0].id ) // 1
+// alert( usersMapped[0].fullName ) // John Smith
+
+// let userMapped =users;
+// for(let i in userMapped)
+//   {
+
+//     userMapped[i].fullname= userMapped[i].name +" "+ userMapped[i].surname;
+    
+//     delete(userMapped[i].name);
+//     delete(userMapped[i].surname);
+//   }   
+
+// console.log(userMapped)
+
+// console.log( userMapped[1].id )
+// console.log( userMapped[0].fullname )
+
+// ● Sum the properties There is a salaries object with arbitrary number of salaries.
+// Write the function sumSalaries(salaries) that returns the sum of all salaries using Object.values and the for..of loop.If salaries is empty, then the result must be 0.
+
+
+let salaries = {
+"John": 400,
+"Pete": 300,
+"Mary": 250
+};
+// alert( sumSalaries(salaries) ); // 650
+let sum=0;
+
+for (let val in salaries)
+{
+    console.log(salaries[val])
+    sum=sum+salaries[val]
+    
+} 
+console.log(sum)
+
+// ● Destructuring assignment We have an object: Write the Destructuring assignment that reads:
+// a) Name property into the variable name.
+// b) Year’s property into the variable age.
+// c) isAdmin property into the variable isAdmin (false, if no such property)
+// d) let user = { name: "John", years: 30};
+
+let obj={ name:"madhuri",year:"24",isadmin:"true"};
+let name=obj.name;
+let age=obj.year;
+let  isadmin=obj.isadmin;
+console.log(name)
+console.log(age)
+console.log(isadmin)
+</script>
+
+</body>
+</html>
+
+<!-- MODULE: 2 (Data Types and Objects)
+
+● Turn the object into JSON and back Turn the user into JSON and then read it back into another variable.
+user = { name: "John Smith", age: 35}; -->
