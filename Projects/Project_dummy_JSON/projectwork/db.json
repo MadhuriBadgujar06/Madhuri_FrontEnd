@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Admin": [
+    {
+      "id": 1,
+      "email": "ankit@gmail.com",
+      "password": "ankit",
+      "name": "Ankit"
+    }
+  ],
+  "user": [
+    {
+      "name": "Madhuri",
+      "mobile": "8511798977",
+      "email": "madhuri@gmail.com",
+      "password": "Madhuri123",
+      "id": "1679645958469",
+      "status": "Unblock"
+    },
+    {
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "id": "1679646009611",
+      "status": "Unblock",
+      "photo": ""
+    },
+    {
+      "name": "Swara",
+      "mobile": "9998330573",
+      "email": "swara@gmail.com",
+      "password": "swara123",
+      "id": "1679646089294",
+      "status": "Unblock"
+    },
+    {
+      "name": "Umang",
+      "mobile": "9679899788",
+      "email": "umang@gmail.com",
+      "password": "umang123",
+      "id": "1680262568757",
+      "status": "Unblock"
+    },
+    {
+      "name": "Shubham Patil",
+      "email": "shubh@gmail.com",
+      "password": "shubh",
+      "mobile": "12323212127",
+      "photo": "https://th.bing.com/th?id=OIP.yt36htQ50gBY-tRP54356gAAAA&w=204&h=306&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2",
+      "status": "unblock",
+      "id": "1683286716733"
+    },
+    {
+      "name": "Paurin Badgujar",
+      "email": "paurinbadgujar@gmail.com",
+      "password": "paurin",
+      "mobile": "09998440572",
+      "photo": "https://th.bing.com/th/id/OIP.L8bs33mJBAUBA01wBfJnjQAAAA?pid=ImgDet&rs=1",
+      "status": "unblock",
+      "id": "1683373873756"
+    },
+    {
+      "name": "sulbha badgujar",
+      "email": "sulbha@gmail.com",
+      "password": "sulbha",
+      "mobile": "9725639692",
+      "photo": "https://th.bing.com/th?id=OIP.A42wP7QbU_Ak1XPBRPGQwwHaLm&w=199&h=312&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2",
+      "status": "unblock",
+      "id": "1683374767001"
+    },
+    {
+      "name": "Meena Vyas",
+      "email": "meena@gmail.com",
+      "password": "meena",
+      "mobile": "8877743422",
+      "photo": "https://th.bing.com/th/id/OIP.Wqw_X_Ru3g5DTsQog3v1bwHaH_?w=191&h=206&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "status": "unblock",
+      "id": "1683390233399"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

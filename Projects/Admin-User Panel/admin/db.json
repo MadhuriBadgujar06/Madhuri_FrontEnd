@@ -41,6 +41,120 @@
       "status": "Unblock"
     }
   ],
+  "snack": [
+    {
+      "image":"https://th.bing.com/th/id/OIP.QebE6jEzJUOUY5Z0uWnt6AHaLH?pid=ImgDet&w=189&h=283&c=7&dpr=1.8",
+      "title": "Treasure Rice Pudding",
+      "price": "15.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958470"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.2b9fV8fkh8FTE6_Us_AW3wHaLF?pid=ImgDet&w=189&h=283&c=7&dpr=1.8",
+      "title": "Oreo Popcorn",
+      "price": "17.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958468"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.aApO1x5v251s9vgu4pKWFAHaK0?pid=ImgDet&w=189&h=275&c=7&dpr=1.8",
+      "title": "Bunny Buddies",
+      "price": "20.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.e10sH16lXGTGYXYOIZbqGwHaE8?w=219&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "title": "Multi-Fruits Pleasure",
+      "price": "25.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.1facr_LPKrS0c7hqmxDU0wAAAA?pid=ImgDet&rs=1",
+      "title": "Vegan Snacks",
+      "price": "33.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    }
+    
+  ],
+  "burger": [
+    {
+      "image":"https://i0.wp.com/thenutritionadventure.com/wp-content/uploads/2017/07/PourHouseAmericanBurger.jpg?resize=5236%2C3490",
+      "title": "Double size burger",
+      "price": "11.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958470"
+    },
+    {
+      "image":"https://i0.wp.com/thenutritionadventure.com/wp-content/uploads/2017/07/PourHouseAmericanBurger.jpg?resize=5236%2C3490",
+      "title": "Bacon, EGG and Cheese",
+      "price": "13.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958468"
+    },
+    {
+      "image":"https://i0.wp.com/thenutritionadventure.com/wp-content/uploads/2017/07/PourHouseAmericanBurger.jpg?resize=5236%2C3490",
+      "title": "Pulled porx Burger",
+      "price": "17.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://i0.wp.com/thenutritionadventure.com/wp-content/uploads/2017/07/PourHouseAmericanBurger.jpg?resize=5236%2C3490",
+      "title": "Fried chicken Burger",
+      "price": "22.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://i0.wp.com/thenutritionadventure.com/wp-content/uploads/2017/07/PourHouseAmericanBurger.jpg?resize=5236%2C3490",
+      "title": "Mini cheese Burger",
+      "price": "9.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    }
+    
+  ],
+  "beverages": [
+    {
+      "image":"https://th.bing.com/th/id/R.8e4e3c2e35c3fad74963b979133a7793?rik=cde1f1A6B3CvrQ&riu=http%3a%2f%2fwww.coolingtunnels.com.au%2fmain%2fwp-content%2fuploads%2f2016%2f10%2fbeverages.jpg&ehk=she5K8fFQGWBDjiM8RYyrqq36UIq96P7B%2fvBYt%2bV5yY%3d&risl=&pid=ImgRaw&r=0",
+      "title": "Bevarages",
+      "price": "11.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958470"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.kMVZHyJPZAzKImzXI8B_8gHaFE?pid=ImgDet&rs=1",
+      "title": "Extra Cold",
+      "price": "13.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958468"
+    },
+    {
+      "image":"https://th.bing.com/th/id/R.a0915c3b00ca1b8d231de99b27af95d6?rik=2UPgUV4OMCdulw&riu=http%3a%2f%2fchipsrestaurants.com%2fwp-content%2fuploads%2f2016%2f05%2fRestaurant-Fairfield.jpg&ehk=mfKVRFA2Bsa9da4fVy2MutSgzYhs1zrxAMOF4AlNHmU%3d&risl=&pid=ImgRaw&r=0",
+      "title": "Mojitos",
+      "price": "17.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://www.plumpiecooks.com/wp-content/uploads/2011/02/marg_withpitcher1-300x215.jpg",
+      "title": "BurgerKing Complementary",
+      "price": "22.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    },
+    {
+      "image":"https://th.bing.com/th/id/OIP.CiO2KKkxVk18hi6Zn0AZCAHaEo?pid=ImgDet&rs=1",
+      "title": "Pepsi",
+      "price": "9.00",
+      "desc": "Lorem ipsum dolor sit amet elit. Phasel nec preti facil",
+      "id": "1679645958469"
+    }
+    
+  ],
   "user": [
     {
       "name": "Madhuri",
