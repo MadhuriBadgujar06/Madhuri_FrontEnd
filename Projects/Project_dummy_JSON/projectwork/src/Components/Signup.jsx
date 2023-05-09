@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function Signup() {
 
@@ -23,23 +24,23 @@ function Signup() {
       let result = true;
       if (formValue.email === null || formValue.email === "") {
         result = false;
-        alert("Email Required..");
+        toast.error("Email Required..");
       }
       if (formValue.password === null || formValue.password === "") {
         result = false;
-        alert("Password Required");
+        toast.error("Password Required");
       }
       if (formValue.name === null || formValue.name === "") {
         result = false;
-        alert("Name Required..");
+        toast.error("Name Required..");
       }
       if (formValue.mobile === null || formValue.mobile === "") {
         result = false;
-        alert("Mobile Required");
+        toast.error("Mobile Required");
       }
       if (formValue.photo === null || formValue.photo === "") {
         result = false;
-        alert("Image Url Required..");
+        toast.error("Image Url Required..");
       }
       
       return result;
@@ -50,7 +51,7 @@ function Signup() {
       if(validation())
       {
         const res= await axios.post(`http://localhost:3000/user`,formValue);
-        alert("Signup Successfull");
+        toast.success("Signup Successfull");
         redirect("/")
         // console.log(formValue)
         setformValue({...formValue,name:"",mobile:"",password:"",email:""})
@@ -62,9 +63,9 @@ function Signup() {
       <div>
       <div className="p-5 container">
         <div className="row">
-            <div className="col-md-6 offset-md-3">
+            <div className="col-md-6 offset-md-3 ">
             
-        <form action="" className="border border-2 p-5">
+        <form action="" className="border form border-5 p-5">
             <h1 className="text-center p-5">SignUp</h1>
         <div className="mb-3 ">
           <input

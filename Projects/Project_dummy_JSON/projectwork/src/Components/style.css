@@ -20,18 +20,22 @@ form
 }
 body
 {    
-    background:linear-gradient(to left bottom, rgba(59, 59, 55, 0.674), #111110d5),url('https://thumbs.dreamstime.com/z/women-handbags-purses-seamless-background-pattern-flat-style-vector-illustration-67513823.jpg')no-repeat center/cover fixed;
-   z-index: -1;
+       z-index: -1;
    background-blend-mode:darken ;
 }
 .Main_nav_container
 {
     position: sticky!important;
     top: 0px;
+    margin-bottom: 30px;
     left: 0px;
     z-index: 100;
+    border-bottom: 2px solid tomato;
+    box-shadow: 1px 1px 2px grey;
 }
-
+h1{
+    color: tomato;
+}
 input
 {
     box-shadow: 1px 1px 1px grey;
@@ -46,17 +50,20 @@ input
 }
 .form{
     border-radius: 10px;
+    border-color: tomato!important;
 }
 ul li
 {
     color: tomato!important;
     font-weight: 600;
-    /* padding:0 10px!important; */
     font-size: 20px;   
+}
+ul li a{
+    margin: 10px; 
 }
 ul li a:hover
 {
-    border-bottom: 2px solid tomato!important;
+    border-bottom: 3px solid tomato!important;
     
 }
 .nav-link

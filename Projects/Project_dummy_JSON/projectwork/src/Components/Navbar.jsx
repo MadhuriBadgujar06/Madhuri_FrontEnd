@@ -2,16 +2,18 @@
 import { NavLink } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import './style.css'
+import { toast } from 'react-toastify';
 
 function Navbar() {
  const redirect = useNavigate();
  
  const logout=()=>{
     redirect('/');
-    localStorage.setItem('name','');
-    localStorage.setItem('photo',"")
-    localStorage.setItem('email',"")
-    alert("Logout Success")
+    localStorage.removeItem('name');
+    localStorage.removeItem('photo')
+    localStorage.removeItem('email')
+    toast.success("Logout Success");
+  
    }
    
   return (
@@ -54,7 +56,7 @@ function Navbar() {
 
 <div id='profile_img'> 
 <NavLink  to="/profile">
-<img src={localStorage.getItem("photo")} width="50px" height="50px" className='rounded' alt="" />
+<img src={localStorage.getItem("photo")} width="75px" height="75px" className='rounded' alt="" />
 </NavLink>
 </div>
 </>

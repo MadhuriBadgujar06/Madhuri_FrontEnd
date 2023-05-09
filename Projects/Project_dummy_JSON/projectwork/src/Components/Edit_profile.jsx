@@ -1,6 +1,9 @@
 import React, { useState,useEffect } from 'react'
 import {useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+
+
 function Edit_profile() {
   const [data, setData] = useState([]);
   const redirect=useNavigate();
@@ -9,6 +12,7 @@ function Edit_profile() {
     if(!(localStorage.getItem("name")))
     {
       redirect("/")
+      
     }
     
   }, []);
@@ -39,23 +43,23 @@ const onchange=(e)=>{
       let result = true;
       if (formValue.email === null || formValue.email === "") {
         result = false;
-        alert("Email Required..");
+        toast.error("Email Required..");
       }
       if (formValue.password === null || formValue.password === "") {
         result = false;
-        alert("Password Required");
+        toast.error("Password Required");
       }
       if (formValue.name === null || formValue.name === "") {
         result = false;
-        alert("Name Required..");
+        toast.error("Name Required..");
       }
       if (formValue.mobile === null || formValue.mobile === "") {
         result = false;
-        alert("Mobile Required");
+        toast.error("Mobile Required");
       }
       if (formValue.photo === null || formValue.photo === "") {
         result = false;
-        alert("Image Url Required..");
+        toast.error("Image Url Required..");
       }
       
       return result;
@@ -73,12 +77,12 @@ const onchange=(e)=>{
   return (
     <div>
         <div>
-      <div className=" p-5 container">
+      <div className="p-3 container">
         <div className="row">
             <div className="col-md-6 offset-md-3">
             
-        <form action="" className="border border-2 p-5">
-            <h1 className="text-center p-5">Update Profile</h1>
+        <form action="" className="border border-5 form p-5">
+            <h1 className="text-center p-3">Update Profile</h1>
         <div className="mb-3 ">
           
           <input

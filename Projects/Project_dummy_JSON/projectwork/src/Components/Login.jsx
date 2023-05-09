@@ -3,6 +3,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 import "./style.css";
+import { toast } from "react-toastify";
 function Login() {
   const redirect = useNavigate();
   const [formValue, setFormValue] = useState({
@@ -24,11 +25,11 @@ useEffect(() => {
     let result = true;
     if (formValue.email === null || formValue.email === "") {
       result = false;
-      alert("Email Required..");
+      toast.error("Email Required..");
     }
     if (formValue.password === null || formValue.password === "") {
       result = false;
-      alert("Password Required");
+      toast.error("Password Required");
     }
     return result;
   };
@@ -45,35 +46,36 @@ useEffect(() => {
         {
           if (formValue.password === res.data[0].password)
            {
-            alert("Login Success");
+            toast.success("Login Success");
             localStorage.setItem("name", res.data[0].name);
             localStorage.setItem("email", res.data[0].email);
             localStorage.setItem("photo",res.data[0].photo)
             localStorage.setItem("id",res.data[0].id)
             redirect("/home");
+            
           }
           else
           {
-            alert("Enter Correct Password")
+            toast.error("Enter Correct Password")
             redirect("/")
           }
         }
           else{
-            alert("Enter Valid Email")
+            toast.error("Enter Valid Email")
             redirect("/")
           }
         
       } else {
-        alert("Enter Valid Data");
+        toast.error("Enter Valid Data");
         redirect("/");
         setFormValue({ ...formValue, email: "", password: "" });
       }
     }
   };
   return (
-    <div className="container background">
+    <div className="container">
       <div className="row  ">
-        <div className="col-md-4 m-auto form mt-5 text-dark bg-light m-5">
+        <div className="col-md-4 m-auto  border border-5 form mt-5 text-dark bg-light m-5">
           <form action="" className="m-5">
             <h1 className=" p-2 text-center">Login</h1>
 

@@ -2,13 +2,14 @@ import axios from "axios";
 import React from "react";
 import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 function Add_Product() {
      const redirect= useNavigate();
     const [formValue, setFormValue] = useState({
         title:"",
         descr:"",
         price:"",
-        img :""
+        url :""
     });
     useEffect(() => {
       if(!(localStorage.getItem("name")))
@@ -22,9 +23,9 @@ function Add_Product() {
     }
 
     const submit=async()=>{
-       const res =await axios.post(`https://dummyjson.com/products`,formValue);
-       setFormValue({...formValue,title:"",descr:"",price:"",img:""}) 
-       alert("Data Submitted")
+       const res =await axios.post(`http://localhost:3000/product`,formValue);
+       setFormValue({...formValue,title:"",descr:"",price:"",url:""}) 
+       toast.success("Product Added..!")
        redirect('/home')
     }
     
@@ -34,7 +35,7 @@ function Add_Product() {
         <div className="row p-5">
             <div className="col-md-6 offset-md-3">
             
-        <form action="" className="border border-2 p-5">
+        <form action="" className="border border-5 form p-5">
             <h1 className="text-center p-5">Insert Product</h1>
         <div className="mb-3 ">
           <label htmlFor="exampleFormControlInput1" className="form-label">
@@ -78,9 +79,10 @@ function Add_Product() {
           </label>
           <input
             type="url"
-            name="price"
+            name="url"
             value={formValue.img}
             onChange={onchange}
+            accept="image/png image/jpg"
             className="form-control"            
           />
         </div>

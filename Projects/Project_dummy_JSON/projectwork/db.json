@@ -58,16 +58,16 @@
       "id": "1683286716733"
     },
     {
-      "name": "Paurin Badgujar",
-      "email": "paurinbadgujar@gmail.com",
+      "name": "Paurin  Badgujar",
+      "email": "paurin@gmail.com",
       "password": "paurin",
-      "mobile": "09998440572",
+      "mobile": "9998440574",
       "photo": "https://th.bing.com/th/id/OIP.L8bs33mJBAUBA01wBfJnjQAAAA?pid=ImgDet&rs=1",
       "status": "unblock",
       "id": "1683373873756"
     },
     {
-      "name": "sulbha badgujar",
+      "name": "Sulbha badgujar",
       "email": "sulbha@gmail.com",
       "password": "sulbha",
       "mobile": "9725639692",
@@ -83,6 +83,296 @@
       "photo": "https://th.bing.com/th/id/OIP.Wqw_X_Ru3g5DTsQog3v1bwHaH_?w=191&h=206&c=7&r=0&o=5&dpr=1.8&pid=1.7",
       "status": "unblock",
       "id": "1683390233399"
+    },
+    {
+      "name": "Sayali",
+      "email": "sayali@gmail.com",
+      "password": "sayali",
+      "mobile": "8978897656",
+      "photo": "https://www.rd.com/wp-content/uploads/2017/09/01-shutterstock_476340928-Irina-Bg.jpg",
+      "status": "unblock",
+      "id": "1683522031494"
+    },
+    {
+      "name": "Minal Shah",
+      "email": "minal@gmail.com",
+      "password": "minal",
+      "mobile": "896789890",
+      "photo": "https://writestylesonline.com/wp-content/uploads/2016/08/Follow-These-Steps-for-a-Flawless-Professional-Profile-Picture.jpg",
+      "status": "unblock",
+      "id": "1683525301400"
+    },
+    {
+      "name": "Nivam P Badgujar",
+      "email": "nivam@gmail.com",
+      "password": "nivam",
+      "mobile": "8945383453",
+      "photo": "https://images.pexels.com/photos/6274712/pexels-photo-6274712.jpeg",
+      "status": "unblock",
+      "id": "1683565831436"
+    }
+  ],
+  "product": [
+    {
+      "id": 11,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": [
+        "Mi 11i"
+      ],
+      "description": [
+        "128GB RAM Grey Color Dual Sim Support"
+      ],
+      "price": [
+        "34997"
+      ],
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1",
+      "desc": "128GB RAM Grey Color"
+    },
+    {
+      "title": "Apple IPhone Max10",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "price": "85999",
+      "id": "1623567273445",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2",
+      "descr": [
+        "Latest Model"
+      ],
+      "description": [
+        "Apple Iphone 256GB RAM"
+      ]
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "1621567524826",
+      "descr": [
+        "Latest Model"
+      ]
+    },
+    {
+      "id": 12,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "Mi10i",
+      "description": "128GB RAM Grey Color",
+      "price": "30000",
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Vivo V6",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "price": "39999",
+      "id": "16232567273445",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2"
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "168356554524826"
+    },
+    {
+      "id": 14,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "Mi10i",
+      "description": "128GB RAM Grey Color",
+      "price": "30000",
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Vivo V6",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "256GB Black Color",
+      "price": "39999",
+      "id": "16835672735",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2"
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "description": "128GB RAM",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "1683567826"
+    },
+    {
+      "id": 15,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "Mi10i",
+      "description": "128GB RAM Grey Color",
+      "price": "30000",
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Vivo V6",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "256GB Black Color",
+      "price": "39999",
+      "id": "16273445",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2"
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "description": "128GB RAM",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "1683526"
+    },
+    {
+      "id": 16,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "Mi10i",
+      "description": "128GB RAM Grey Color",
+      "price": "30000",
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Vivo V6",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "256GB Black Color",
+      "price": "39999",
+      "id": "16836725",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2"
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "description": "128GB RAM",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "1567524826"
+    },
+    {
+      "id": 18,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "Mi10i",
+      "description": "128GB RAM Grey Color",
+      "price": "30000",
+      "url": "https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?pid=ImgDet&rs=1"
+    },
+    {
+      "title": "Vivo V6",
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "256GB Black Color",
+      "price": "39999",
+      "id": "16845",
+      "url": "https://th.bing.com/th?id=OIP.Jga_WLWlw4M3Zrj39ZYGDgHaMW&w=193&h=322&c=8&rs=1&qlt=90&o=6&dpr=1.8&pid=3.1&rm=2"
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "description": "128GB RAM",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "24826"
+    },
+    {
+      "title": [
+        "Vivo V27"
+      ],
+      "discountPercentage": 12.96,
+      "rating": 4.69,
+      "stock": 94,
+      "brand": "Apple",
+      "category": "smartphones",
+      "description": "256GB Black Color",
+      "price": [
+        "29993"
+      ],
+      "id": "16835",
+      "url": [
+        "https://th.bing.com/th/id/OIP.LHoNalWEw_4ykhP3TE5CKgHaD4?w=295&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7"
+      ],
+      "desc": [
+        "Latest Model 256GB Black Color"
+      ]
+    },
+    {
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "title": "IPhone 14 Pro Max",
+      "description": "128GB RAM",
+      "price": "90000",
+      "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
+      "id": "168"
     }
   ],
   "comments": [
