@@ -1,9 +1,9 @@
-//To Run this Project
-//Start JSON SERVER
-//Run Project
-//login id : admin@gmail.com
-// login password : admin
-
+**To Run this Project
+Start JSON SERVER
+Run Project
+login id : admin@gmail.com
+login password : admin
+**
 
 
 # Getting Started with Create React App
