@@ -40,7 +40,7 @@ function List() {
         {
           list.filter((item)=>item.name.toLowerCase().includes(input)).map((item )=>{
             return(
-               <li key="id" className='p-2'>{item.name}</li>
+               <li key={id} className='p-2'>{item.name}</li>
             )
           })
             

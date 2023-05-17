@@ -1,0 +1,59 @@
+{
+  "Users": [
+    {
+      "name": "Priyanka",
+      "age": "25",
+      "id": "228728122",
+      "email": "priyanka@gmail.com",
+      "password": "priyu123"
+    },
+    {
+      "name": "Shraddha",
+      "age": "22",
+      "id": "228728123",
+      "email": "shraddha@gmail.com",
+      "password": "shraddha123"
+    },
+    {
+      "name": "Paurin",
+      "email": "paurin@gmail.com",
+      "mobile": "908989899",
+      "password": "1234",
+      "id": "1682703242156",
+      "status": "Unblock"
+    },
+    {
+      "name": "Jenica",
+      "email": "jeny@gmail.com",
+      "mobile": "9078787679",
+      "password": "jeny",
+      "id": "1682703311362",
+      "status": "Unblock"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "name" :"Admin"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

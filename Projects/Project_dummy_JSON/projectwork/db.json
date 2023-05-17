@@ -110,6 +110,15 @@
       "photo": "https://images.pexels.com/photos/6274712/pexels-photo-6274712.jpeg",
       "status": "unblock",
       "id": "1683565831436"
+    },
+    {
+      "name": "Falguni",
+      "email": "falguni@gmail.com",
+      "password": "sudha",
+      "mobile": "1234567890",
+      "photo": "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      "status": "unblock",
+      "id": "1683643987442"
     }
   ],
   "product": [
@@ -265,7 +274,9 @@
       "category": "smartphones",
       "title": "IPhone 14 Pro Max",
       "description": "128GB RAM",
-      "price": "90000",
+      "price": [
+        "9000"
+      ],
       "url": "https://th.bing.com/th/id/OIP.nbV7lXq8tjn6z65vO38PXgHaFj?w=213&h=180&c=7&r=0&o=5&dpr=1.8&pid=1.7",
       "id": "1683526"
     },
